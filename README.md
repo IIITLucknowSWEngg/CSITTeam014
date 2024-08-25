@@ -7,6 +7,8 @@ TEAM IDEA:
 
 TEAM MEMBERS:
 
+Tadikonda Purnanagaphaneendra
+
 VENKATA REVANTH KURAPATI 
 
 Kukkudapu Srinidhi
@@ -17,7 +19,6 @@ NALLA HITHA SAI SRINATH
 
 Siddharth Paladi 
 
-Tadikonda Purnanagaphaneendra
-
 Gana Kalvakuntla
 
+Koyyani Naga Sai Yaaghnetha
