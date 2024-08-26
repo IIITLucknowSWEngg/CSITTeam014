@@ -14,4 +14,4 @@ CSITTeam014
 + **Siddharth Paladi** -  LCS2023032 -  SiddharthPaladi -  siddharth2304p@gmail.com
 + NALLA HITHA SAI SRINATH
 + Gana Kalvakuntla
-+ Koyyani Naga Sai Yaaghnetha
++ Koyyani Naga Sai Yaaghnetha - LIT2023034 - yaaghnetha09 - yaaghnethak@gmail.com
