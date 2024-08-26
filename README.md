@@ -1,24 +1,17 @@
 # CSITTeam014
 CSITTeam014
 
-TEAM NAME:
+## TEAM NAME:
 
-TEAM IDEA:
+## TEAM IDEA:
 
-TEAM MEMBERS:
+## TEAM MEMBERS:
 
-Tadikonda Purnanagaphaneendra
-
-VENKATA REVANTH KURAPATI 
-
-Kukkudapu Srinidhi
-
-KALYAN CHILAMKURI
-
-NALLA HITHA SAI SRINATH
-
-Siddharth Paladi 
-
-Gana Kalvakuntla
-
-Koyyani Naga Sai Yaaghnetha
++ Tadikonda Purna Naga Phaneendra
++ VENKATA REVANTH KURAPATI 
++ Kukkudapu Srinidhi
++ KALYAN CHILAMKURI
++ **Siddharth Paladi** -  LCS2023032 -  SiddharthPaladi -  siddharth2304p@gmail.com
++ NALLA HITHA SAI SRINATH
++ Gana Kalvakuntla
++ Koyyani Naga Sai Yaaghnetha
