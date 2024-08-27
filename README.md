@@ -12,6 +12,6 @@ CSITTeam014
 + **Kukkudapu Srinidhi** - LCS2023027 - sreenidhi01 - srinidhi.siri17@gmail.com
 + **Kalyan Chilamkuri** - LCS2023030 - kalyanchilamkuri - kalyanchilamkuri8@gmail.com
 + **Siddharth Paladi** -  LCS2023032 -  SiddharthPaladi -  siddharth2304p@gmail.com
-+ **NALLA HITHA SAI SRINATH**
++ **NALLA HITHA SAI SRINATH** - LCS2023001 - saisrinath21 - saisrinathnalla@gmail.com
 + **Gana Kalvakuntla** -  LCS2023049 -  ganakalvakuntla2006 -  ganakalvakuntla@gmail.com
 + **Koyyani Naga Sai Yaaghnetha** - LIT2023034 - yaaghnetha09 - yaaghnethak@gmail.com
