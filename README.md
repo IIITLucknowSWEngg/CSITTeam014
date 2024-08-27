@@ -7,7 +7,7 @@ CSITTeam014
 
 ## TEAM MEMBERS:
 
-+ Tadikonda Purna Naga Phaneendra
++ **Tadikonda Purna Naga Phaneendra** -LIT2023026 -  purnatadikonda5 - purnatadikonda5@gmail.com
 + **Kukkudapu Srinidhi** - LCS2023027 - sreenidhi01 - srinidhi.siri17@gmail.com
 + **Kalyan Chilamkuri** - LCS2023030 - kalyanchilamkuri - kalyanchilamkuri8@gmail.com
 + **Siddharth Paladi** -  LCS2023032 -  SiddharthPaladi -  siddharth2304p@gmail.com
