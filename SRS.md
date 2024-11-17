@@ -121,4 +121,25 @@ The PhonePe Clone will be a web-based and mobile platform for digital payments a
 - Regular penetration testing and audits shall ensure security compliance.
 
 #### 3.2.5 Availability
-- The system shall have 99.9% uptime, with backup servers to ensure uninterrupted servi
+- The system shall have 99.9% uptime, with backup servers to ensure uninterrupted service.
+- The mobile app shall offer offline access to limited features like viewing transaction history.
+
+#### 3.2.6 Compliance
+- The system shall comply with PCI-DSS standards for secure payment processing.
+- It shall adhere to GDPR and other regional data protection laws.
+
+---
+
+## 4. Other Requirements
+
+### 4.1 Hardware Interfaces
+- Minimum device requirements: 2 GB RAM, Android 8.0 or later, iOS 12 or later.
+- Backend servers shall run on high-availability cloud infrastructure (AWS, Azure, or GCP).
+
+### 4.2 Software Interfaces
+- Integration with UPI APIs (e.g., NPCI, bank-specific APIs).
+- Use of secure payment gateways for non-UPI transactions.
+
+### 4.3 Documentation Requirements
+- User manuals for end users and admins.
+- API documentation for third-party developers interested in extending the app's functionality.
