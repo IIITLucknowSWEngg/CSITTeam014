@@ -1,9 +1,9 @@
 # CSITTeam014
 CSITTeam014
 
-## TEAM NAME:
+## TEAM NAME: CyberSapiens
 
-## TEAM IDEA:
+## Project Name: PhonePe clone
 
 ## TEAM MEMBERS:
 
