@@ -29,6 +29,8 @@ The application will offer the following features:
 ### 1.5 Overview
 This document details both functional and non-functional requirements. Functional requirements describe what the system should do, such as enabling payments and linking bank accounts. Non-functional requirements define how the system should perform, focusing on aspects like security, scalability, and usability.
 
+---
+
 ## 2. Overall Description
 
 ### 2.1 Product Perspective
@@ -60,3 +62,63 @@ The PhonePe Clone will be a web-based and mobile platform for digital payments a
 - Reliable internet connectivity for users to conduct transactions.
 - Availability and reliability of third-party services like bank APIs and UPI systems.
 - Compliance with legal and financial regulations for data protection and transactions.
+
+---
+
+## 3. Requirements
+
+### 3.1 Functional Requirements
+
+#### 3.1.1 User Management
+- The system shall allow users to register using their mobile numbers and verify them via OTP.
+- The system shall enable login functionality with username/password or biometric authentication (if supported by the device).
+- Users shall be able to update personal information such as email, phone number, and address.
+
+#### 3.1.2 Bank Account Management
+- The system shall allow users to link multiple bank accounts securely.
+- Users shall be able to view and manage their linked accounts, including adding or removing accounts.
+- Bank balance checks via linked accounts shall be supported.
+
+#### 3.1.3 Money Transfers
+- The system shall allow users to send money via UPI using UPI IDs or QR codes.
+- The system shall enable users to receive money through UPI or bank transfers.
+- Transaction limits should align with user’s bank or UPI provider policies.
+
+#### 3.1.4 Bill Payments and Recharges
+- The system shall support payments for utilities such as electricity, gas, water, and broadband services.
+- Users shall be able to recharge mobile plans and DTH subscriptions.
+
+#### 3.1.5 Transaction History
+- Users shall be able to view their complete transaction history.
+- The system shall allow filtering of transactions by date, type, and recipient.
+
+#### 3.1.6 Notifications
+- Users shall receive real-time notifications for transaction updates, offers, and payment reminders.
+- Notifications shall be customizable to reduce spam.
+
+#### 3.1.7 Admin Functions
+- Admins shall have the ability to monitor user activity and flag suspicious transactions.
+- The system shall provide tools for managing user profiles, approving disputes, and generating reports.
+
+---
+
+### 3.2 Non-Functional Requirements
+
+#### 3.2.1 Performance
+- The system shall handle up to 1 million concurrent users during peak times.
+- The response time for UPI transactions shall not exceed 2 seconds under normal conditions.
+
+#### 3.2.2 Usability
+- The user interface shall be intuitive and optimized for users with minimal technical knowledge.
+- The app shall support multiple languages to cater to a diverse user base.
+
+#### 3.2.3 Scalability
+- The backend architecture shall support future enhancements like adding new payment methods or services.
+
+#### 3.2.4 Security
+- All sensitive data (e.g., UPI PINs, bank account details) shall be encrypted using AES-256 encryption.
+- The system shall implement two-factor authentication for all transactions.
+- Regular penetration testing and audits shall ensure security compliance.
+
+#### 3.2.5 Availability
+- The system shall have 99.9% uptime, with backup servers to ensure uninterrupted servi
