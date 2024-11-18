@@ -450,6 +450,4 @@ describe('Rewards: Cashback, Points, Referral Bonuses', function() {
     validator.ok(walletBalance >= 100, 'Referral bonus not added to wallet');
   });
 });
-```
-```
 
