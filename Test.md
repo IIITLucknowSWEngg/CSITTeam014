@@ -72,7 +72,6 @@ const kycPage = require('../pages/kycPage');
 
 describe('Account and Identity Verification (KYC)', function() {
   it('should successfully complete KYC verification', function() {
-    // Open the KYC page
     kycPage.open();
 
     // Provide user details for verification
@@ -86,14 +85,11 @@ describe('Account and Identity Verification (KYC)', function() {
       postalCode: '400001'
     });
 
-    // Submit KYC details
     kycPage.submitKYC();
 
-    // Validate success message
     const successMessage = kycPage.getSuccessMessage();
     validator.strictEqual(successMessage, 'KYC verification in progress', 'Success message mismatch');
-
-    // Check verification status
+    
     const verificationStatus = kycPage.getVerificationStatus();
     validator.strictEqual(verificationStatus, 'Verified', 'Account verification status mismatch');
   });
@@ -251,7 +247,7 @@ describe('Money Transfer', function() {
 
 ---
 
-## Automation Code for Scenario
+## QRCodePayment.js Code
 
 ```javascript
 const validator = require('assert');
@@ -283,6 +279,175 @@ describe('QR Code Payments', function() {
 
     const errorMessage = qrPaymentPage.getErrorMessage();
     validator.strictEqual(errorMessage, 'Invalid QR code, please try again', 'Error message mismatch');
+  });
+});
+
+```
+---
+
+
+# Feature: Bank Account Balance
+
+## Scenario: User Checks Bank Account Balance
+
+### Given:
+- The user has a linked bank account and is logged into their account.
+ 
+### When:
+- The user navigates to the "Bank Account Balance" section.
+- The app fetches the current balance from the linked bank account.
+
+### Then:
+- The user sees the current balance of their linked bank account.
+- A confirmation message or error message is displayed if the balance fetch fails.
+
+---
+
+## BankAccountBalance.js
+
+```javascript
+const validator = require('assert');
+const bankAccountPage = require('../pages/bankAccountPage');
+
+describe('Bank Account Balance', function() {
+  it('should display the correct bank account balance', function() {
+    bankAccountPage.open();
+
+    const balance = bankAccountPage.getBankAccountBalance();
+
+    validator.ok(balance >= 0, 'Balance should be a non-negative number');
+    console.log(`Current balance: ₹${balance}`);
+
+    const currentBalance = bankAccountPage.getBankAccountBalance();
+    validator.strictEqual(balance, currentBalance, 'Bank balance was not updated correctly');
+  });
+
+  it('should display an error message if unable to fetch balance', function() {
+    bankAccountPage.simulateNetworkIssue();
+
+    bankAccountPage.open();
+
+    const errorMessage = bankAccountPage.getErrorMessage();
+    validator.strictEqual(errorMessage, 'Unable to fetch balance, please try again later', 'Error message mismatch');
+  });
+});
+
+
+```
+---
+
+# Feature: Transaction History
+
+## Scenario: User Views Transaction History
+
+### Given:
+- The user has performed at least one transaction (either send or receive money).
+- The user is logged into their account and navigates to the "Transaction History" section in the app.
+
+### When:
+- The user selects the "Transaction History" option in the app.
+- The app fetches and displays the user's past transactions.
+- The user is able to filter transactions by date, amount, or type (debit/credit).
+
+### Then:
+- The transaction history is displayed with details such as date, transaction type, amount, and status (successful, pending, failed).
+- The user can scroll through previous transactions or search specific ones.
+- The user can view detailed information about each transaction, including transaction ID and recipient.
+
+---
+
+## TransactionHistory.js
+
+```javascript
+const validator = require('assert');
+const transactionHistoryPage = require('../pages/transactionHistoryPage');
+
+describe('Transaction History', function() {
+  it('should display correct transaction history details', function() {
+    transactionHistoryPage.open();
+
+    const transactions = transactionHistoryPage.getTransactionHistory();
+
+    validator.ok(transactions.length > 0, 'Transaction history is empty');
+    
+    const recentTransaction = transactions[0]; 
+    validator.ok(recentTransaction.date, 'Date is missing in transaction');
+    validator.ok(recentTransaction.amount, 'Amount is missing in transaction');
+    validator.ok(recentTransaction.status, 'Status is missing in transaction');
+
+    const filteredTransactions = transactionHistoryPage.filterTransactionsByDate('2024-11-01');
+    validator.ok(filteredTransactions.length > 0, 'No transactions found for the selected date');
+
+    const debitTransactions = transactionHistoryPage.filterTransactionsByType('Debit');
+    validator.ok(debitTransactions.length > 0, 'No debit transactions found');
+  });
+
+  it('should display an error message if unable to fetch transaction history', function() {
+    transactionHistoryPage.simulateNetworkIssue();
+
+    transactionHistoryPage.open();
+
+    const errorMessage = transactionHistoryPage.getErrorMessage();
+    validator.strictEqual(errorMessage, 'Unable to fetch transaction history, please try again later', 'Error message mismatch');
+  });
+});
+```
+---
+
+# Feature: Rewards - Cashback, Points, Referral Bonuses
+
+## Scenario: User Receives Rewards for Transactions and Referrals
+
+### Given:
+- The user is logged into their account and has performed actions that are eligible for rewards (e.g., a transaction, referral, or specific milestone). 
+
+### When:
+- The user completes a transaction eligible for cashback or points.
+- The user successfully refers a friend who completes registration and a qualifying action.
+
+### Then:
+- The user receives the eligible reward (cashback, points, or referral bonus).
+- The reward is reflected in the user's wallet, points balance, or transaction history.
+
+---
+
+## Rewards.js Code
+
+```javascript
+const validator = require('assert');
+const rewardsPage = require('../pages/rewardsPage');
+
+describe('Rewards: Cashback, Points, Referral Bonuses', function() {
+  it('should award cashback for a qualifying transaction', function() {
+    rewardsPage.open();
+
+    rewardsPage.performTransaction({
+      amount: 1000,
+      upiID: 'recipient@bank'
+    });
+
+    const cashbackMessage = rewardsPage.getRewardMessage();
+    validator.strictEqual(cashbackMessage, 'You earned ₹50 cashback!', 'Cashback message mismatch');
+
+    const walletBalance = rewardsPage.getWalletBalance();
+    validator.ok(walletBalance >= 50, 'Cashback not added to wallet');
+  });
+
+  it('should award points for a milestone achievement', function() {
+    rewardsPage.open();
+
+    const pointsBalance = rewardsPage.getPointsBalance();
+    validator.ok(pointsBalance >= 100, 'Points not added after milestone');
+  });
+
+  it('should award referral bonus for a successful referral', function() {
+    rewardsPage.openReferralSection();
+    rewardsPage.referFriend('friend@example.com');
+    const referralMessage = rewardsPage.getReferralMessage();
+    validator.strictEqual(referralMessage, 'You earned ₹100 referral bonus!', 'Referral bonus message mismatch');
+
+    const walletBalance = rewardsPage.getWalletBalance();
+    validator.ok(walletBalance >= 100, 'Referral bonus not added to wallet');
   });
 });
 ```
