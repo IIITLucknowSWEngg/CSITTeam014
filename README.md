@@ -3,7 +3,7 @@ CSITTeam014
 
 ## TEAM NAME: CyberSapiens
 
-## Project Name: PhonePe clone
+## Project Name: PhonePe competitor
 
 ## TEAM MEMBERS:
 
