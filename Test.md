@@ -240,15 +240,12 @@ describe('Money Transfer', function() {
 - The merchant or recipient has generated a valid QR code for payment.
 
 ### When:
-- The user navigates to the "QR Code Payments" section in the app.
-- The user scans the QR code provided by the merchant or recipient.
+- The user navigates to the "QR Code Payments" section in the app, and scans the QR code provided by the merchant or recipient.
 - The app retrieves the payment details (amount, recipient information) from the QR code.
-- The user confirms the payment details.
-- The user enters any required authentication (e.g., UPI PIN, OTP).
+- The user confirms the payment details, and enters any required authentication (e.g., UPI PIN, OTP).
 
 ### Then:
 - The payment is processed successfully.
-- A confirmation message is displayed to the user.
 - The transaction is reflected in the user’s transaction history.
 - The recipient receives the payment.
 
