@@ -1,28 +1,28 @@
+# User Requirements Document (URD) for PhonePe Clone  
 
-# User Requirements Document (URD) for PhonePe Clone
+## 1. Introduction  
 
-## 1. Introduction
+### 1.1 Purpose  
+The purpose of this document is to define the user requirements for the **PhonePe Clone**, a digital payment platform enabling users to perform UPI transactions, manage bank accounts, pay bills, and perform mobile recharges seamlessly. It aims to deliver an efficient, secure, and user-friendly solution for digital payments.  
 
-### 1.1 Purpose
+### 1.2 Scope  
+The PhonePe Clone will replicate essential features of a digital wallet and payment platform, focusing on:  
+- UPI-based money transfers.  
+- Bill payments and mobile recharges.  
+- Secure and reliable bank account management.  
+- Comprehensive transaction history and notifications.  
 
-This document defines the user requirements for the **"PhonePe Clone"** application, a digital payments platform. It outlines the system’s functionality from a user perspective to ensure it meets expectations and provides a seamless user experience for performing UPI transactions, bill payments, and managing linked bank accounts.
+This document provides a roadmap for developers, testers, and stakeholders to ensure the platform meets user expectations effectively.  
 
-### 1.2 Scope
+### 1.3 Definitions  
+- **UPI**: Unified Payments Interface, enabling real-time bank-to-bank transactions using mobile numbers or UPI IDs.  
+- **Digital Wallet**: A virtual account that stores user funds for online transactions.  
+- **Bill Payments**: Payment for utilities such as electricity, gas, and internet services.  
 
-The application will function as a comprehensive digital wallet and payments solution, allowing users to:
+---
 
-- Send/receive money
-- Pay bills
-- Recharge mobile phones
-- Manage multiple bank accounts
 
-This document details the functional and non-functional requirements essential for the development of the application.
 
-### 1.3 Definitions
-
-- **UPI Payment**: Users can transfer money directly between bank accounts via UPI using phone numbers or UPI IDs.
-- **Bill Payments**: Users can pay for utility services, including electricity, gas, water, and mobile recharge.
-- **Bank Account Management**: Users can link and manage multiple bank accounts within the application.
 
 ## 2. Functional Requirements
 
