@@ -150,6 +150,14 @@ The system will interact with mobile device hardware, including:
 ---
 
 ## 5. Non-Functional Requirements (NFRs)
+## NFR compatibility matrix
+| NFR Categories          | Performance | Security | Availability | Scalability | Usability |
+|------------------------|-------------|-----------|--------------|-------------|-----------|
+| Performance            | —           | C         | O            | C+          | C         |
+| Security              | C           | —         | O            | I           | C         |
+| Availability          | O           | O         | —            | C+          | I         |
+| Scalability           | C+          | I         | C+           | —           | I         |
+| Usability             | C           | C         | I            | I           | —         |
 
 ### 5.1 Performance Requirements
 - The application shall process transactions within 2 seconds under normal conditions.  
