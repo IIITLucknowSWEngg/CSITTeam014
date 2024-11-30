@@ -149,38 +149,44 @@ The system will interact with mobile device hardware, including:
 
 ---
 
-## 5. Non-Functional Requirements (NFRs)
-## NFR compatibility matrix
-| NFR Categories          | Performance | Security | Availability | Scalability | Usability |
-|------------------------|-------------|-----------|--------------|-------------|-----------|
-| Performance            | —           | C         | O            | C+          | C         |
-| Security              | C           | —         | O            | I           | C         |
-| Availability          | O           | O         | —            | C+          | I         |
-| Scalability           | C+          | I         | C+           | —           | I         |
-| Usability             | C           | C         | I            | I           | —         |
-# NFR Relationship Matrix -  Explanation
+# SE Guidelines vs NFR Compatibility Matrix
 
-## Relationship Types
+| SE Guidelines/NFRs | Performance | Security | Availability | Scalability | Usability |
+|-------------------|-------------|-----------|--------------|-------------|-----------|
+| Modularity        | C+          | C+        | C+           | C+          | O         |
+| Maintainability   | O           | C+        | C+           | C+          | O         |
+| Reusability      | O           | C+        | C+           | C+          | O         |
+| Testability      | O           | C+        | C+           | O           | I         |
+| Documentation    | I           | C+        | O            | O           | C+        |
+| Error Handling   | C           | C+        | C+           | O           | C+        |
 
-### C+ (Complementary)
+## Understanding the Relationships
+
+### Relationship Types Explained
+
+#### C+ (Complementary)
 - **Definition**: Requirements that positively reinforce each other
-- **Example**: Scalability and Performance often complement each other as better scalability typically leads to improved performance
+- **Example**: Modularity and Scalability complement each other as modular systems are easier to scale
 
-### O (Overlapping)
+#### O (Overlapping)
 - **Definition**: Requirements that partially support or share common elements
-- **Example**: Security and Availability may overlap as both contribute to system reliability
+- **Example**: Maintainability and Performance have overlapping concerns in system optimization
 
-### C (Conflicting)
+#### C (Conflicting)
 - **Definition**: Requirements that negatively impact each other
-- **Example**: Security vs Usability - stricter security measures often make the system less user-friendly
+- **Example**: Error Handling and Performance conflict as comprehensive error handling can slow system response
 
-### I (Independent)
+#### I (Independent)
 - **Definition**: Requirements that have no direct impact on each other
-- **Example**: Usability and Data Backup requirements typically don't affect each other
+- **Example**: Documentation and Performance have no direct influence on each other
 
-### — (Same Category)
-- **Definition**: Intersection of a requirement with itself
-- **Example**: Performance vs Performance
+### Key Matrix Insights
+
+1. Most SE Guidelines are complementary (C+) to Security and Availability
+2. Modularity shows strong complementary relationships with most NFRs
+3. Error Handling has the most varied relationships across NFRs
+4. Usability tends to have overlapping relationships with many guidelines
+5. Few truly conflicting relationships exist, showing good architectural alignment
 
 ### 5.1 Performance Requirements
 - The application shall process transactions within 2 seconds under normal conditions.  
