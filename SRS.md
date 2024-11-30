@@ -158,6 +158,29 @@ The system will interact with mobile device hardware, including:
 | Availability          | O           | O         | —            | C+          | I         |
 | Scalability           | C+          | I         | C+           | —           | I         |
 | Usability             | C           | C         | I            | I           | —         |
+# NFR Relationship Matrix -  Explanation
+
+## Relationship Types
+
+### C+ (Complementary)
+- **Definition**: Requirements that positively reinforce each other
+- **Example**: Scalability and Performance often complement each other as better scalability typically leads to improved performance
+
+### O (Overlapping)
+- **Definition**: Requirements that partially support or share common elements
+- **Example**: Security and Availability may overlap as both contribute to system reliability
+
+### C (Conflicting)
+- **Definition**: Requirements that negatively impact each other
+- **Example**: Security vs Usability - stricter security measures often make the system less user-friendly
+
+### I (Independent)
+- **Definition**: Requirements that have no direct impact on each other
+- **Example**: Usability and Data Backup requirements typically don't affect each other
+
+### — (Same Category)
+- **Definition**: Intersection of a requirement with itself
+- **Example**: Performance vs Performance
 
 ### 5.1 Performance Requirements
 - The application shall process transactions within 2 seconds under normal conditions.  
