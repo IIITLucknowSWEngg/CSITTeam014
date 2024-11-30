@@ -149,7 +149,33 @@ The system will interact with mobile device hardware, including:
 
 ---
 
-## 5. NON FUNCTIONAL REQUIREMENRTS
+### 5. Functional Requirements
+
+## Use Cases
+
+| Use Case | Primary Actor | Pre-Conditions | Actor's Goals | Secondary Actors | Main Tasks/Functions |
+| --- | --- | --- | --- | --- | --- |
+| Register | User | None | Create an account to access the app's features | - | Submit registration details |
+| Login | User | Must have an existing account | Access the app and its features | - | Enter login credentials |
+| Add Money to Wallet | User | Must have a linked payment method | Add funds to their digital wallet | - | Initiate a money transfer or deposit |
+| Send Money to Contacts | User | Must have sufficient balance in wallet | Transfer money to other users | - | Select recipient, enter amount, authorize transfer |
+| Pay Bills | User | Must have linked bank account or wallet balance | Pay utility bills through the app | - | Choose biller, enter details, make payment |
+| Recharge Mobile | User | Must have wallet balance | Recharge their mobile phone number | - | Select mobile number, choose recharge plan, complete payment |
+| Book Tickets | User | Must have wallet balance or linked payment method | Book tickets for various services | - | Search for and select tickets, make payment |
+| View Transaction History | User | Must be logged in | Review past transactions | - | Navigate to transaction history section |
+| Raise Dispute | User | Must have made a recent transaction | Dispute a transaction or issue | Customer Support | Submit dispute details, provide evidence |
+| Accept Payments | Merchant | Must have registered and set up account | Receive digital payments from users | Payment Gateway | Enable payment methods, view transaction details |
+| View Payment History | Merchant | Must have an active merchant account | Review payment history and details | - | Access payment history reports |
+| Withdraw Money to Bank Account | Merchant | Must have received payments | Transfer funds to linked bank account | - | Initiate withdrawal request |
+| Resolve Disputes | Merchant | Must have unresolved disputes | Work with support to resolve payment disputes | Customer Support | Provide transaction details, communicate with users |
+| Manage Users | Admin | Must have administrative access | Manage user accounts and permissions | - | Create, modify, or deactivate user accounts |
+| Generate Reports | Admin | Must have administrative access | Generate reports on user activities and transactions | - | Select report type, customize parameters, export report |
+
+The application should support the above use cases to provide a comprehensive digital payment and financial services platform for users, merchants, and administrators.
+
+---
+
+## 6. NON FUNCTIONAL REQUIREMENRTS
 # SE Guidelines vs NFR Compatibility Matrix
 
 | SE Guidelines/NFRs | Performance | Security | Availability | Scalability | Usability |
@@ -189,19 +215,19 @@ The system will interact with mobile device hardware, including:
 4. Usability tends to have overlapping relationships with many guidelines
 5. Few truly conflicting relationships exist, showing good architectural alignment
 
-### 5.1 Performance Requirements
+### 6.1 Performance Requirements
 - The application shall process transactions within 2 seconds under normal conditions.  
 - The system shall handle up to 50,000 concurrent users without performance degradation.  
 
 ---
 
-### 5.2 Security Requirements
+### 6.2 Security Requirements
 - User data shall be encrypted both in transit (using TLS) and at rest (using AES-256).  
 - The system shall enforce multi-factor authentication for all users.  
 
 ---
 
-### 5.3 Availability and Reliability
+### 6.3 Availability and Reliability
 - The system shall achieve 99.9% uptime, with automatic failover mechanisms.  
 - Daily backups shall ensure data recovery in case of failures.
 - <img src="uptime and downtime.png" alt="Uptime and Downtime Visualization" width="800"/>
@@ -209,27 +235,27 @@ The system will interact with mobile device hardware, including:
 
 ---
 
-### 5.4 Scalability
+### 6.4 Scalability
 - The system shall support horizontal scaling to accommodate increased transaction volumes.  
 
 ---
 
-### 5.5 Usability
+### 6.5 Usability
 - The UI/UX design shall prioritize ease of use and accessibility for all users.  
 
 ---
 
-## 6. Other Requirements
+## 7. Other Requirements
 
-### 6.1 Localization
+### 7.1 Localization
 The application shall support multiple regional languages and currencies in future releases.  
 
-### 6.2 Ethical Requirements
+### 7.2 Ethical Requirements
 The system shall include mechanisms to prevent misuse, such as fraud detection and reporting features.  
 
 ---
 
-## 7. Appendices
+## 8. Appendices
 
 - **Appendix A**: Glossary of Terms  
 - **Appendix B**: Diagrams (System Architecture, Use Case Diagrams)  
