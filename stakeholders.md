@@ -129,3 +129,68 @@ This document provides a comprehensive **Stakeholder Register** for the **PhoneP
 - **Category:** Internal
 
 ---
+
+
+## External Stakeholders
+
+### 1. **End Users**
+- **Role:** Individuals using the app for payments and transactions.
+- **Responsibilities:**
+  - Provide feedback on usability and features.
+  - Participate in surveys and beta testing.
+  - Share reviews to enhance app visibility.
+- **Influence:** High
+- **Interest:** High
+- **Category:** External
+
+### 2. **Banks and Financial Institutions**
+- **Role:** Provide core payment infrastructure (e.g., UPI).
+- **Responsibilities:**
+  - Enable digital payments.
+  - Ensure secure processing of transactions.
+  - Collaborate on technical integration and issue resolution.
+- **Influence:** High
+- **Interest:** High
+- **Category:** External
+
+### 3. **Regulatory Authorities**
+- **Role:** Monitor compliance with digital payment laws.
+- **Responsibilities:**
+  - Enforce data privacy and transaction security standards.
+  - Monitor adherence to anti-money laundering (AML) regulations.
+  - Provide certifications and compliance reports.
+- **Influence:** High
+- **Interest:** Medium
+- **Category:** External
+
+### 4. **Merchants**
+- **Role:** Businesses accepting payments via the app.
+- **Responsibilities:**
+  - Encourage customers to use the app.
+  - Provide feedback on merchant-specific features.
+  - Ensure smooth integration with their systems.
+- **Influence:** Medium
+- **Interest:** High
+- **Category:** External
+
+### 5. **Third-Party Service Providers**
+- **Role:** Support app functionalities through APIs and integrations.
+- **Responsibilities:**
+  - Maintain reliability of integrated services (e.g., payment gateways).
+  - Ensure compatibility with platform updates.
+  - Provide technical support for issues.
+- **Influence:** Medium
+- **Interest:** Medium
+- **Category:** External
+
+### 6. **Advertisers and Sponsors**
+- **Role:** Promote their products and services on the platform.
+- **Responsibilities:**
+  - Collaborate on advertising and sponsorship deals.
+  - Provide promotional materials and campaigns.
+  - Track engagement metrics for optimization.
+- **Influence:** Medium
+- **Interest:** Medium
+- **Category:** External
+
+---
