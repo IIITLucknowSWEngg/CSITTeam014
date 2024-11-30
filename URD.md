@@ -103,43 +103,24 @@ This document provides a roadmap for developers, testers, and stakeholders to en
 
 ---
 
-## 3. Non-Functional Requirements
+## 3. Non-Functional Requirements  
 
-### 3.1 Performance
+### 3.1 Performance  
+- Transaction processing time must be less than 3 seconds.  
+- Support up to 1 million simultaneous users.  
 
-- **Response Time**: Transaction operations must complete within 1 second.
-- **Load Handling**: The system must handle up to 50,000 concurrent users with no performance degradation.
-- **Scalability**: The system should easily scale to accommodate growing user bases and transaction volume.
+### 3.2 Security  
+- Encrypt sensitive user data and transactions.  
+- Implement fraud detection systems.  
 
-### 3.2 Usability
+### 3.3 Usability  
+- Provide an intuitive, user-friendly interface with multi-language support.  
 
-- **User Interface (UI)**:
-  - The design should be intuitive and user-friendly, allowing quick access to key features like money transfers, bill payments, and transaction history.
-  
-- **Accessibility**:
-  - Ensure compliance with WCAG guidelines for accessibility to users with disabilities.
-  
-- **Mobile Optimization**:
-  - Provide a fully optimized app experience for mobile devices running iOS and Android.
+### 3.4 Availability  
+- Ensure 99.9% system uptime for uninterrupted service.  
 
-### 3.3 Security
+---
 
-- **Data Protection**:
-  - Encrypt all sensitive user data and transaction information using SSL/TLS.
-  
-- **Authentication**:
-  - Implement multi-factor authentication (MFA) and biometric verification for secure logins and transactions.
-  
-- **Compliance**:
-  - Ensure compliance with GDPR and PCI-DSS standards for data and payment security.
-
-### 3.4 Reliability
-
-- **Availability**:
-  - Ensure an uptime of 99.9%, allowing users constant access to perform transactions without interruptions.
-  
-- **Backup & Recovery**:
-  - Implement daily backups and a disaster recovery plan to restore data and operations in case of system failure.
 
 ## 4. Constraints
 
