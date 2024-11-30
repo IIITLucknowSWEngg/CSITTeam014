@@ -24,111 +24,84 @@ This document provides a roadmap for developers, testers, and stakeholders to en
 
 
 
-## 2. Functional Requirements
+## 2. Functional Requirements  
 
-### 2.1 User Management
+### 2.1 User Management  
+1. *Registration and Login*  
+   - Users register with their phone number, verified through OTP.  
+   - Login options: OTP-based login, biometric authentication, or email integration.  
 
-- **Account Creation**:
-  - Users can create accounts using their phone number, verified via OTP.
-  - Option to register using email or integrate social media profiles (e.g., Google, Facebook).
-  
-- **Account Verification**:
-  - Phone number verification using OTP during registration.
-  
-- **Login/Logout**:
-  - Secure login using mobile number and OTP.
-  - Option to use social media for authentication and support for biometric authentication (fingerprint/face unlock).
-  
-- **Profile Management**:
-  - Users can view and edit their personal details such as name, email, and linked bank accounts.
-  - Users can upload or update their profile picture.
-  
-- **Password/Pin Management**:
-  - Users can set/reset their UPI PIN through the app.
-  - Support for resetting passwords or unlocking accounts via OTP or email.
+2. *Profile Management*  
+   - Edit personal details (name, email, profile picture).  
+   - Update and manage linked bank accounts.  
 
-### 2.2 UPI Transactions
+3. *Security*  
+   - Set or reset UPI PIN securely via OTP verification.  
+   - Enable two-factor authentication for additional safety.  
 
-- **Send/Receive Money**:
-  - Send Money: Users can send money by entering the recipient's phone number, UPI ID, or scanning a QR code.
-  - Receive Money: Users can request money by generating a UPI ID or QR code.
-  
-- **Transaction History**:
-  - Provide a detailed transaction history showing completed, pending, or failed transactions.
-  - Users can download or share transaction receipts.
-  
-- **Scheduled Payments**:
-  - Users can schedule recurring payments for specific dates (e.g., monthly utility bills).
-  
-- **Real-Time Notifications**:
-  - Notify users of successful, pending, or failed transactions via in-app notifications and SMS/email.
 
-### 2.3 Bill Payments & Recharges
+### 2.2 UPI Transactions  
+1. *Send/Receive Money*  
+   - Options for transferring funds via UPI ID, mobile number, or QR code.  
+   - Generate QR codes to request payments.  
 
-- **Utility Bill Payments**:
-  - Users can pay for electricity, water, gas, broadband, and other utilities by selecting from a list of service providers.
-  
-- **Mobile Recharges**:
-  - Provide options for mobile recharges, data top-ups, and postpaid bill payments across multiple carriers.
-  
-- **Automatic Payment Reminders**:
-  - Send reminders for due bills, enabling users to pay before the due date.
+2. *Transaction History*  
+   - Detailed view of completed, pending, or failed transactions.  
+   - Downloadable transaction receipts.  
 
-### 2.4 Bank Account Management
+3. *Scheduled Transactions*  
+   - Schedule recurring payments for utilities or subscriptions.  
 
-- **Linking Bank Accounts**:
-  - Users can securely link multiple bank accounts using UPI.
-  - Display account balances, recent transactions, and provide options to change the primary bank account.
-  
-- **Set UPI PIN**:
-  - Users can set or reset UPI PIN for linked bank accounts through a secure OTP verification process.
-  
-- **Bank Account Overview**:
-  - Show balance and transaction history for all linked accounts.
-  - Allow users to switch between accounts for UPI transactions.
+4. *Real-Time Notifications*  
+   - Alerts for transaction updates (success, failure, pending) via SMS, email, and push notifications.  
 
-### 2.5 Payment Gateway Integration
 
-- **Payment Methods**:
-  - Support UPI, credit/debit cards, net banking, and mobile wallets (e.g., Google Pay, PayPal).
-  
-- **Transaction Confirmation**:
-  - Provide real-time transaction confirmation with a unique transaction ID and details.
-  - Option to download or share receipts of payment via SMS, email, or PDF.
 
-### 2.6 Customer Support
+### 2.3 Bill Payments and Recharges  
+1. *Utility Bill Payments*  
+   - Pay bills for electricity, water, gas, and internet through a unified interface.  
 
-- **Support Requests**:
-  - Provide customer support through live chat, email, and phone.
-  - Users can create and track support tickets for issues related to transactions or account management.
-  
-- **FAQs and Help Center**:
-  - Offer a detailed FAQ section and tutorials on UPI setup, bill payments, and managing accounts.
-  
-- **24/7 Support Availability**:
-  - Ensure real-time assistance through AI-based chatbots or human agents for immediate support.
+2. *Mobile Recharges*  
+   - Recharge options for prepaid/postpaid mobile plans and data top-ups.  
 
-### 2.7 Notifications and Alerts
+3. *Reminders*  
+   - Notify users of upcoming bill due dates or low balances.  
 
-- **Transaction Alerts**:
-  - Notify users about completed, pending, or failed transactions via push notifications, SMS, and email.
-  
-- **Reminders**:
-  - Remind users about bill payment due dates, upcoming scheduled payments, and low account balances.
-  
-- **Promotional Offers**:
-  - Notify users about offers, discounts, or cashback promotions via in-app notifications and email.
+### 2.4 Bank Account Management  
+1. *Link Bank Accounts*  
+   - Securely link multiple bank accounts using UPI for seamless transactions.  
+   - Display account balances and transaction history.  
 
-### 2.8 User Preferences
+2. *Set/Reset UPI PIN*  
+   - Enable users to set or reset their UPI PIN securely.  
 
-- **Customization**:
-  - Allow users to save favorite payees, billers, and frequently used UPI IDs for quick access.
-  
-- **Language Preferences**:
-  - Offer multi-language support for users from various regions.
-  
-- **Notification Settings**:
-  - Provide options for users to customize notification preferences for transactions, offers, and alerts.
+3. *Primary Account Management*  
+   - Allow users to switch primary accounts for payments.  
+
+
+### 2.5 Payment Gateway Integration  
+1. *Payment Methods*  
+   - Support payments via UPI, credit/debit cards, and mobile wallets.  
+
+2. *Transaction Confirmation*  
+   - Provide unique transaction IDs and downloadable receipts.  
+
+### 2.6 Customer Support  
+1. *Support Channels*  
+   - 24/7 customer support via chatbots, live agents, or email.  
+   - Issue ticket creation and tracking system.  
+
+2. *FAQs and Tutorials*  
+   - Provide resources on using app features like UPI setup and bill payments.  
+
+### 2.7 Notifications and Alerts  
+1. *Transaction Alerts*  
+   - Notify users of completed or failed transactions.  
+
+2. *Promotional Notifications*  
+   - Inform users about cashback offers, discounts, or new features.  
+
+---
 
 ## 3. Non-Functional Requirements
 
