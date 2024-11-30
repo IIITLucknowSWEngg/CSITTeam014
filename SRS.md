@@ -166,7 +166,7 @@ The system will interact with mobile device hardware, including:
 ### 5.3 Availability and Reliability
 - The system shall achieve 99.9% uptime, with automatic failover mechanisms.  
 - Daily backups shall ensure data recovery in case of failures.
-- <img src="uptime-and-downtime" alt="Uptime and Downtime Visualization" width="800"/>
+- <img src="uptime and downtime" alt="Uptime and Downtime Visualization" width="800"/>
 
 
 ---
