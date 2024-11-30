@@ -173,6 +173,10 @@ The system will interact with mobile device hardware, including:
 
 The application should support the above use cases to provide a comprehensive digital payment and financial services platform for users, merchants, and administrators.
 
+
+#### Use Case Diagram  
+![PhonePe Use Cases](https://github.com/IIITLucknowSWEngg/CSITTeam014/blob/main/PhonePe%20Use%20cases.png)
+
 ---
 
 ## 6. NON FUNCTIONAL REQUIREMENRTS
