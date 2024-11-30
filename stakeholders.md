@@ -6,21 +6,25 @@
 
 This document provides a comprehensive **Stakeholder Register** for the **PhonePe Clone** project. Stakeholders are individuals, teams, or entities with an interest in or influence over the project. Categorizing them as **internal** or **external** helps ensure clear communication, effective collaboration, and alignment of goals, contributing to the successful execution of the project.
 
-| Stakeholder                    | Role and Importance                                                 | Responsibilities                                                                                   | Impact on Project                                                         |
-|--------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| Project Sponsor                | Provides funding and sets project direction                         | Approves project scope, budget, and timeline; Ensures project aligns with company goals; Guides decisions | High - Their decisions directly affect the project’s success             |
-| Project Manager                | Plans and oversees the project's progress                           | Manages budget, resources, and timelines; Keeps project on track; Coordinates between teams       | High - Responsible for day-to-day project execution                      |
-| Development Team               | Builds and tests the payment app                                    | Writes and maintains code; Adds digital payment and wallet features; Ensures secure transactions  | High - Quality of work impacts app performance and timeline              |
-| UI/UX Designers                | Designs the app's look and feel                                     | Creates intuitive designs; Ensures accessibility; Works closely with developers                   | Medium - Influences user satisfaction and ease of use                    |
-| Quality Assurance (QA) Team    | Ensures app quality and reliability                                 | Conducts testing for bugs; Reports issues; Ensures stability of new features                      | High - Ensures app reliability and smooth functionality                  |
-| Product Owner                  | Represents user needs and priorities                                | Defines and prioritizes features; Decides on app improvements; Acts as a link between teams       | High - Decisions directly shape the final product                        |
-| End Users                      | Individuals using the app for payments and transactions             | Provides feedback on app usability and features                                                   | High - Their satisfaction determines the app’s popularity and success    |
-| Banks and Financial Institutions | Enables digital payments through UPI and other methods             | Provides UPI and other payment services; Ensures secure transaction processing                    | High - Essential for core app functions                                  |
-| Regulatory Authorities         | Ensures app follows digital payment regulations                     | Monitors compliance with legal standards; Enforces data security and transaction laws             | High - Non-compliance risks legal issues                                 |
-| Customer Support Team          | Assists users with questions and issues                             | Handles inquiries and complaints; Resolves or escalates issues                                    | Medium - Affects user satisfaction and retention                         |
-| Security Auditors              | Ensures app security and data protection                            | Conducts security audits; Ensures compliance with data privacy standards; Identifies vulnerabilities | High - Prevents data breaches and maintains user trust                |
-| Marketing Team                 | Promotes the app to attract more users and merchants                | Creates and manages marketing campaigns; Runs social media; Tracks and adapts to market trends    | Medium - Affects app visibility and user acquisition                     |
-| Merchants                      | Businesses accepting payments through the app                       | Provides feedback on features; Uses the app for transactions; Encourages customers to use the app | Medium - Positive experience helps attract more users                    |
+---
+## Stakeholder Register Table
+
+| **Stakeholder**                | **Role**                                         | **Responsibilities**                                                        | **Influence** | **Interest** | **Category**  |
+|--------------------------------|-------------------------------------------------|----------------------------------------------------------------------------|---------------|--------------|---------------|
+| **Project Sponsor**            | Oversees funding and strategic alignment        | Approves scope, budget, timeline; aligns goals; guides decisions            | High          | High         | Internal      |
+| **Project Manager**            | Manages project execution                       | Plans and monitors progress; allocates resources; resolves conflicts        | High          | High         | Internal      |
+| **Development Team**           | Develops and maintains the platform             | Implements features, fixes bugs, ensures scalability                        | High          | High         | Internal      |
+| **UI/UX Designers**            | Ensure a seamless, user-friendly experience     | Create intuitive designs, test usability, ensure accessibility              | Medium        | High         | Internal      |
+| **Quality Assurance (QA) Team**| Ensures app quality and stability               | Conducts testing, identifies bugs, ensures stability and performance        | High          | High         | Internal      |
+| **Product Owner**              | Defines product vision and priorities           | Specifies features, sets priorities, manages backlog                        | High          | High         | Internal      |
+| **End Users**                  | Use the app for payments and transactions       | Provide feedback, test features, enhance visibility through reviews         | High          | High         | External      |
+| **Banks and Financial Institutions** | Enable digital payments and transaction security | Provide UPI infrastructure, ensure security, support integrations          | High          | High         | External      |
+| **Regulatory Authorities**     | Enforce compliance with digital payment regulations | Ensure adherence to privacy, security, and AML standards                  | High          | Medium       | External      |
+| **Customer Support Team**      | Provides support to app users                   | Handles inquiries and complaints, resolves issues                            | Medium        | Medium       | Internal      |
+| **Security Auditors**          | Ensure app security and compliance              | Conduct security audits, ensure data protection, identify vulnerabilities   | High          | High         | External      |
+| **Marketing Team**             | Promotes the app and its features               | Creates marketing campaigns, tracks market trends, engages with users       | Medium        | Medium       | Internal      |
+| **Merchants**                  | Use the app to accept payments                  | Accept payments, provide feedback, encourage app adoption by customers     | Medium        | Medium       | External      |
+
 
 ---
 
