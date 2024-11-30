@@ -122,17 +122,35 @@ This document provides a roadmap for developers, testers, and stakeholders to en
 ---
 
 
-## 4. Constraints
+## 4. System Requirements  
 
-- **Third-Party Integration**: The application will rely on third-party UPI and bank APIs, which may affect functionality depending on availability and performance.
-- **Compliance**: Ensure adherence to legal and regulatory requirements, such as PCI-DSS for payment processing and GDPR for data protection.
-- **Budget & Timeline**: Development may be constrained by budget limits and deadlines, affecting feature availability in initial releases.
+### 4.1 Hardware Requirements  
+- GPS and internet-enabled smartphones for user access.  
+- Servers to support backend operations and real-time updates.  
 
-## 5. Assumptions
+### 4.2 Software Requirements  
+- Backend: Node.js, Python, or Java.  
+- Database: MySQL, MongoDB, or PostgreSQL.  
+- Mobile Platforms: Android (version 8.0 and above) and iOS (version 11 and above).  
 
-- **Internet Access**: Users will have stable internet connectivity to access and use the app’s features.
-- **UPI Availability**: UPI services will be functional and available for use throughout the user base.
-- **Payment Gateway Stability**: Integrated payment gateways will maintain uptime and provide secure transaction processing.
+---
+
+## 5. User Interfaces  
+
+1. *User Interface*  
+   - Clean, intuitive design for easy navigation.  
+   - Dashboard for quick access to UPI, recharges, and bill payments.  
+
+2. *Customer Support Interface*  
+   - Chat interface for real-time assistance.  
+   - Issue-tracking dashboard for support agents.  
+
+3. *Admin Panel*  
+   - Monitor user activity, transactions, and support tickets.  
+   - Generate system reports and analytics.  
+
+---
+
 
 ## 6. Glossary
 
