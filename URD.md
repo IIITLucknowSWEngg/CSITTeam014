@@ -152,8 +152,25 @@ This document provides a roadmap for developers, testers, and stakeholders to en
 ---
 
 
-## 6. Glossary
+## 6. Continuous Integration and Deployment (CI/CD)  
 
-- **UPI**: Unified Payments Interface, a real-time payment system that enables inter-bank transactions.
-- **PCI-DSS**: Payment Card Industry Data Security Standard, a security standard for handling credit card transactions.
-- **MFA**: Multi-Factor Authentication, a security process that requires two or more verification methods.
+### 6.1 CI Pipeline  
+1. Version control integration with GitHub or GitLab.  
+2. Automated testing frameworks for unit, integration, and UI tests.  
+3. Real-time feedback via Slack or email notifications.  
+
+### 6.2 CD Pipeline  
+1. Staging and production environments for seamless deployment.  
+2. Zero-downtime deployment strategies (e.g., blue-green deployment).  
+3. Automated app store submissions using tools like Fastlane.  
+
+---
+
+## 7. Constraints and Assumptions  
+
+- The app assumes users have smartphones with active internet connections.  
+- Payment gateway integration relies on APIs for seamless transactions.  
+- User trust depends on secure transactions and quick issue resolution.  
+
+---  
+
