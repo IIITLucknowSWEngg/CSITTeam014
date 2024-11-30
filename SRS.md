@@ -264,7 +264,7 @@ The system shall include mechanisms to prevent misuse, such as fraud detection a
 ---
 ## Refereces 
 - classroom pdf
-- <img src="usecases_reference" alt="use case documentation contents " width="800"/>
+- <img src="usecases_reference.png" alt="use case documentation contents " width="800"/>
 - <img src="nfr.png" alt="nfr compatibility matrix" width="800"/>
 -claude ai prompt : generate a  se guidelines vs NFR compatibility matrix for the following NFR's  1) performance , 2) scalability 3)security 4) availability 5)usibility 
 
