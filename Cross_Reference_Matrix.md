@@ -16,3 +16,4 @@
 | FR 3.3 Usability Requirements      | DC 4.1 Mobile App - UI                 | TC-156 to TC-160 | CA 7.7                        | UI 5.1               |  
 | FR 3.4 Availability Requirements   | DC 4.2 Backend Infrastructure          | TC-161 to TC-165 | CA 7.8                        | UI 5.3               |  
 | FR 4.1 User Interfaces             | DC 4.1 Mobile App - UI                 | TC-166 to TC-170 | CA 7.9                        | UI 5.1, 5.2, 5.3     |  
+| FR 4.2 Continuous Integration      | DC 6.1 CI/CD Pipeline                  | TC-171 to TC-175 | CA 7.10                       | UI 5.4               |  
