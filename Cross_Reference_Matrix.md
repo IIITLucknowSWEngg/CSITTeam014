@@ -15,3 +15,4 @@
 | FR 3.2 Security Requirements       | DC 4.2 Backend - Security Service      | TC-151 to TC-155 | CA 7.6                        | UI 5.3               |  
 | FR 3.3 Usability Requirements      | DC 4.1 Mobile App - UI                 | TC-156 to TC-160 | CA 7.7                        | UI 5.1               |  
 | FR 3.4 Availability Requirements   | DC 4.2 Backend Infrastructure          | TC-161 to TC-165 | CA 7.8                        | UI 5.3               |  
+| FR 4.1 User Interfaces             | DC 4.1 Mobile App - UI                 | TC-166 to TC-170 | CA 7.9                        | UI 5.1, 5.2, 5.3     |  
