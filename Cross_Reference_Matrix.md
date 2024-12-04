@@ -20,3 +20,4 @@
 | FR 4.3 System Integration          | DC 4.2 Backend - Integration Services  | TC-176 to TC-180 | CA 7.11                       | UI 5.5               |  
 | FR 5.1 Transaction Rollback        | DC 4.2 Backend - Payment Service       | TC-181 to TC-185 | CA 7.12                       | UI 5.6               |  
 | FR 5.2 Data Privacy                | DC 4.2 Backend - Security Service      | TC-186 to TC-190 | CA 7.13                       | UI 5.7               |  
+| FR 5.3 Regulatory Compliance       | DC 4.2 Backend - Compliance Service    | TC-191 to TC-195 | CA 7.14                       | UI 5.8               |  
