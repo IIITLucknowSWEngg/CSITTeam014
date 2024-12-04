@@ -18,3 +18,4 @@
 | FR 4.1 User Interfaces             | DC 4.1 Mobile App - UI                 | TC-166 to TC-170 | CA 7.9                        | UI 5.1, 5.2, 5.3     |  
 | FR 4.2 Continuous Integration      | DC 6.1 CI/CD Pipeline                  | TC-171 to TC-175 | CA 7.10                       | UI 5.4               |  
 | FR 4.3 System Integration          | DC 4.2 Backend - Integration Services  | TC-176 to TC-180 | CA 7.11                       | UI 5.5               |  
+| FR 5.1 Transaction Rollback        | DC 4.2 Backend - Payment Service       | TC-181 to TC-185 | CA 7.12                       | UI 5.6               |  
