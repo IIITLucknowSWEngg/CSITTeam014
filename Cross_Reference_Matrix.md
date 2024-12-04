@@ -1,6 +1,4 @@
-Here is the updated **Cross-Reference Matrix for PhonePe Clone** in markdown table format:
 
-```markdown
 | Functional Requirements (FR)       | Design Components (DC)                | Test Cases (TC)        | Constraints & Assumptions (CA) | User Interfaces (UI)             |
 |------------------------------------|----------------------------------------|------------------------|-------------------------------|----------------------------------|
 | FR 2.1 User Management             | DC 4.1 Mobile App - UI, Controller     | TC-101 to TC-105        | CA 7.1                        | UI 5.1                           |
