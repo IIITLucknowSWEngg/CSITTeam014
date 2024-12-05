@@ -55,8 +55,6 @@
 ## User
 ![container-diagram-Merchant](https://www.planttext.com/api/plantuml/png/b5RRRXen47tVhvZIXqf8A8cg92L2A5oYA5AIhd9Hditk05QytfLjGlcsFlIJ-WiTmrviTZU59_3Cd6FxdF70tzz_hhLXogmI4No9SSubmjFDv6NqU7j_0meZm-H2O9aR_xoVGhSxY5AHggknOD7xiDiD0iEDG9YaqZ0gKp3bRA5O0Zq8bwd4a7A2FeFW6upY63B54wOs41K0JObNZQetPn6N2s1P9dZ434-b3ge3THxI6QUDHbdM0QOXsIvf1OD1bIgGmo5ydPtrexZlKhpXhCIlSRO3vy7FaVQ0C0hlu9OPNBFDbc95mNnDF4xMSlI_Nvx6CtlhCIc5CWQg_k0HUfTwKKng5jcDuNcNtrARAfw7xJLvfDASnMuHn-mqZcl7T7di4OyX67CX86IR1ANnY4XWSGpHdVn0RMeql0mVHwPN90XL-rnvz1YgnzJmUMwrnoQTn7y9oTKfCsp6DBgDt69iKRhlx7HCEnH9ouuNU35dDKCzl7Nq0A1df4TWdJo0m37GWrSE7aHI6BV7aOVRA4ZVcry6bMG2z4ORJ3nnnqo-dxpIUtlUvdRNejXkIPGbU1UnpD7bsVcFSy-Y9LTnBwGHk04h5pbO2aJV3wK9Lte9hMsLKTPBViPArtv2iHjzIvxHKT2i4QNROzNSw_M6tWYwWewTGHCcXEu4-NpxlCZDsCg6iKE01oRP0i5fwGQeEsagJDc_TO0xKIg0sxSDkzJdHmMjEhOHk3SiN5pHf65Alm8S6-1Dqu4OdkrST-qbQD0WufwsrFO4Va8MdxmfRj1Ho4NaJxsfr1Ml4BEbj2wPBsGhR4ymJyKMKDlTdST9i52bz3EemRvWlwcQhcMV8e4cQPAif9KPOStDidooGPCt5bnxUeLXjHThNRkcZFqhz0y00F__0m00)
 ```plantuml
-## Merchant
-
  @startuml
 !define RECTANGLE rectangle
 !define BOLD **<color:Black>**
@@ -112,8 +110,104 @@ notificationService --> pushNotification : "Send Push Notifications"
 @enduml
 
 ```
-## Admin
+## Merchant
+![image](https://github.com/user-attachments/assets/afc92d8c-0c3d-48ee-ad93-9b017dc93036)
+```plantuml
+@startuml
+!define RECTANGLE rectangle
+!define BOLD **<color:Black>**
 
+title Container Diagram - Merchant - PhonePe Clone
+
+' Add primary containers
+' Merchant-facing application
+RECTANGLE "Merchant App" as merchantApp <<Mobile Application>> #ffa07a
+
+' API Gateway
+RECTANGLE "Merchant API Gateway" as merchantGateway <<API Gateway>> #ff7f50
+
+' Backend services
+RECTANGLE "Merchant Service" as merchantService <<Microservice>> #ff4500
+RECTANGLE "Transaction Service" as transactionService <<Microservice>> #ffa07a
+RECTANGLE "Notification Service" as notificationService <<Microservice>> #ff4500
+RECTANGLE "Chat Service" as chatService <<Microservice>> #ffa07a
+
+' Database containers
+RECTANGLE "Merchant Database" as merchantDB <<Database>> #ffe4e1
+RECTANGLE "Transaction Database" as transactionDB <<Database>> #ffe4e1
+
+' External systems
+RECTANGLE "Banking System" as bankingSystem <<External System>> #b22222
+RECTANGLE "Payment Gateway" as paymentGateway <<External System>> #b22222
+RECTANGLE "Push Notification Service" as pushNotification <<External System>> #b22222
+RECTANGLE "Customer Support System" as customerSupport <<External System>> #b22222
+
+' Relationships between containers
+merchantApp --> merchantGateway : "API Calls"
+merchantGateway --> merchantService : "Manage Merchant Profile"
+merchantGateway --> transactionService : "Track Transactions"
+merchantGateway --> notificationService : "Send Payment Notifications"
+merchantGateway --> chatService : "In-App Chat"
+
+merchantService --> merchantDB : "Read/Write Data"
+transactionService --> transactionDB : "Read/Write Data"
+
+transactionService --> bankingSystem : "Bank Settlements"
+transactionService --> paymentGateway : "Process Payments"
+notificationService --> pushNotification : "Send Notifications"
+chatService --> customerSupport : "Escalate Issues"
+
+@enduml
+
+```
+## Admin
+![image](https://github.com/user-attachments/assets/ebd5ffda-9ca0-4c0a-b0b8-28c35cfd967c)
+```plantuml
+@startuml
+!define RECTANGLE rectangle
+!define BOLD **<color:Black>**
+
+title Container Diagram - Admin - PhonePe Clone
+
+' Add primary containers
+' Admin-facing web application
+RECTANGLE "Admin Web Panel" as adminPanel <<Web Application>> #fa8072
+
+' API Gateway
+RECTANGLE "Admin API Gateway" as adminGateway <<API Gateway>> #ff6347
+
+' Backend services
+RECTANGLE "Admin Service" as adminService <<Microservice>> #ff4500
+RECTANGLE "Transaction Service" as transactionService <<Microservice>> #ffa07a
+RECTANGLE "Notification Service" as notificationService <<Microservice>> #ff4500
+RECTANGLE "Chat Service" as chatService <<Microservice>> #ffa07a
+
+' Database containers
+RECTANGLE "Admin Database" as adminDB <<Database>> #ffe4e1
+RECTANGLE "Transaction Database" as transactionDB <<Database>> #ffe4e1
+
+' External systems
+RECTANGLE "Banking System" as bankingSystem <<External System>> #b22222
+RECTANGLE "Push Notification Service" as pushNotification <<External System>> #b22222
+RECTANGLE "Customer Support System" as customerSupport <<External System>> #b22222
+
+' Relationships between containers
+adminPanel --> adminGateway : "API Calls"
+adminGateway --> adminService : "Manage Users/Merchants"
+adminGateway --> transactionService : "Monitor Transactions"
+adminGateway --> notificationService : "Send Notifications"
+adminGateway --> chatService : "Handle Support Issues"
+
+adminService --> adminDB : "Read/Write Data"
+transactionService --> transactionDB : "Read/Write Data"
+
+transactionService --> bankingSystem : "Monitor Bank Settlements"
+notificationService --> pushNotification : "Send Notifications"
+chatService --> customerSupport : "Escalate Issues"
+
+@enduml
+
+```
 # Component Diagram
 ## User
 ![Component_Diagram_User](https://www.planttext.com/api/plantuml/png/X5H1Rjim4Bph5GjVUZ9wpw68OnIjWRemxFJMoqRUI8GbKY1NSOoYB-kXJ-eNkXJ5X9GSn1T9kpFZdLbH__xylNMCblksAOeFyFcPoMfiO5MoiQv0Vu753qTs0UZ0tyJYbcnPe-QX4HzYSuUNbZJ35sGwusN0ZBMn597V3Qj7LI8he-50zacLDC3JnbYFd7NlsBHauT1tdR5XX5WSQn5xX_gaT0M7YsDg1-HO2XLlEzp1dUdr4Utb1dQrqRGZM3ToBJeiJrYHk4hB2_XL520_uVSFRf1mOAaHVqTW4yBo04ibewuQ2ad2dYhbs0RBFpNg8wnwhYMRqUvBrYboAdLlKJinwKMsg6L0d-uBDMc_TgSQapN1HZDLDfyXNrk2c8drhiwsvburf9LrfjoDNgww3jOryfX8kbeluLjnjR_zqlO-QQzLgyx10_6PI0zGyFom42XDsycoDBjYQ2sNdsR9mWqSL2NSxkCtKocT8wy6APGjdYY-qpdZpSI4jREc9EVU84vZ4iAUIb9Fb0URqv9eX916ULPSnoIpy-s7ii5K4Blkqlz3xcPk0H9gq9hRy3fNphCFdcHNSs-f9K-U76uXVfKbovip1B5nhgVtV6IdNWJySvZzaUHJLzpA9Fup-1y00F__0m00)
