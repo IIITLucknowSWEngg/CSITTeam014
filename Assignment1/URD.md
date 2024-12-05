@@ -140,6 +140,140 @@ I assist users and merchants in resolving payment or account-related issues.
 
 </details>
 
+<details>
+<summary>Use Case 1: Send Money</summary>
+
+**Steps:**
+- Open the app and select "Send Money."
+- Choose a contact or enter the recipient's UPI ID.
+- Enter the amount to send and add a note (optional).
+- Confirm the payment and authenticate with PIN or biometrics.
+  
+**Outcome:** The user successfully sends money to the recipient.
+
+</details>
+
+<details>
+<summary>Use Case 2: Pay Bills</summary>
+
+**Steps:**
+- Navigate to the "Pay Bills" section in the app.
+- Select the type of bill (e.g., electricity, mobile).
+- Enter the required details and the amount.
+- Confirm the payment and authenticate with PIN or biometrics.
+
+**Outcome:** The user successfully pays the selected bill.
+
+</details>
+
+<details>
+<summary>Use Case 3: Recharge Mobile</summary>
+
+**Steps:**
+- Go to the "Recharge" section.
+- Select the mobile operator and enter the mobile number.
+- Choose a plan or enter the recharge amount.
+- Confirm the recharge and authenticate the payment.
+
+**Outcome:** The user successfully recharges their mobile.
+
+</details>
+
+<details>
+<summary>Use Case 4: Generate QR Code for Payments</summary>
+
+**Steps:**
+- Open the "Payments" section and select "Generate QR Code."
+- Enter the amount to be received.
+- Share the QR code with the customer for payment.
+  
+**Outcome:** The merchant successfully generates a QR code for customer payments.
+
+</details>
+
+<details>
+<summary>Use Case 5: View Transaction History</summary>
+
+**Steps:**
+- Navigate to the "Transaction History" section.
+- Filter transactions by date, type, or amount.
+- Select a transaction to view details.
+
+**Outcome:** The user successfully views their transaction history.
+
+</details>
+
+<details>
+<summary>Use Case 6: Request a Refund</summary>
+
+**Steps:**
+- Go to the "Help" or "Support" section.
+- Select the transaction for which a refund is needed.
+- Submit a refund request and provide a reason.
+  
+**Outcome:** The user successfully requests a refund.
+
+</details>
+
+<details>
+<summary>Use Case 7: Link Bank Account</summary>
+
+**Steps:**
+- Open the app and navigate to "Settings."
+- Select "Bank Accounts" and choose "Link New Account."
+- Enter bank details and verify using OTP.
+  
+**Outcome:** The user successfully links their bank account to the app.
+
+</details>
+
+<details>
+<summary>Use Case 8: Access Customer Support</summary>
+
+**Steps:**
+- Navigate to the "Help" or "Support" section.
+- Select the type of issue or query.
+- Chat with a support representative or view FAQs.
+
+**Outcome:** The user receives assistance for their query.
+
+</details>
+
+<details>
+<summary>Use Case 9: Track Referral Rewards</summary>
+
+**Steps:**
+- Go to the "Referral Program" section in the app.
+- View the number of successful referrals and rewards earned.
+- Share referral links with friends directly from the app.
+
+**Outcome:** The user monitors their referral rewards effectively.
+
+</details>
+
+<details>
+<summary>Use Case 10: Manage Payment Methods</summary>
+
+**Steps:**
+- Navigate to the "Payment Methods" section.
+- Add, edit, or remove payment options (e.g., UPI, cards).
+- Set a preferred payment method for transactions.
+
+**Outcome:** The user manages their payment methods conveniently.
+
+</details>
+
+<details>
+<summary>Use Case 11: Explore Offers and Discounts</summary>
+
+**Steps:**
+- Open the app and go to the "Offers" section.
+- Browse available discounts and cashback offers.
+- Select an offer to view details and terms.
+
+**Outcome:** The user discovers offers that can save money on transactions.
+
+</details>
 
 ## 1. Introduction  
 
