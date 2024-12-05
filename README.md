@@ -3,7 +3,7 @@
 ## TEAM NAME: CyberSapiens
 
 ## Project Name: PhonePe Competitor  
-*Assignment:* [IIITLucknowSWEngg/Assignment#12](https://github.com/IIITLucknowSWEngg/Assignment/issues/12)
+*Assignment:* [Record of Approval](https://github.com/IIITLucknowSWEngg/Assignment/issues/12)
 
 ---
 
