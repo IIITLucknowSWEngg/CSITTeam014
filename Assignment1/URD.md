@@ -1,4 +1,145 @@
 # User Requirements Document (URD) for PhonePe Clone  
+<details>
+<summary>User 1: End User</summary>
+
+### User 1: End User  
+**Role:** Likely an End User  
+**Scenario:**  
+I use PhonePe for daily transactions and want a seamless experience for payments and financial services.  
+
+**Goals:**  
+- Quickly send money to contacts using UPI or bank transfers.  
+- Pay bills (electricity, mobile, DTH, etc.) in one place.  
+- View transaction history and track expenses.  
+- Use QR codes for contactless payments at stores.  
+- Earn rewards like cashback or discounts for transactions.  
+
+**Pain Points:**  
+- Delays in transaction processing or failure notifications.  
+- Lack of clarity on reward redemption.  
+
+</details>
+
+
+<details>
+<summary>User 2: Merchant</summary>
+
+### User 2: Merchant  
+**Role:** Likely a Merchant  
+**Scenario:**  
+I run a small shop and need a reliable payment platform to accept digital payments.  
+
+**Goals:**  
+- Generate unique QR codes for easy customer payments.  
+- Track daily transaction history and view settlements.  
+- Notify customers of payment confirmation in real time.  
+- Access business loans or credit through the platform.  
+
+**Pain Points:**  
+- Limited customer support for payment disputes.  
+- Delays in settlement to the bank account.  
+
+</details>
+  
+
+<details>
+<summary>User 3: Family Member</summary>
+
+### User 3: Family Member  
+**Role:** Likely a Family Member  
+**Scenario:**  
+I manage household expenses and want a user-friendly platform for bill payments and tracking.  
+
+**Goals:**  
+- Set up reminders for recurring bill payments.  
+- Pay bills for utilities, school fees, or subscriptions without errors.  
+- Use cashback or coupons to save money on frequent transactions.  
+
+**Pain Points:**  
+- Missed payment notifications leading to late fees.  
+- Difficulty in tracking multiple accounts or bills.  
+
+</details>
+
+
+<details>
+<summary>User 4: Admin</summary>
+
+### User 4: Admin  
+**Role:** Likely an Admin  
+**Scenario:**  
+I ensure smooth platform operations and resolve escalations from users or merchants.  
+
+**Goals:**  
+- Monitor transaction logs and identify technical issues.  
+- Resolve disputes like failed payments or refund delays.  
+- Manage fraud detection and prevent unauthorized access.  
+- Generate periodic reports on platform performance and growth.  
+
+**Pain Points:**  
+- Insufficient tools to analyze transaction trends.  
+- Challenges in handling high volumes of customer queries.  
+
+</details>
+
+<details>
+<summary>User 5: First-Time User</summary>
+
+### User 5: First-Time User  
+**Role:** Likely a First-Time User  
+**Scenario:**  
+I am new to digital payments and want a simple and secure way to transfer money.  
+
+**Goals:**  
+- Easily link my bank account to the app.  
+- Understand the steps to complete a payment without confusion.  
+- Get quick support if I face any transaction issues.  
+
+**Pain Points:**  
+- Overwhelming features or complicated setup processes.  
+- Fear of security risks or transaction failures.  
+
+</details>
+  
+
+<details>
+<summary>User 6: Frequent Traveler</summary>
+
+### User 6: Frequent Traveler  
+**Role:** Likely a Frequent Traveler  
+**Scenario:**  
+I often pay for transportation, tolls, and travel-related services using PhonePe.  
+
+**Goals:**  
+- Recharge travel cards (e.g., metro or FASTag) directly.  
+- Pay for cabs, buses, or train tickets seamlessly.  
+- Get travel insurance or offers for frequent travelers.  
+
+**Pain Points:**  
+- Delays in recharge updates for travel cards.  
+- Limited options for integrated travel services.  
+
+</details>
+
+<details>
+<summary>User 7: Customer Support Rep</summary>
+
+### User 7: Customer Support Rep  
+**Role:** Likely a Customer Support Rep  
+**Scenario:**  
+I assist users and merchants in resolving payment or account-related issues.  
+
+**Goals:**  
+- Access detailed transaction history and logs to resolve disputes.  
+- Handle refund requests or payment failures efficiently.  
+- Provide guidance to new users on linking accounts or using features.  
+
+**Pain Points:**  
+- Lack of real-time data during peak transaction hours.  
+- Managing multiple escalations without adequate resources.  
+
+</details>
+
 
 ## 1. Introduction  
 
