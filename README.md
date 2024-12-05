@@ -24,15 +24,13 @@
 
 ## Team Contribution Log  
 
-| Team Member                    | Commit Hash        | Commit Description                      | Date       |
-|--------------------------------|--------------------|------------------------------------------|------------|
-| *Tadikonda Purna Naga Phaneendra* | commit-hash-1 | Description of the commit               | YYYY-MM-DD |
-| *Kukkudapu Srinidhi*         | d0f924d2c10155c62311b6188750d9abc39be909   | updated the test.md and added the test cases                | 2024-12-05 |
-| *Kalyan Chilamkuri*          | commit-hash-3   | Description of the commit               | YYYY-MM-DD |
-| *Siddharth Paladi*           | f804d5812895f4f58e40b6dca9980bba4efd4a85   |Updated the Stakeholder Register Table and added relevant details for each stakeholder  | 2024-12-01 |
-| *Nalla Hitha Sai Srinath*    | 38ade40dc89858a3099dcd9538bce891db86032a   |Created Architecture.md and added most of the c4 model diagrams               |2024-11-17  |
-| *Gana Kalvakuntla*           | 495340ba844292be863db144fbd82353b91c80b3  |  Created urd.md documenting project requirements and updated srs.md with error case and use case diagrams.  | 2024-11-30 |
-| *Koyyani Naga Sai Yaaghnetha*|7b9a13f3b9bf202dcbc4208d3e85d51082aa54c4| Added the Use Cases under Functional Requirements Section  | 2024-11-30 |
-| *Revanth Kurapati*           | 508e7a39e9bf81bac8dcf519dddee6f059ff2148  | updatead the uptime and downtime values table               | 2024-11-30 |
-
----
+| Team Member                    | Commit Hash        | Commit Description                                                             | Date       |
+|--------------------------------|--------------------|---------------------------------------------------------------------------------|------------|
+| *Tadikonda Purna Naga Phaneendra* | eda9819d547d903145aa7a1ede5334adccbca887 | Updated Cross_Reference_Matrix.md, added SRS.md file, and defined the mapping of test cases in Cross_Reference_Matrix.md | 2024-12-04 |
+| *Kukkudapu Srinidhi*           | d0f924d2c10155c62311b6188750d9abc39be909  | Updated the test.md and added the test cases                                    | 2024-12-05 |
+| *Kalyan Chilamkuri*            | commit-hash-3     | Description of the commit                                                      | YYYY-MM-DD |
+| *Siddharth Paladi*             | f804d5812895f4f58e40b6dca9980bba4efd4a85  | Updated the Stakeholder Register Table and added relevant details for each stakeholder | 2024-12-01 |
+| *Nalla Hitha Sai Srinath*      | 38ade40dc89858a3099dcd9538bce891db86032a  | Created Architecture.md and added most of the C4 model diagrams                | 2024-11-17 |
+| *Gana Kalvakuntla*             | 495340ba844292be863db144fbd82353b91c80b3  | Created urd.md documenting project requirements and updated srs.md with error case and use case diagrams | 2024-11-30 |
+| *Koyyani Naga Sai Yaaghnetha*  | 7b9a13f3b9bf202dcbc4208d3e85d51082aa54c4  | Added the Use Cases under Functional Requirements Section                      | 2024-11-30 |
+| *Revanth Kurapati*             | 508e7a39e9bf81bac8dcf519dddee6f059ff2148  | Updated the uptime and downtime values table                                   | 2024-11-30 |
