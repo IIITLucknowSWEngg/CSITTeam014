@@ -296,12 +296,15 @@ component "Merchant Dashboard Module" {
     - Design Component: Withdrawal Processing Module  
       - Manages withdrawal requests and bank transfer processes.
 
-plantuml 
+![image](https://github.com/user-attachments/assets/6911020e-d4ff-4a01-b7af-d6dacb039ae9)
+
+```plantuml 
 @startuml 
 component "Withdrawal Processing Module" { 
     + initiateWithdrawalRequest() 
 } 
-@enduml 
+@enduml
+``` 
 
 
 13. *Resolve Disputes*
