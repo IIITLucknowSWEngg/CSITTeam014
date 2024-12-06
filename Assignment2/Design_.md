@@ -197,15 +197,18 @@ package "Data Layer" {
    - *Description:* Book tickets for various services.
    - *Design Component:* Ticket Booking Module
      - Manages ticket searches, selections, and payment processing.
-     
-plantuml 
+     - 
+![image](https://github.com/user-attachments/assets/bfbb6361-87e7-4d58-adbe-6d1e2b3bab5c)
+
+```plantuml 
 @startuml 
 component "Ticket Booking Module" { 
     + searchTickets() 
     + selectTicket() 
     + processBooking() 
 } 
-@enduml 
+@enduml
+```
 
 
 8. *View Transaction History*
