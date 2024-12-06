@@ -334,8 +334,11 @@ component "Dispute Resolution Module" {
 
 15. *Generate Reports*
      - Actor: Admin         - Precondition: Administrative access         - Description: Generate various reports based on user activity and transactions         - Design Component: Reporting Module             - Generates reports for analysis.
+   
+![image](https://github.com/user-attachments/assets/9757bde2-dd28-46c7-ae7c-c1c2047e84dc)
 
-plantuml     @startuml     component "Reporting Module" {             + generateUserActivityReport()             + generateTransactionReport()     }     @enduml      
+
+```plantuml     @startuml     component "Reporting Module" {             + generateUserActivityReport()             + generateTransactionReport()     }     @enduml     ``` 
 
 ---
 
