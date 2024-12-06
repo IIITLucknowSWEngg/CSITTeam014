@@ -257,13 +257,17 @@ component "Dispute Management Module" {
     - Design Component: Merchant Payment Module  
       - Facilitates payment acceptance through various methods.
 
-plantuml 
+
+![image](https://github.com/user-attachments/assets/a4b55f63-37a4-40aa-a17d-25dbd637fee3)
+
+```plantuml 
 @startuml 
 component "Merchant Payment Module" { 
     + enablePaymentMethods() 
     + viewTransactionDetails() 
 } 
-@enduml 
+@enduml
+```
 
 
 11. *View Payment History*
