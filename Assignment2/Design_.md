@@ -328,7 +328,9 @@ component "Dispute Resolution Module" {
 14. *Manage Users*
      - Actor: Admin        - Precondition: Must have administrative access        - Description: Manage user accounts and permissions        - Design Component: Admin Management Module          - Provides functionalities for creating, modifying, or deactivating user accounts.
 
-plantuml    @startuml    component "Admin Management Module" {        + createUserAccount()        + modifyUserAccount()        + deactivateUserAccount()    }    @enduml     
+![image](https://github.com/user-attachments/assets/ce149392-9dbc-4214-84c1-c9f399aa7cc9)
+
+```plantuml    @startuml    component "Admin Management Module" {        + createUserAccount()        + modifyUserAccount()        + deactivateUserAccount()    }    @enduml ```    
 
 15. *Generate Reports*
      - Actor: Admin         - Precondition: Administrative access         - Description: Generate various reports based on user activity and transactions         - Design Component: Reporting Module             - Generates reports for analysis.
