@@ -348,7 +348,9 @@ component "Dispute Resolution Module" {
      - Importance Level: C+
      - Design Component: Modular Architecture Framework     
 
-plantuml     @startuml     component "Modular Architecture Framework" {             + defineModules()             + manageModuleDependencies()     }     @enduml      
+![image](https://github.com/user-attachments/assets/46eb880a-98a4-4bcd-8ad0-211d0d3bb023)
+
+```plantuml     @startuml     component "Modular Architecture Framework" {             + defineModules()             + manageModuleDependencies()     }     @enduml```  
 
 2. *Maintainability*
      - Importance Level: O           - Design Component: Code Maintenance Guidelines 
