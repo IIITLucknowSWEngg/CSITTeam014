@@ -45,8 +45,9 @@ The purpose of this Software Design Document (SDD) is to provide a comprehensive
 ## 2. System Architecture
 
 The architecture of the PhonePe application consists of three main layers: Presentation Layer, Business Logic Layer, and Data Layer.
+![image](https://github.com/user-attachments/assets/4748ddfd-784e-4fa9-9b9f-fcf4b5723a66)
 
-plantuml
+```plantuml
 @startuml
 package "Presentation Layer" {
     [User Interface] 
@@ -64,9 +65,7 @@ package "Data Layer" {
     [Database]
 }
 @enduml
-
-
----
+```
 
 ## 3. Functional Requirements and Design Components
 
