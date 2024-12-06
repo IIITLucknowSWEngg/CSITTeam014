@@ -218,13 +218,17 @@ component "Ticket Booking Module" {
     - *Design Component:* Transaction History Module  
       - Retrieves and displays past transactions for user review.
 
-plantuml 
+![image](https://github.com/user-attachments/assets/72febafc-2e20-494f-bb59-c691cb17eae9)
+
+
+```plantuml 
 @startuml 
 component "Transaction History Module" { 
     + fetchTransactionHistory() 
     + displayTransactions() 
 } 
-@enduml 
+@enduml
+```
 
 
 9. *Raise Dispute*
@@ -234,13 +238,14 @@ component "Transaction History Module" {
     - Design Component: Dispute Management Module  
       - Allows users to submit disputes and tracks their status.
 
-plantuml 
+```plantuml 
 @startuml 
 component "Dispute Management Module" { 
     + submitDispute() 
     + trackDisputeStatus() 
 } 
-@enduml 
+@enduml
+```
 
 
 10. *Accept Payments*
