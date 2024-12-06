@@ -314,12 +314,15 @@ component "Withdrawal Processing Module" {
     - Design Component: Dispute Resolution Module  
       - Facilitates communication between merchants and support for dispute resolution.
 
-plantuml 
+![image](https://github.com/user-attachments/assets/91d981e4-8790-495a-9531-af0f37342541)
+
+```plantuml 
 @startuml 
 component "Dispute Resolution Module" { 
     + provideTransactionDetails() 
 } 
-@enduml 
+@enduml
+```
 
 
 14. *Manage Users*
