@@ -116,8 +116,11 @@ package "Data Layer" {
    - *Description:* Add funds to their digital wallet.
    - *Design Component:* Wallet Management Module
      - Facilitates linking payment methods and processing deposits.
+    
+ ![image](https://github.com/user-attachments/assets/cfcf2e2b-550f-4258-acf0-27a3337cc14d)
+
      
-   plantuml
+   ```plantuml
    @startuml
    component "Wallet Management Module" {
        + linkPaymentMethod()
@@ -125,6 +128,7 @@ package "Data Layer" {
        + updateWalletBalance()
    }
    @enduml
+   ```
    
 
 2. *Send Money to Contacts*
