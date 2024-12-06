@@ -137,8 +137,10 @@ package "Data Layer" {
    - *Description:* Transfer money to other users.
    - *Design Component:* Transaction Processing Module
      - Manages fund transfers, recipient validation, and transaction authorization.
-     
-   plantuml
+
+![image](https://github.com/user-attachments/assets/0e872a56-cc4b-4b41-9817-65d0abc305ed)
+
+   ```plantuml
    @startuml
    component "Transaction Processing Module" {
        + validateRecipient()
@@ -146,9 +148,10 @@ package "Data Layer" {
        + updateTransactionHistory()
    }
    @enduml
+   ```
    
 
-3. *Pay Bills*
+2. *Pay Bills*
    - *Actor:* User
    - *Precondition:* Must have linked bank account or wallet balance.
    - *Description:* Pay utility bills through the app.
@@ -165,7 +168,7 @@ package "Data Layer" {
    @enduml
    
 
-4. *Recharge Mobile*
+3. *Recharge Mobile*
    - *Actor:* User
    - *Precondition:* Must have wallet balance.
    - *Description:* Recharge their mobile phone number.
@@ -182,7 +185,7 @@ package "Data Layer" {
    @enduml
    
 
-5. *Book Tickets*
+4. *Book Tickets*
    - *Actor:* User
    - *Precondition:* Must have wallet balance or linked payment method.
    - *Description:* Book tickets for various services.
