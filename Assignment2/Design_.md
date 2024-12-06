@@ -238,6 +238,8 @@ component "Transaction History Module" {
     - Design Component: Dispute Management Module  
       - Allows users to submit disputes and tracks their status.
 
+![image](https://github.com/user-attachments/assets/6036330a-f600-4b9c-9be6-cf72efa6d966)
+
 ```plantuml 
 @startuml 
 component "Dispute Management Module" { 
