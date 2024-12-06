@@ -157,8 +157,10 @@ package "Data Layer" {
    - *Description:* Pay utility bills through the app.
    - *Design Component:* Bill Payment Module
      - Interfaces with biller APIs for payment processing and confirmation.
-     
-   plantuml
+
+![image](https://github.com/user-attachments/assets/7974a002-e282-4839-9b46-7c2b0b4c01da)
+
+  ```plantuml
    @startuml
    component "Bill Payment Module" {
        + selectBiller()
@@ -166,6 +168,7 @@ package "Data Layer" {
        + confirmPayment()
    }
    @enduml
+```
    
 
 3. *Recharge Mobile*
