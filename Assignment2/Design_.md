@@ -95,8 +95,11 @@ package "Data Layer" {
    - *Description:* Access the app and its features.
    - *Design Component:* Authentication Module
      - Manages user login sessions, credential verification, and security measures.
+
+![image](https://github.com/user-attachments/assets/8f20b3f7-d597-4544-8c1f-e93f6437b621)
+
      
-   plantuml
+   ```plantuml
    @startuml
    component "Authentication Module" {
        + verifyCredentials()
@@ -104,9 +107,10 @@ package "Data Layer" {
        + endSession()
    }
    @enduml
+   ```
    
 
-2. *Add Money to Wallet*
+1. *Add Money to Wallet*
    - *Actor:* User
    - *Precondition:* Must have a linked payment method.
    - *Description:* Add funds to their digital wallet.
@@ -123,7 +127,7 @@ package "Data Layer" {
    @enduml
    
 
-3. *Send Money to Contacts*
+2. *Send Money to Contacts*
    - *Actor:* User
    - *Precondition:* Must have sufficient balance in wallet.
    - *Description:* Transfer money to other users.
@@ -140,7 +144,7 @@ package "Data Layer" {
    @enduml
    
 
-4. *Pay Bills*
+3. *Pay Bills*
    - *Actor:* User
    - *Precondition:* Must have linked bank account or wallet balance.
    - *Description:* Pay utility bills through the app.
@@ -157,7 +161,7 @@ package "Data Layer" {
    @enduml
    
 
-5. *Recharge Mobile*
+4. *Recharge Mobile*
    - *Actor:* User
    - *Precondition:* Must have wallet balance.
    - *Description:* Recharge their mobile phone number.
@@ -174,7 +178,7 @@ package "Data Layer" {
    @enduml
    
 
-6. *Book Tickets*
+5. *Book Tickets*
    - *Actor:* User
    - *Precondition:* Must have wallet balance or linked payment method.
    - *Description:* Book tickets for various services.
