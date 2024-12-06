@@ -177,8 +177,10 @@ package "Data Layer" {
    - *Description:* Recharge their mobile phone number.
    - *Design Component:* Mobile Recharge Module
      - Handles selection of recharge plans and processes payments.
-     
-   plantuml
+
+![image](https://github.com/user-attachments/assets/baad54f6-16b3-4928-85be-c8f1cf93a0e6)
+
+   ```plantuml
    @startuml
    component "Mobile Recharge Module" {
        + selectRechargePlan()
@@ -186,9 +188,10 @@ package "Data Layer" {
        + updateMobileBalance()
    }
    @enduml
+   ```
    
 
-4. *Book Tickets*
+3. *Book Tickets*
    - *Actor:* User
    - *Precondition:* Must have wallet balance or linked payment method.
    - *Description:* Book tickets for various services.
