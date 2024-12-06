@@ -75,8 +75,10 @@ package "Data Layer" {
    - *Description:* Create an account to access the app's features.
    - *Design Component:* User Registration Module
      - Handles input validation, user data storage, and account creation.
-     
-   plantuml
+
+![image](https://github.com/user-attachments/assets/ca0df450-6179-42d1-860e-e1dd4ac839de)
+
+   ```plantuml
    @startuml
    component "User Registration Module" {
        + validateInput()
@@ -84,9 +86,10 @@ package "Data Layer" {
        + createAccount()
    }
    @enduml
+   ```
    
 
-2. *Login*
+1. *Login*
    - *Actor:* User
    - *Precondition:* Must have an existing account.
    - *Description:* Access the app and its features.
@@ -103,7 +106,7 @@ package "Data Layer" {
    @enduml
    
 
-3. *Add Money to Wallet*
+2. *Add Money to Wallet*
    - *Actor:* User
    - *Precondition:* Must have a linked payment method.
    - *Description:* Add funds to their digital wallet.
@@ -120,7 +123,7 @@ package "Data Layer" {
    @enduml
    
 
-4. *Send Money to Contacts*
+3. *Send Money to Contacts*
    - *Actor:* User
    - *Precondition:* Must have sufficient balance in wallet.
    - *Description:* Transfer money to other users.
@@ -137,7 +140,7 @@ package "Data Layer" {
    @enduml
    
 
-5. *Pay Bills*
+4. *Pay Bills*
    - *Actor:* User
    - *Precondition:* Must have linked bank account or wallet balance.
    - *Description:* Pay utility bills through the app.
@@ -154,7 +157,7 @@ package "Data Layer" {
    @enduml
    
 
-6. *Recharge Mobile*
+5. *Recharge Mobile*
    - *Actor:* User
    - *Precondition:* Must have wallet balance.
    - *Description:* Recharge their mobile phone number.
@@ -171,7 +174,7 @@ package "Data Layer" {
    @enduml
    
 
-7. *Book Tickets*
+6. *Book Tickets*
    - *Actor:* User
    - *Precondition:* Must have wallet balance or linked payment method.
    - *Description:* Book tickets for various services.
