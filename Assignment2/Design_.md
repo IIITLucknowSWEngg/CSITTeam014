@@ -277,13 +277,16 @@ component "Merchant Payment Module" {
     - Design Component: Merchant Dashboard Module  
       - Displays payment history and transaction details for merchants.
 
-plantuml 
+![image](https://github.com/user-attachments/assets/4cd06984-eeb6-46b2-91fb-97d16441c2ad)
+
+```plantuml 
 @startuml 
 component "Merchant Dashboard Module" { 
     + fetchPaymentHistory() 
     + displayPaymentDetails() 
 } 
-@enduml 
+@enduml
+```
 
 
 12. *Withdraw Money to Bank Account*
