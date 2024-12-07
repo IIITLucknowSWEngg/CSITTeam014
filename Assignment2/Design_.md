@@ -47,26 +47,6 @@ The purpose of this Software Design Document (SDD) is to provide a comprehensive
 The architecture of the PhonePe application consists of three main layers: Presentation Layer, Business Logic Layer, and Data Layer.
 ![image](https://github.com/user-attachments/assets/4748ddfd-784e-4fa9-9b9f-fcf4b5723a66)
 
-```plantuml
-@startuml
-package "Presentation Layer" {
-    [User Interface] 
-    [Merchant Interface]
-    [Admin Interface]
-}
-
-package "Business Logic Layer" {
-    [User Management]
-    [Transaction Processing]
-    [Payment Gateway Integration]
-}
-
-package "Data Layer" {
-    [Database]
-}
-@enduml
-```
-
 ## 3. Functional Requirements and Design Components
 
 1. *Register*
@@ -76,18 +56,7 @@ package "Data Layer" {
    - *Design Component:* User Registration Module
      - Handles input validation, user data storage, and account creation.
 
-![image](https://github.com/user-attachments/assets/ca0df450-6179-42d1-860e-e1dd4ac839de)
-
-   ```plantuml
-   @startuml
-   component "User Registration Module" {
-       + validateInput()
-       + storeUserData()
-       + createAccount()
-   }
-   @enduml
-   ```
-   
+![image](https://github.com/user-attachments/assets/ca0df450-6179-42d1-860e-e1dd4ac839de) 
 
 1. *Login*
    - *Actor:* User
@@ -96,19 +65,7 @@ package "Data Layer" {
    - *Design Component:* Authentication Module
      - Manages user login sessions, credential verification, and security measures.
 
-![image](https://github.com/user-attachments/assets/8f20b3f7-d597-4544-8c1f-e93f6437b621)
-
-     
-   ```plantuml
-   @startuml
-   component "Authentication Module" {
-       + verifyCredentials()
-       + startSession()
-       + endSession()
-   }
-   @enduml
-   ```
-   
+![image](https://github.com/user-attachments/assets/8f20b3f7-d597-4544-8c1f-e93f6437b621)   
 
 1. *Add Money to Wallet*
    - *Actor:* User
@@ -117,19 +74,7 @@ package "Data Layer" {
    - *Design Component:* Wallet Management Module
      - Facilitates linking payment methods and processing deposits.
     
- ![image](https://github.com/user-attachments/assets/cfcf2e2b-550f-4258-acf0-27a3337cc14d)
-
-     
-   ```plantuml
-   @startuml
-   component "Wallet Management Module" {
-       + linkPaymentMethod()
-       + processDeposit()
-       + updateWalletBalance()
-   }
-   @enduml
-   ```
-   
+ ![image](https://github.com/user-attachments/assets/cfcf2e2b-550f-4258-acf0-27a3337cc14d)   
 
 2. *Send Money to Contacts*
    - *Actor:* User
@@ -140,17 +85,6 @@ package "Data Layer" {
 
 ![image](https://github.com/user-attachments/assets/0e872a56-cc4b-4b41-9817-65d0abc305ed)
 
-   ```plantuml
-   @startuml
-   component "Transaction Processing Module" {
-       + validateRecipient()
-       + authorizeTransfer()
-       + updateTransactionHistory()
-   }
-   @enduml
-   ```
-   
-
 2. *Pay Bills*
    - *Actor:* User
    - *Precondition:* Must have linked bank account or wallet balance.
@@ -158,18 +92,7 @@ package "Data Layer" {
    - *Design Component:* Bill Payment Module
      - Interfaces with biller APIs for payment processing and confirmation.
 
-![image](https://github.com/user-attachments/assets/7974a002-e282-4839-9b46-7c2b0b4c01da)
-
-  ```plantuml
-   @startuml
-   component "Bill Payment Module" {
-       + selectBiller()
-       + processPayment()
-       + confirmPayment()
-   }
-   @enduml
-```
-   
+![image](https://github.com/user-attachments/assets/7974a002-e282-4839-9b46-7c2b0b4c01da) 
 
 3. *Recharge Mobile*
    - *Actor:* User
@@ -178,18 +101,7 @@ package "Data Layer" {
    - *Design Component:* Mobile Recharge Module
      - Handles selection of recharge plans and processes payments.
 
-![image](https://github.com/user-attachments/assets/baad54f6-16b3-4928-85be-c8f1cf93a0e6)
-
-   ```plantuml
-   @startuml
-   component "Mobile Recharge Module" {
-       + selectRechargePlan()
-       + processRecharge()
-       + updateMobileBalance()
-   }
-   @enduml
-   ```
-   
+![image](https://github.com/user-attachments/assets/baad54f6-16b3-4928-85be-c8f1cf93a0e6)  
 
 3. *Book Tickets*
    - *Actor:* User
@@ -199,18 +111,6 @@ package "Data Layer" {
      - Manages ticket searches, selections, and payment processing.
      - 
 ![image](https://github.com/user-attachments/assets/bfbb6361-87e7-4d58-adbe-6d1e2b3bab5c)
-
-```plantuml 
-@startuml 
-component "Ticket Booking Module" { 
-    + searchTickets() 
-    + selectTicket() 
-    + processBooking() 
-} 
-@enduml
-```
-
-
 8. *View Transaction History*
     - *Actor:* User  
     - *Precondition:* Must be logged in  
@@ -219,18 +119,6 @@ component "Ticket Booking Module" {
       - Retrieves and displays past transactions for user review.
 
 ![image](https://github.com/user-attachments/assets/72febafc-2e20-494f-bb59-c691cb17eae9)
-
-
-```plantuml 
-@startuml 
-component "Transaction History Module" { 
-    + fetchTransactionHistory() 
-    + displayTransactions() 
-} 
-@enduml
-```
-
-
 9. *Raise Dispute*
     - Actor: User  
     - Precondition: Must have made a recent transaction  
@@ -239,17 +127,6 @@ component "Transaction History Module" {
       - Allows users to submit disputes and tracks their status.
 
 ![image](https://github.com/user-attachments/assets/6036330a-f600-4b9c-9be6-cf72efa6d966)
-
-```plantuml 
-@startuml 
-component "Dispute Management Module" { 
-    + submitDispute() 
-    + trackDisputeStatus() 
-} 
-@enduml
-```
-
-
 10. *Accept Payments*
     - Actor: Merchant  
     - Precondition: Must have registered and set up account  
@@ -259,17 +136,6 @@ component "Dispute Management Module" {
 
 
 ![image](https://github.com/user-attachments/assets/a4b55f63-37a4-40aa-a17d-25dbd637fee3)
-
-```plantuml 
-@startuml 
-component "Merchant Payment Module" { 
-    + enablePaymentMethods() 
-    + viewTransactionDetails() 
-} 
-@enduml
-```
-
-
 11. *View Payment History*
     - Actor: Merchant  
     - Precondition: Must have an active merchant account  
@@ -278,17 +144,6 @@ component "Merchant Payment Module" {
       - Displays payment history and transaction details for merchants.
 
 ![image](https://github.com/user-attachments/assets/4cd06984-eeb6-46b2-91fb-97d16441c2ad)
-
-```plantuml 
-@startuml 
-component "Merchant Dashboard Module" { 
-    + fetchPaymentHistory() 
-    + displayPaymentDetails() 
-} 
-@enduml
-```
-
-
 12. *Withdraw Money to Bank Account*
     - Actor: Merchant  
     - Precondition: Must have received payments  
@@ -297,16 +152,6 @@ component "Merchant Dashboard Module" {
       - Manages withdrawal requests and bank transfer processes.
 
 ![image](https://github.com/user-attachments/assets/6911020e-d4ff-4a01-b7af-d6dacb039ae9)
-
-```plantuml 
-@startuml 
-component "Withdrawal Processing Module" { 
-    + initiateWithdrawalRequest() 
-} 
-@enduml
-``` 
-
-
 13. *Resolve Disputes*
     - Actor: Merchant  
     - Precondition: Must have unresolved disputes  
@@ -315,32 +160,15 @@ component "Withdrawal Processing Module" {
       - Facilitates communication between merchants and support for dispute resolution.
 
 ![image](https://github.com/user-attachments/assets/91d981e4-8790-495a-9531-af0f37342541)
-
-```plantuml 
-@startuml 
-component "Dispute Resolution Module" { 
-    + provideTransactionDetails() 
-} 
-@enduml
-```
-
-
 14. *Manage Users*
      - Actor: Admin        - Precondition: Must have administrative access        - Description: Manage user accounts and permissions        - Design Component: Admin Management Module          - Provides functionalities for creating, modifying, or deactivating user accounts.
 
 ![image](https://github.com/user-attachments/assets/ce149392-9dbc-4214-84c1-c9f399aa7cc9)
 
-```plantuml    @startuml    component "Admin Management Module" {        + createUserAccount()        + modifyUserAccount()        + deactivateUserAccount()    }    @enduml ```    
-
 15. *Generate Reports*
      - Actor: Admin         - Precondition: Administrative access         - Description: Generate various reports based on user activity and transactions         - Design Component: Reporting Module             - Generates reports for analysis.
    
 ![image](https://github.com/user-attachments/assets/9757bde2-dd28-46c7-ae7c-c1c2047e84dc)
-
-
-```plantuml     @startuml     component "Reporting Module" {             + generateUserActivityReport()             + generateTransactionReport()     }     @enduml     ``` 
-
----
 
 ## 4. Non-Functional Requirements and Design Components
 
@@ -349,40 +177,26 @@ component "Dispute Resolution Module" {
      - Design Component: Modular Architecture Framework     
 
 ![image](https://github.com/user-attachments/assets/46eb880a-98a4-4bcd-8ad0-211d0d3bb023)
-
-```plantuml     @startuml     component "Modular Architecture Framework" {             + defineModules()             + manageModuleDependencies()     }     @enduml```  
-
 2. *Maintainability*
      - Importance Level: O           - Design Component: Code Maintenance Guidelines 
-![image](https://github.com/user-attachments/assets/615e5e50-08f9-4320-9ac7-fce4d6e51fea)
-
-```plantuml      @startuml  component "Code Maintenance Guidelines" {  + establishCodingStandards()  + documentCodeBase() }  @enduml```  
+![image](https://github.com/user-attachments/assets/615e5e50-08f9-4320-9ac7-fce4d6e51fea) 
 
 3. *Reusability*
      - Importance Level: O      – Design Component: Shared Libraries/Components
 ![image](https://github.com/user-attachments/assets/ba26ae1b-d783-4a33-aa54-c500ca831b3b)
 
-
-```plantuml      @startuml  component "Shared Libraries/Components" {  + createReusableComponents()  }  @enduml```
-
 4. *Testability*
      - Importance Level: O     – Design Component: Testing Framework Integration 
 ![image](https://github.com/user-attachments/assets/d05b10c2-3915-407e-b410-5138de2f7846)
-
-```plantuml      @startuml  component "Testing Framework Integration" {  + implementUnitTests()  + implementIntegrationTests()  }  @enduml ``` 
 
 5. *Documentation*
      - Importance Level: I     – Design Component: Documentation Standards 
 ![image](https://github.com/user-attachments/assets/7cd5ee4a-1a77-4d35-8479-36acf716b361)
 
-```plantuml      @startuml  component "Documentation Standards" {  + provideGuidelinesForDocumentation()  }  @enduml ``` 
-
 6. *Error Handling*
      - Importance Level: N/A     – Design Component: Error Handling Framework
   
 ![image](https://github.com/user-attachments/assets/e13a6762-53a5-40ec-a161-d02ba4d0ae65)
-
-```plantuml      @startuml  component "Error Handling Framework" {  + logErrors()  + displayUserFriendlyErrors() }  @enduml ``` 
 
 ## 5. Data Design
 
@@ -391,35 +205,6 @@ component "Dispute Resolution Module" {
 The database schema will include tables for users, transactions, merchants, and disputes.
 
 ![image](https://github.com/user-attachments/assets/46d49111-fa9c-4385-ae18-b65ecb19cae0)
-
-```plantuml
-@startuml
-entity "Users" {
-    + user_id : int
-    + username : string
-    + password : string
-}
-
-entity "Transactions" {
-    + transaction_id : int
-    + amount : float
-    + date : datetime
-}
-
-entity "Merchants" {
-    + merchant_id : int
-    + name : string
-}
-
-entity "Disputes" {
-    + dispute_id : int
-    + transaction_id : int 
-}
-@enduml
-```
-
-
----
 
 ## 6. Interface Design
 
@@ -434,28 +219,6 @@ The user interface will consist of:
 ### Mockups
 
 ![image](https://github.com/user-attachments/assets/3e707687-b985-4f22-85ac-47b15f55a6fc)
-
-```plantuml
-@startuml
-skinparam componentStyle rectangle
-
-component "Registration Screen" {
-}
-
-component "Login Screen" {
-}
-
-component "Dashboard" {
-}
-
-component "Transaction History" {
-}
-@enduml
-```
-
-
----
-
 ## 7. Error Handling and Recovery
 
 The system will implement robust error handling mechanisms that include:
