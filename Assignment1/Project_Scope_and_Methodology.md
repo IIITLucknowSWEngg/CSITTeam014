@@ -8,64 +8,64 @@ The PhonePe Clone project aims to develop a comprehensive digital payment platfo
 ---
 
 ## **2. Objectives**  
-- **User-Centric Experience**: Develop an intuitive and user-friendly interface for common payment tasks.  
-- **Secure Transactions**: Implement strong encryption and fraud prevention measures to ensure data security.  
-- **Scalability and Reliability**: Build a system capable of handling high transaction volumes without downtime.  
-- **Seamless Payment Integration**: Enable smooth UPI transactions, bill payments, and mobile recharges.  
-- **Customer Support**: Provide support resources and self-help tools to assist users.  
+- **2.1 User-Centric Experience**: Develop an intuitive and user-friendly interface for common payment tasks.  
+- **2.2 Secure Transactions**: Implement strong encryption and fraud prevention measures to ensure data security.  
+- **2.3 Scalability and Reliability**: Build a system capable of handling high transaction volumes without downtime.  
+- **2.4 Seamless Payment Integration**: Enable smooth UPI transactions, bill payments, and mobile recharges.  
+- **2.5 Customer Support**: Provide support resources and self-help tools to assist users.  
 
 ---
 
 ## **3. Scope Description**  
 The scope outlines the key features, boundaries, and exclusions for the project.  
 
-### **In-Scope Features**  
-- **UPI Transactions**: Enable users to send and receive payments through UPI.  
-- **Bill Payments**: Support payments for utility bills (electricity, water, gas, etc.).  
-- **Mobile Recharges**: Allow users to recharge prepaid mobile numbers.  
-- **Bank Account Management**: Facilitate secure linking and management of user bank accounts.  
-- **Transaction History**: Maintain detailed transaction records for user reference.  
-- **Notifications**: Send real-time updates and alerts for successful payments, failures, and important notices.  
+### **3.1 In-Scope Features**  
+- **3.1.1 UPI Transactions**: Enable users to send and receive payments through UPI.  
+- **3.1.2 Bill Payments**: Support payments for utility bills (electricity, water, gas, etc.).  
+- **3.1.3 Mobile Recharges**: Allow users to recharge prepaid mobile numbers.  
+- **3.1.4 Bank Account Management**: Facilitate secure linking and management of user bank accounts.  
+- **3.1.5 Transaction History**: Maintain detailed transaction records for user reference.  
+- **3.1.6 Notifications**: Send real-time updates and alerts for successful payments, failures, and important notices.  
 
-### **Out-of-Scope Features**  
-- **Advanced Financial Services**: No support for investments, loans, or credit services.  
-- **Loyalty and Reward Programs**: No cashbacks, points, or reward systems.  
-- **Offline Payments**: No support for offline QR-based payments.  
-- **International Payments**: No support for cross-border payments or foreign currency transactions.  
-- **Multi-Language Support**: No support for multilingual interfaces or localization.  
-- **Advanced Analytics and Reports**: No provision for in-depth financial analytics or custom reports.  
-- **Cryptocurrency Transactions**: No integration with blockchain or support for crypto payments.  
-- **Custom Payment Schedules**: No feature to schedule recurring payments or subscriptions.  
-- **Account Aggregation**: No aggregation of multiple bank accounts into a single dashboard.  
-- **Customizable Themes**: No ability for users to customize the app’s appearance or themes.  
-- **AI-Powered Chatbots**: No AI-based customer support chatbot integration.  
-- **Third-Party Integrations**: No integrations with e-commerce platforms or external apps.
+### **3.2 Out-of-Scope Features**  
+- **3.2.1 Advanced Financial Services**: No support for investments, loans, or credit services.  
+- **3.2.2 Loyalty and Reward Programs**: No cashbacks, points, or reward systems.  
+- **3.2.3 Offline Payments**: No support for offline QR-based payments.  
+- **3.2.4 International Payments**: No support for cross-border payments or foreign currency transactions.  
+- **3.2.5 Multi-Language Support**: No support for multilingual interfaces or localization.  
+- **3.2.6 Advanced Analytics and Reports**: No provision for in-depth financial analytics or custom reports.  
+- **3.2.7 Cryptocurrency Transactions**: No integration with blockchain or support for crypto payments.  
+- **3.2.8 Custom Payment Schedules**: No feature to schedule recurring payments or subscriptions.  
+- **3.2.9 Account Aggregation**: No aggregation of multiple bank accounts into a single dashboard.  
+- **3.2.10 Customizable Themes**: No ability for users to customize the app’s appearance or themes.  
+- **3.2.11 AI-Powered Chatbots**: No AI-based customer support chatbot integration.  
+- **3.2.12 Third-Party Integrations**: No integrations with e-commerce platforms or external apps.
 - 
 ---
 
 ## **4. Deliverables**  
 The project deliverables are the tangible outputs at each phase of the project.  
 
-- **Discovery Phase Deliverables**:  
+- **4.1 Discovery Phase Deliverables**:  
   - Project charter  
   - Product backlog with prioritized features and user stories  
 
-- **Design and Development Deliverables**:  
+- **4.2 Design and Development Deliverables**:  
   - Wireframes and UI/UX prototypes  
   - Secure API integrations for UPI, bill payments, and bank linking  
   - Payment gateway integration and transaction flow implementation  
 
-- **Testing and QA Deliverables**:  
+- **4.3 Testing and QA Deliverables**:  
   - Unit test cases and test reports  
   - Integration and end-to-end testing results  
   - Vulnerability and security audit reports  
 
-- **Deployment Deliverables**:  
+- **4.4 Deployment Deliverables**:  
   - CI/CD pipeline for continuous deployment  
   - User support documentation and FAQs  
   - Release notes for each version update  
 
-- **Post-Deployment Deliverables**:  
+- **4.5 Post-Deployment Deliverables**:  
   - Bug-fix reports  
   - Performance monitoring and error tracking tools  
   - Feature enhancement requests based on user feedback  
@@ -75,39 +75,39 @@ The project deliverables are the tangible outputs at each phase of the project.
 ## **5. Stakeholders**  
 Identifying the key stakeholders and their roles in the project.  
 
-- **Project Sponsor**: Executive management responsible for approving and funding the project.  
-- **Project Manager**: Oversees the project, ensuring deliverables are met within the timeline and budget.  
-- **Development Team**: Cross-functional team responsible for coding, testing, and deploying the platform.  
-- **Quality Assurance (QA) Team**: QA engineers responsible for ensuring the product meets quality standards.  
-- **End Users**: Customers who will use the PhonePe Clone platform for payments and transactions.  
+- **5.1 Project Sponsor**: Executive management responsible for approving and funding the project.  
+- **5.2 Project Manager**: Oversees the project, ensuring deliverables are met within the timeline and budget.  
+- **5.3 Development Team**: Cross-functional team responsible for coding, testing, and deploying the platform.  
+- **5.4 Quality Assurance (QA) Team**: QA engineers responsible for ensuring the product meets quality standards.  
+- **5.5 End Users**: Customers who will use the PhonePe Clone platform for payments and transactions.  
 
 ---
 
 ## **6. Methodology**  
 The PhonePe Clone project will be executed using the **Agile development methodology**, following the **Scrum framework**. Agile ensures flexibility, iterative development, and continuous improvement.  
 
-### **Key Agile Principles**  
-- **Incremental Development**: Deliver small, functional pieces of the platform in each sprint.  
-- **Frequent Delivery**: Release working versions of the platform at the end of every sprint.  
-- **Collaboration**: Foster close collaboration between the development team, stakeholders, and users.  
-- **Adaptability**: Respond to changing user needs and business requirements during development.  
-- **Focus on Working Software**: Prioritize a working product over comprehensive documentation.  
+### **6.1 Key Agile Principles**  
+- **6.1.1 Incremental Development**: Deliver small, functional pieces of the platform in each sprint.  
+- **6.1.2 Frequent Delivery**: Release working versions of the platform at the end of every sprint.  
+- **6.1.3 Collaboration**: Foster close collaboration between the development team, stakeholders, and users.  
+- **6.1.4 Adaptability**: Respond to changing user needs and business requirements during development.  
+- **6.1.5 Focus on Working Software**: Prioritize a working product over comprehensive documentation.  
 
-### **Scrum Roles**  
-- **Product Owner**: Defines the product vision, maintains the backlog, and prioritizes features.  
-- **Scrum Master**: Facilitates Scrum processes, resolves blockers, and promotes team efficiency.  
-- **Development Team**: Cross-functional team responsible for coding, testing, and deployment.  
+### **6.2 Scrum Roles**  
+- **6.2.1 Product Owner**: Defines the product vision, maintains the backlog, and prioritizes features.  
+- **6.2.2 Scrum Master**: Facilitates Scrum processes, resolves blockers, and promotes team efficiency.  
+- **6.2.3 Development Team**: Cross-functional team responsible for coding, testing, and deployment.  
 
-### **Scrum Events**  
-- **Sprint Planning**: The development team and product owner plan tasks for the upcoming sprint.  
-- **Daily Scrum**: Short, daily stand-up meetings to discuss progress, blockers, and next steps.  
-- **Sprint Review**: Showcase the completed work to stakeholders and gather feedback.  
-- **Sprint Retrospective**: Analyze the completed sprint to identify areas of improvement.  
+### **6.3 Scrum Events**  
+- **6.3.1 Sprint Planning**: The development team and product owner plan tasks for the upcoming sprint.  
+- **6.3.1 Daily Scrum**: Short, daily stand-up meetings to discuss progress, blockers, and next steps.  
+- **6.3.1 Sprint Review**: Showcase the completed work to stakeholders and gather feedback.  
+- **6.3.1 Sprint Retrospective**: Analyze the completed sprint to identify areas of improvement.  
 
-### **Agile Artifacts**  
-- **Product Backlog**: Centralized list of all product features, user stories, and improvements.  
-- **Sprint Backlog**: Subset of the product backlog selected for completion during a sprint.  
-- **Increment**: A functional, shippable product version delivered at the end of a sprint.  
+### **6.4 Agile Artifacts**  
+- **6.4.1 Product Backlog**: Centralized list of all product features, user stories, and improvements.  
+- **6.4.2 Sprint Backlog**: Subset of the product backlog selected for completion during a sprint.  
+- **6.4.3 Increment**: A functional, shippable product version delivered at the end of a sprint.  
 
 ---
 
@@ -128,32 +128,32 @@ The PhonePe Clone project will be executed using the **Agile development methodo
 ## **8. Constraints**  
 Constraints highlight limitations that could impact the project's success.  
 
-- **Time Constraints**: Strict deadlines for each phase to meet product launch targets.  
-- **Budget Constraints**: Limited resources allocated for development, testing, and deployment.  
-- **Technical Constraints**: Dependence on third-party APIs (UPI, bill payments, etc.) which may affect system performance.  
-- **Regulatory Constraints**: Compliance with financial regulations (e.g., data protection laws) may restrict certain features.  
-- **Resource Constraints**: Limited availability of skilled developers, testers, and support staff.  
-- **Security Constraints**: Need to adhere to stringent security measures to protect user data and transactions.  
-- **Scalability Constraints**: System must support a large number of concurrent users without performance degradation.  
-- **Hardware Constraints**: Reliance on cloud infrastructure and hardware resources for scalability and performance.  
-- **Dependency Constraints**: Dependence on third-party payment gateways, APIs, and banking systems.  
-- **Data Privacy Constraints**: Compliance with privacy laws like GDPR, which may limit data collection and usage.  
-- **Testing Constraints**: Limited time for comprehensive testing, including load and stress testing.  
-- **Design Constraints**: User interface and experience (UI/UX) must be consistent with industry standards and user expectations.  
-- **Maintenance Constraints**: Continuous maintenance and support required after deployment, affecting resource allocation.  
-- **Versioning Constraints**: Managing multiple versions/releases simultaneously during updates or bug fixes.  
-- **Licensing Constraints**: Adherence to open-source license rules for third-party libraries or frameworks used.  
-- **Change Management Constraints**: Any change in scope or features must follow a formal change control process.
+- **8.1 Time Constraints**: Strict deadlines for each phase to meet product launch targets.  
+- **8.2 Budget Constraints**: Limited resources allocated for development, testing, and deployment.  
+- **8.3 Technical Constraints**: Dependence on third-party APIs (UPI, bill payments, etc.) which may affect system performance.  
+- **8.4 Regulatory Constraints**: Compliance with financial regulations (e.g., data protection laws) may restrict certain features.  
+- **8.5 Resource Constraints**: Limited availability of skilled developers, testers, and support staff.  
+- **8.6 Security Constraints**: Need to adhere to stringent security measures to protect user data and transactions.  
+- **8.7 Scalability Constraints**: System must support a large number of concurrent users without performance degradation.  
+- **8.8 Hardware Constraints**: Reliance on cloud infrastructure and hardware resources for scalability and performance.  
+- **8.9 Dependency Constraints**: Dependence on third-party payment gateways, APIs, and banking systems.  
+- **8.10 Data Privacy Constraints**: Compliance with privacy laws like GDPR, which may limit data collection and usage.  
+- **8.11 Testing Constraints**: Limited time for comprehensive testing, including load and stress testing.  
+- **8.12 Design Constraints**: User interface and experience (UI/UX) must be consistent with industry standards and user expectations.  
+- **8.13 Maintenance Constraints**: Continuous maintenance and support required after deployment, affecting resource allocation.  
+- **8.14 Versioning Constraints**: Managing multiple versions/releases simultaneously during updates or bug fixes.  
+- **8.15 Licensing Constraints**: Adherence to open-source license rules for third-party libraries or frameworks used.  
+- **8.16 Change Management Constraints**: Any change in scope or features must follow a formal change control process.
   
 ---
 
 ## **9. Assumptions**  
 Assumptions are conditions that are assumed to be true for the project to proceed as planned.  
 
-- **Third-Party Integrations**: APIs for UPI payments, bill payments, and mobile recharges will be stable and available.  
-- **User Requirements**: User needs will remain consistent and not change drastically during development.  
-- **Resource Availability**: Adequate team resources (developers, QA engineers) will be available throughout the project.  
-- **Infrastructure**: Cloud infrastructure for deployment and scaling will be accessible as required.  
+- **9.1 Third-Party Integrations**: APIs for UPI payments, bill payments, and mobile recharges will be stable and available.  
+- **9.2 User Requirements**: User needs will remain consistent and not change drastically during development.  
+- **9.3 Resource Availability**: Adequate team resources (developers, QA engineers) will be available throughout the project.  
+- **9.4 Infrastructure**: Cloud infrastructure for deployment and scaling will be accessible as required.  
 
 ---
 
