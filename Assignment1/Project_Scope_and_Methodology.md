@@ -132,7 +132,19 @@ Constraints highlight limitations that could impact the project's success.
 - **Budget Constraints**: Limited resources allocated for development, testing, and deployment.  
 - **Technical Constraints**: Dependence on third-party APIs (UPI, bill payments, etc.) which may affect system performance.  
 - **Regulatory Constraints**: Compliance with financial regulations (e.g., data protection laws) may restrict certain features.  
-
+- **Resource Constraints**: Limited availability of skilled developers, testers, and support staff.  
+- **Security Constraints**: Need to adhere to stringent security measures to protect user data and transactions.  
+- **Scalability Constraints**: System must support a large number of concurrent users without performance degradation.  
+- **Hardware Constraints**: Reliance on cloud infrastructure and hardware resources for scalability and performance.  
+- **Dependency Constraints**: Dependence on third-party payment gateways, APIs, and banking systems.  
+- **Data Privacy Constraints**: Compliance with privacy laws like GDPR, which may limit data collection and usage.  
+- **Testing Constraints**: Limited time for comprehensive testing, including load and stress testing.  
+- **Design Constraints**: User interface and experience (UI/UX) must be consistent with industry standards and user expectations.  
+- **Maintenance Constraints**: Continuous maintenance and support required after deployment, affecting resource allocation.  
+- **Versioning Constraints**: Managing multiple versions/releases simultaneously during updates or bug fixes.  
+- **Licensing Constraints**: Adherence to open-source license rules for third-party libraries or frameworks used.  
+- **Change Management Constraints**: Any change in scope or features must follow a formal change control process.
+  
 ---
 
 ## **9. Assumptions**  
