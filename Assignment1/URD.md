@@ -1,514 +1,189 @@
-# User Requirements Document (URD) for PhonePe Clone  
-<details>
-<summary>User 1: End User</summary>
-
-### User 1: End User  
-**Role:** Likely an End User  
-**Scenario:**  
-I use PhonePe for daily transactions and want a seamless experience for payments and financial services.  
-
-**Goals:**  
-- Quickly send money to contacts using UPI or bank transfers.  
-- Pay bills (electricity, mobile, DTH, etc.) in one place.  
-- View transaction history and track expenses.  
-- Use QR codes for contactless payments at stores.  
-- Earn rewards like cashback or discounts for transactions.  
-
-**Pain Points:**  
-- Delays in transaction processing or failure notifications.  
-- Lack of clarity on reward redemption.  
-
-</details>
-
-
-<details>
-<summary>User 2: Merchant</summary>
-
-### User 2: Merchant  
-**Role:** Likely a Merchant  
-**Scenario:**  
-I run a small shop and need a reliable payment platform to accept digital payments.  
-
-**Goals:**  
-- Generate unique QR codes for easy customer payments.  
-- Track daily transaction history and view settlements.  
-- Notify customers of payment confirmation in real time.  
-- Access business loans or credit through the platform.  
-
-**Pain Points:**  
-- Limited customer support for payment disputes.  
-- Delays in settlement to the bank account.  
-
-</details>
-  
-
-<details>
-<summary>User 3: Family Member</summary>
-
-### User 3: Family Member  
-**Role:** Likely a Family Member  
-**Scenario:**  
-I manage household expenses and want a user-friendly platform for bill payments and tracking.  
-
-**Goals:**  
-- Set up reminders for recurring bill payments.  
-- Pay bills for utilities, school fees, or subscriptions without errors.  
-- Use cashback or coupons to save money on frequent transactions.  
-
-**Pain Points:**  
-- Missed payment notifications leading to late fees.  
-- Difficulty in tracking multiple accounts or bills.  
-
-</details>
-
-
-<details>
-<summary>User 4: Admin</summary>
-
-### User 4: Admin  
-**Role:** Likely an Admin  
-**Scenario:**  
-I ensure smooth platform operations and resolve escalations from users or merchants.  
-
-**Goals:**  
-- Monitor transaction logs and identify technical issues.  
-- Resolve disputes like failed payments or refund delays.  
-- Manage fraud detection and prevent unauthorized access.  
-- Generate periodic reports on platform performance and growth.  
-
-**Pain Points:**  
-- Insufficient tools to analyze transaction trends.  
-- Challenges in handling high volumes of customer queries.  
-
-</details>
-
-<details>
-<summary>User 5: First-Time User</summary>
-
-### User 5: First-Time User  
-**Role:** Likely a First-Time User  
-**Scenario:**  
-I am new to digital payments and want a simple and secure way to transfer money.  
-
-**Goals:**  
-- Easily link my bank account to the app.  
-- Understand the steps to complete a payment without confusion.  
-- Get quick support if I face any transaction issues.  
-
-**Pain Points:**  
-- Overwhelming features or complicated setup processes.  
-- Fear of security risks or transaction failures.  
-
-</details>
-  
-
-<details>
-<summary>User 6: Frequent Traveler</summary>
-
-### User 6: Frequent Traveler  
-**Role:** Likely a Frequent Traveler  
-**Scenario:**  
-I often pay for transportation, tolls, and travel-related services using PhonePe.  
-
-**Goals:**  
-- Recharge travel cards (e.g., metro or FASTag) directly.  
-- Pay for cabs, buses, or train tickets seamlessly.  
-- Get travel insurance or offers for frequent travelers.  
-
-**Pain Points:**  
-- Delays in recharge updates for travel cards.  
-- Limited options for integrated travel services.  
-
-</details>
-
-<details>
-<summary>User 7: Customer Support Rep</summary>
-
-### User 7: Customer Support Rep  
-**Role:** Likely a Customer Support Rep  
-**Scenario:**  
-I assist users and merchants in resolving payment or account-related issues.  
-
-**Goals:**  
-- Access detailed transaction history and logs to resolve disputes.  
-- Handle refund requests or payment failures efficiently.  
-- Provide guidance to new users on linking accounts or using features.  
-
-**Pain Points:**  
-- Lack of real-time data during peak transaction hours.  
-- Managing multiple escalations without adequate resources.  
-
-</details>
-
-<details>
-<summary>Use Case 1: Send Money</summary>
-
-**Steps:**
-- Open the app and select "Send Money."
-- Choose a contact or enter the recipient's UPI ID.
-- Enter the amount to send and add a note (optional).
-- Confirm the payment and authenticate with PIN or biometrics.
-  
-**Outcome:** The user successfully sends money to the recipient.
-
-</details>
-
-<details>
-<summary>Use Case 2: Pay Bills</summary>
-
-**Steps:**
-- Navigate to the "Pay Bills" section in the app.
-- Select the type of bill (e.g., electricity, mobile).
-- Enter the required details and the amount.
-- Confirm the payment and authenticate with PIN or biometrics.
-
-**Outcome:** The user successfully pays the selected bill.
-
-</details>
-
-<details>
-<summary>Use Case 3: Recharge Mobile</summary>
-
-**Steps:**
-- Go to the "Recharge" section.
-- Select the mobile operator and enter the mobile number.
-- Choose a plan or enter the recharge amount.
-- Confirm the recharge and authenticate the payment.
-
-**Outcome:** The user successfully recharges their mobile.
-
-</details>
-
-<details>
-<summary>Use Case 4: Generate QR Code for Payments</summary>
-
-**Steps:**
-- Open the "Payments" section and select "Generate QR Code."
-- Enter the amount to be received.
-- Share the QR code with the customer for payment.
-  
-**Outcome:** The merchant successfully generates a QR code for customer payments.
-
-</details>
-
-<details>
-<summary>Use Case 5: View Transaction History</summary>
-
-**Steps:**
-- Navigate to the "Transaction History" section.
-- Filter transactions by date, type, or amount.
-- Select a transaction to view details.
-
-**Outcome:** The user successfully views their transaction history.
-
-</details>
-
-<details>
-<summary>Use Case 6: Request a Refund</summary>
-
-**Steps:**
-- Go to the "Help" or "Support" section.
-- Select the transaction for which a refund is needed.
-- Submit a refund request and provide a reason.
-  
-**Outcome:** The user successfully requests a refund.
-
-</details>
-
-<details>
-<summary>Use Case 7: Link Bank Account</summary>
-
-**Steps:**
-- Open the app and navigate to "Settings."
-- Select "Bank Accounts" and choose "Link New Account."
-- Enter bank details and verify using OTP.
-  
-**Outcome:** The user successfully links their bank account to the app.
-
-</details>
-
-<details>
-<summary>Use Case 8: Access Customer Support</summary>
-
-**Steps:**
-- Navigate to the "Help" or "Support" section.
-- Select the type of issue or query.
-- Chat with a support representative or view FAQs.
-
-**Outcome:** The user receives assistance for their query.
-
-</details>
-
-<details>
-<summary>Use Case 9: Track Referral Rewards</summary>
-
-**Steps:**
-- Go to the "Referral Program" section in the app.
-- View the number of successful referrals and rewards earned.
-- Share referral links with friends directly from the app.
-
-**Outcome:** The user monitors their referral rewards effectively.
-
-</details>
-
-<details>
-<summary>Use Case 10: Manage Payment Methods</summary>
-
-**Steps:**
-- Navigate to the "Payment Methods" section.
-- Add, edit, or remove payment options (e.g., UPI, cards).
-- Set a preferred payment method for transactions.
-
-**Outcome:** The user manages their payment methods conveniently.
-
-</details>
-
-<details>
-<summary>Use Case 11: Explore Offers and Discounts</summary>
-
-**Steps:**
-- Open the app and go to the "Offers" section.
-- Browse available discounts and cashback offers.
-- Select an offer to view details and terms.
-
-**Outcome:** The user discovers offers that can save money on transactions.
-
-</details>
-
-<details>
-<summary>User Interface Requirements</summary>
-
-### 3.1 Registration and Login Pages
-- **Features:**
-  - Fields for email, password, phone number, and social media login (Google, Facebook).
-  - Options for password recovery, account management, and social media account linking.
-
-### 3.2 Home Interface
-- **Features:**
-  - Prominent search bar for quick access to payments, recharges, and bill payments.
-  - Quick access buttons for frequently used features (e.g., send money, pay bills).
-  - Display of ongoing offers and promotions on the home screen.
-  - User-friendly navigation to various services.
-
-### 3.3 Payment Interface
-- **Features:**
-  - **Payment Form:**
-    - Support for UPI, debit/credit cards, and wallets.
-    - Option to save payment methods for future transactions.
-    - Summary of transaction details before confirmation.
-  - **Confirmation Page:**
-    - Displays transaction details, including recipient, amount, and transaction ID.
-    - Option to share the payment receipt via messaging apps.
-    - Option to add the transaction to calendar apps.
-
-### 3.4 Transaction History Interface
-- **Features:**
-  - List of recent transactions with filters for date, type, and amount.
-  - Details view for each transaction, including status and payment method.
-  - Search functionality to quickly find specific transactions.
-  - Options to download transaction history.
-
-### 3.5 Referral Program Interface
-- **Features:**
-  - View referral status and rewards earned.
-  - Share referral links via social media or messaging apps.
-  - Display of referral statistics.
-  - Guidelines on earning rewards through referrals.
-
-### 3.6 Customer Support Interface
-- **Features:**
-  - Searchable FAQ section for common issues.
-  - Options to initiate support requests for disputes, refunds, or account issues.
-  - Live chat integration for real-time support.
-  - Status tracking for ongoing support requests.
-
-### 3.7 Security Settings
-- **Features:**
-  - Enable two-factor authentication for added security.
-  - Change account passwords and PINs easily.
-  - Alerts for suspicious activity or unauthorized access attempts.
-  - Customizable privacy settings.
-
-### 3.8 Notification and Alert System
-- **Features:**
-  - Push notifications for transaction confirmations, promotions, and alerts.
-  - Alerts for payment status changes or security notifications.
-  - Settings for users to customize notification preferences.
-
-</details>
-
-
-## 1. Introduction  
-
-### 1.1 Purpose  
-The purpose of this document is to define the user requirements for the **PhonePe Clone**, a digital payment platform enabling users to perform UPI transactions, manage bank accounts, pay bills, and perform mobile recharges seamlessly. It aims to deliver an efficient, secure, and user-friendly solution for digital payments.  
-
-### 1.2 Scope  
-The PhonePe Clone will replicate essential features of a digital wallet and payment platform, focusing on:  
-- UPI-based money transfers.  
-- Bill payments and mobile recharges.  
-- Secure and reliable bank account management.  
-- Comprehensive transaction history and notifications.  
-
-This document provides a roadmap for developers, testers, and stakeholders to ensure the platform meets user expectations effectively.  
-
-### 1.3 Definitions  
-- **UPI**: Unified Payments Interface, enabling real-time bank-to-bank transactions using mobile numbers or UPI IDs.  
-- **Digital Wallet**: A virtual account that stores user funds for online transactions.  
-- **Bill Payments**: Payment for utilities such as electricity, gas, and internet services.  
+# **User Requirements Document (URD)**  
 
 ---
 
+## **1. Introduction**  
 
+### **1.1 Purpose**  
+This document outlines the user requirements for the PhonePe Clone application. It serves as a guide for the design, development, and testing phases to ensure the final product aligns with user needs and expectations.  
 
+### **1.2 Scope**  
+The PhonePe Clone is a mobile-based digital payment platform that enables users to:  
+- Perform UPI transactions.  
+- Recharge mobiles and DTH services.  
+- Pay utility bills.  
+- Manage digital wallets.  
+- Facilitate merchant payments via QR codes.  
+- View transaction history and analytics.  
 
-## 2. Functional Requirements  
+### **1.3 Definitions, Acronyms, and Abbreviations**  
+- **UPI**: Unified Payments Interface  
+- **OTP**: One-Time Password  
+- **NFR**: Non-Functional Requirement  
+- **User**: An individual using the platform for payments.  
+- **Merchant**: A business entity accepting payments via the platform.  
+- **Admin**: Personnel managing user and system operations.  
 
-### 2.1 User Management  
-1. *Registration and Login*  
-   - Users register with their phone number, verified through OTP.  
-   - Login options: OTP-based login, biometric authentication, or email integration.  
-
-2. *Profile Management*  
-   - Edit personal details (name, email, profile picture).  
-   - Update and manage linked bank accounts.  
-
-3. *Security*  
-   - Set or reset UPI PIN securely via OTP verification.  
-   - Enable two-factor authentication for additional safety.  
-
-
-### 2.2 UPI Transactions  
-1. *Send/Receive Money*  
-   - Options for transferring funds via UPI ID, mobile number, or QR code.  
-   - Generate QR codes to request payments.  
-
-2. *Transaction History*  
-   - Detailed view of completed, pending, or failed transactions.  
-   - Downloadable transaction receipts.  
-
-3. *Scheduled Transactions*  
-   - Schedule recurring payments for utilities or subscriptions.  
-
-4. *Real-Time Notifications*  
-   - Alerts for transaction updates (success, failure, pending) via SMS, email, and push notifications.  
-
-
-
-### 2.3 Bill Payments and Recharges  
-1. *Utility Bill Payments*  
-   - Pay bills for electricity, water, gas, and internet through a unified interface.  
-
-2. *Mobile Recharges*  
-   - Recharge options for prepaid/postpaid mobile plans and data top-ups.  
-
-3. *Reminders*  
-   - Notify users of upcoming bill due dates or low balances.  
-
-### 2.4 Bank Account Management  
-1. *Link Bank Accounts*  
-   - Securely link multiple bank accounts using UPI for seamless transactions.  
-   - Display account balances and transaction history.  
-
-2. *Set/Reset UPI PIN*  
-   - Enable users to set or reset their UPI PIN securely.  
-
-3. *Primary Account Management*  
-   - Allow users to switch primary accounts for payments.  
-
-
-### 2.5 Payment Gateway Integration  
-1. *Payment Methods*  
-   - Support payments via UPI, credit/debit cards, and mobile wallets.  
-
-2. *Transaction Confirmation*  
-   - Provide unique transaction IDs and downloadable receipts.  
-
-### 2.6 Customer Support  
-1. *Support Channels*  
-   - 24/7 customer support via chatbots, live agents, or email.  
-   - Issue ticket creation and tracking system.  
-
-2. *FAQs and Tutorials*  
-   - Provide resources on using app features like UPI setup and bill payments.  
-
-### 2.7 Notifications and Alerts  
-1. *Transaction Alerts*  
-   - Notify users of completed or failed transactions.  
-
-2. *Promotional Notifications*  
-   - Inform users about cashback offers, discounts, or new features.  
+### **1.4 References**  
+- NPCI Guidelines for UPI Payments  
+- OWASP Secure Development Guidelines  
+- SWEBOK Guide  
 
 ---
 
-## 3. Non-Functional Requirements  
+## **2. User Stories**  
 
-### 3.1 Performance  
-- Transaction processing time must be less than 3 seconds.  
-- Support up to 1 million simultaneous users.  
-
-### 3.2 Security  
-- Encrypt sensitive user data and transactions.  
-- Implement fraud detection systems.  
-
-### 3.3 Usability  
-- Provide an intuitive, user-friendly interface with multi-language support.  
-
-### 3.4 Availability  
-- Ensure 99.9% system uptime for uninterrupted service.  
-
----
-
-
-## 4. System Requirements  
-
-### 4.1 Hardware Requirements  
-- GPS and internet-enabled smartphones for user access.  
-- Servers to support backend operations and real-time updates.  
-
-### 4.2 Software Requirements  
-- Backend: Node.js, Python, or Java.  
-- Database: MySQL, MongoDB, or PostgreSQL.  
-- Mobile Platforms: Android (version 8.0 and above) and iOS (version 11 and above).  
-
----
-
-## 5. User Interfaces  
-
-1. *User Interface*  
-   - Clean, intuitive design for easy navigation.  
-   - Dashboard for quick access to UPI, recharges, and bill payments.  
-
-2. *Customer Support Interface*  
-   - Chat interface for real-time assistance.  
-   - Issue-tracking dashboard for support agents.  
-
-3. *Admin Panel*  
-   - Monitor user activity, transactions, and support tickets.  
-   - Generate system reports and analytics.  
-
----
-
-
-## 6. Continuous Integration and Deployment (CI/CD)  
-
-### 6.1 CI Pipeline  
-1. Version control integration with GitHub or GitLab.  
-2. Automated testing frameworks for unit, integration, and UI tests.  
-3. Real-time feedback via Slack or email notifications.  
-
-### 6.2 CD Pipeline  
-1. Staging and production environments for seamless deployment.  
-2. Zero-downtime deployment strategies (e.g., blue-green deployment).  
-3. Automated app store submissions using tools like Fastlane.  
-
----
-
-## 7. Constraints and Assumptions  
-
-- The app assumes users have smartphones with active internet connections.  
-- Payment gateway integration relies on APIs for seamless transactions.  
-- User trust depends on secure transactions and quick issue resolution.  
+### **User 1: Individual User**  
+- **Scenario**: I need a convenient way to make payments and track expenses.  
+- **Goals**:  
+  - Transfer money using UPI.  
+  - Recharge mobile/DTH.  
+  - Pay utility bills quickly.  
+  - Track transaction history.  
+- **Pain Points**:  
+  - Frustration with failed payments.  
+  - Difficulty managing multiple payment methods.  
 
 ---  
 
+### **User 2: Merchant**  
+- **Scenario**: I want a secure platform to accept customer payments.  
+- **Goals**:  
+  - Receive payments via QR codes.  
+  - Track incoming transactions.  
+  - Withdraw earnings to bank accounts.  
+- **Pain Points**:  
+  - Delays in payment settlements.  
+  - Lack of comprehensive transaction reports.  
+
+---  
+
+### **User 3: Admin**  
+- **Scenario**: I oversee system operations and ensure regulatory compliance.  
+- **Goals**:  
+  - Manage user accounts.  
+  - Monitor transaction activities.  
+  - Resolve disputes promptly.  
+- **Pain Points**:  
+  - Detecting and handling fraud efficiently.  
+  - Managing system downtime.  
+
+---
+
+## **3. Use Cases**  
+
+### **Use Case 1: Registering and Logging In**  
+- **Actor**: User  
+- **Steps**:  
+  1. Enter phone number to register.  
+  2. Verify account using an OTP.  
+  3. Set up a secure PIN for transactions.  
+
+---
+
+### **Use Case 2: Adding Money to Wallet**  
+- **Actor**: User  
+- **Steps**:  
+  1. Select "Add Money" and input amount.  
+  2. Choose a payment method (UPI, card, net banking).  
+  3. Confirm the transaction to update wallet balance.  
+
+---
+
+### **Use Case 3: Making a UPI Payment**  
+- **Actor**: User  
+- **Steps**:  
+  1. Select the recipient using UPI ID, QR code, or phone number.  
+  2. Enter the amount and verify the details.  
+  3. Authorize the transaction using a PIN.  
+
+---
+
+### **Use Case 4: Accepting Payments via QR Codes**  
+- **Actor**: Merchant  
+- **Steps**:  
+  1. Generate a unique QR code.  
+  2. Share the QR code with customers for payments.  
+  3. Receive payment confirmation in the app.  
+
+---
+
+### **Use Case 5: Raising a Dispute for Failed Transactions**  
+- **Actor**: User  
+- **Steps**:  
+  1. Navigate to transaction history.  
+  2. Select the failed transaction and click "Raise Dispute."  
+  3. Provide additional details or evidence and submit the claim.  
+
+---
+
+## **4. Functional Requirements**  
+
+### **4.1 User Registration and Authentication**  
+- Enable registration using phone numbers and OTP verification.  
+- Support secure login with PIN or biometric authentication.  
+- Provide a password reset option via OTP.  
+
+---
+
+### **4.2 Wallet Management**  
+- Allow users to add money using UPI, cards, or net banking.  
+- Enable withdrawal of wallet balance to linked bank accounts.  
+- Display real-time wallet balance updates.  
+
+---
+
+### **4.3 UPI Transactions**  
+- Facilitate bank account linking and UPI ID generation.  
+- Support payments using UPI ID, QR codes, or phone numbers.  
+- Provide transaction status updates and notifications.  
+
+---
+
+### **4.4 Bill Payments and Recharges**  
+- Enable payment of utility bills and recharges for mobile/DTH services.  
+- Offer multiple payment options for bills.  
+- Generate receipts for completed transactions.  
+
+---
+
+### **4.5 Transaction History**  
+- Display categorized transaction history.  
+- Allow filtering by date, amount, and type.  
+- Provide detailed views for each transaction.  
+
+---
+
+## **5. Non-Functional Requirements**  
+
+### **5.1 Performance and Scalability**  
+- Support up to 10,000 concurrent users with minimal latency.  
+- Handle peak loads during festivals or events.  
+
+---
+
+### **5.2 Security**  
+- Use HTTPS for secure data transmission.  
+- Encrypt sensitive user data like PINs and payment details.  
+- Implement fraud detection for UPI transactions.  
+
+---
+
+### **5.3 Usability**  
+- Provide an intuitive interface for easy navigation.  
+- Include accessibility features like text-to-speech and high contrast.  
+
+---
+
+## **6. Acceptance Criteria**  
+
+- Users can perform end-to-end UPI transactions without errors.  
+- Wallet balance reflects real-time updates after transactions.  
+- Admin tools for dispute resolution and system management are functional.  
+- Adheres to regulatory standards for security and compliance.  
+
+---
+
+## **7. Conclusion**  
+
+This document clearly defines the functional and non-functional requirements for developing a robust, user-friendly PhonePe Clone application. By addressing user stories and pain points, the development team can deliver a platform that meets user expectations while maintaining high standards of security and usability.
