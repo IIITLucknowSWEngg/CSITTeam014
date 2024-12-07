@@ -1,4 +1,4 @@
-# *Test Plan for PhonePe Clone*
+# *Test document for PhonePe competitors*
 
 ## *1. Introduction*
 
