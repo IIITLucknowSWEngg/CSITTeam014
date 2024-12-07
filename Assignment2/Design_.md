@@ -354,28 +354,33 @@ component "Dispute Resolution Module" {
 
 2. *Maintainability*
      - Importance Level: O           - Design Component: Code Maintenance Guidelines 
+![image](https://github.com/user-attachments/assets/615e5e50-08f9-4320-9ac7-fce4d6e51fea)
 
-plantuml      @startuml  component "Code Maintenance Guidelines" {  + establishCodingStandards()  + documentCodeBase() }  @enduml  
+```plantuml      @startuml  component "Code Maintenance Guidelines" {  + establishCodingStandards()  + documentCodeBase() }  @enduml```  
 
 3. *Reusability*
      - Importance Level: O      – Design Component: Shared Libraries/Components 
+![image](https://github.com/user-attachments/assets/ba26ae1b-d783-4a33-aa54-c500ca831b3b)
 
-plantuml      @startuml  component "Shared Libraries/Components" {  + createReusableComponents()  }  @enduml  
+```plantuml      @startuml  component "Shared Libraries/Components" {  + createReusableComponents()  }  @enduml```
 
 4. *Testability*
      - Importance Level: O     – Design Component: Testing Framework Integration 
+![image](https://github.com/user-attachments/assets/d05b10c2-3915-407e-b410-5138de2f7846)
 
-plantuml      @startuml  component "Testing Framework Integration" {  + implementUnitTests()  + implementIntegrationTests()  }  @enduml  
+```plantuml      @startuml  component "Testing Framework Integration" {  + implementUnitTests()  + implementIntegrationTests()  }  @enduml ``` 
 
 5. *Documentation*
      - Importance Level: I     – Design Component: Documentation Standards 
+![image](https://github.com/user-attachments/assets/7cd5ee4a-1a77-4d35-8479-36acf716b361)
 
-plantuml      @startuml  component "Documentation Standards" {  + provideGuidelinesForDocumentation()  }  @enduml  
+```plantuml      @startuml  component "Documentation Standards" {  + provideGuidelinesForDocumentation()  }  @enduml ``` 
 
 6. *Error Handling*
      - Importance Level: N/A     – Design Component: Error Handling Framework 
+![image](https://github.com/user-attachments/assets/e13a6762-53a5-40ec-a161-d02ba4d0ae65)
 
-plantuml      @startuml  component "Error Handling Framework" {  + logErrors()  + displayUserFriendlyErrors() }  @enduml  
+```plantuml      @startuml  component "Error Handling Framework" {  + logErrors()  + displayUserFriendlyErrors() }  @enduml ``` 
 
 ---
 
@@ -385,7 +390,9 @@ plantuml      @startuml  component "Error Handling Framework" {  + logErrors()  
 
 The database schema will include tables for users, transactions, merchants, and disputes.
 
-plantuml
+![image](https://github.com/user-attachments/assets/46d49111-fa9c-4385-ae18-b65ecb19cae0)
+
+```plantuml
 @startuml
 entity "Users" {
     + user_id : int
@@ -409,6 +416,7 @@ entity "Disputes" {
     + transaction_id : int 
 }
 @enduml
+```
 
 
 ---
@@ -425,7 +433,9 @@ The user interface will consist of:
 
 ### Mockups
 
-plantuml
+![image](https://github.com/user-attachments/assets/3e707687-b985-4f22-85ac-47b15f55a6fc)
+
+```plantuml
 @startuml
 skinparam componentStyle rectangle
 
@@ -441,6 +451,7 @@ component "Dashboard" {
 component "Transaction History" {
 }
 @enduml
+```
 
 
 ---
