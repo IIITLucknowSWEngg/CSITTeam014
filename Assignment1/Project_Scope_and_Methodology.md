@@ -111,7 +111,7 @@ The PhonePe Clone project will be executed using the **Agile development methodo
 
 ---
 
-## **7. Timeline**  
+## **7. Expected Rough Timeline**  
  The project timeline follows the IEEE standard, incorporating key elements such as phases, milestones, deliverables, resource allocation, risk management, review points, and change control.  
 
 | **Phase**           | **Expected Approximate Duration** | **Expected Key Milestones**                          | **Expected Major Deliverables**                 | **Review Points**                | **Expected Resources Allocated** |
