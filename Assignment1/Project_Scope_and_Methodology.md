@@ -174,9 +174,9 @@ Assumptions are conditions that are assumed to be true for the project to procee
 ### **2. PhonePe Documentation**  
 
 #### **2.1. PhonePe Developer API Documentation**  
-- **Access Link**: [PhonePe Developer Docs](https://developer.phonepe.com/v1/reference/pay-api-1)  
+- **Access Link1**: [PhonePe Developer Docs](https://developer.phonepe.com/v1/reference/pay-api-1)  
 
 #### **2.2. PhonePe Introduction Guide**  
-- **Access Link**: [PhonePe API Integration Guide](https://developer.phonepe.com/v1/docs/api-integration-1)  
+- **Access Link2**: [PhonePe API Integration Guide](https://developer.phonepe.com/v1/docs/api-integration-1)  
 
 ---
