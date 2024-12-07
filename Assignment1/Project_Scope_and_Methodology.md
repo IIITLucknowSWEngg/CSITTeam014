@@ -31,7 +31,16 @@ The scope outlines the key features, boundaries, and exclusions for the project.
 - **Advanced Financial Services**: No support for investments, loans, or credit services.  
 - **Loyalty and Reward Programs**: No cashbacks, points, or reward systems.  
 - **Offline Payments**: No support for offline QR-based payments.  
-
+- **International Payments**: No support for cross-border payments or foreign currency transactions.  
+- **Multi-Language Support**: No support for multilingual interfaces or localization.  
+- **Advanced Analytics and Reports**: No provision for in-depth financial analytics or custom reports.  
+- **Cryptocurrency Transactions**: No integration with blockchain or support for crypto payments.  
+- **Custom Payment Schedules**: No feature to schedule recurring payments or subscriptions.  
+- **Account Aggregation**: No aggregation of multiple bank accounts into a single dashboard.  
+- **Customizable Themes**: No ability for users to customize the app’s appearance or themes.  
+- **AI-Powered Chatbots**: No AI-based customer support chatbot integration.  
+- **Third-Party Integrations**: No integrations with e-commerce platforms or external apps.
+- 
 ---
 
 ## **4. Deliverables**  
