@@ -103,15 +103,16 @@ The PhonePe Clone project will be executed using the **Agile development methodo
 ---
 
 ## **7. Timeline**  
-A high-level timeline for project completion, covering major phases and milestones.  
+ The project timeline follows the IEEE standard, incorporating key elements such as phases, milestones, deliverables, resource allocation, risk management, review points, and change control.  
 
-| **Phase**              | **Duration**         | **Key Milestones** |
-|-----------------------|---------------------|---------------------|
-| Discovery & Planning   | 2-3 weeks           | Project scope, objectives, and initial backlog complete |
-| Design & Development   | 8-10 weeks          | UI/UX design, UPI and payment gateway integration |
-| Testing & QA           | 4-6 weeks           | Unit testing, security audit, and load testing complete |
-| Deployment             | 2 weeks             | Staging, production setup, and user support system launch |
-| Maintenance & Support  | Ongoing             | Feature enhancements and bug fixes |  
+| **Phase**           | **Approximate Duration** | **Key Milestones**                          | **Major Deliverables**                 | **Review Points**                | **Resources Allocated** |
+|---------------------|-------------------------|--------------------------------------------|---------------------------------------|----------------------------------|-------------------------|
+| **Initiation**       | 2 weeks                 | Project scope, charter approval           | Project Charter, Product Backlog      | Stakeholder review               | Project Manager, Team Leads |
+| **Planning**         | 2 weeks                 | Requirements gathering, design approval  | SRS, Design Documents                 | Review with stakeholders         | Business Analysts, Designers  |
+| **Execution**        | 8 weeks                 | Completion of coding, integration        | Wireframes, UI/UX, API Integrations  | Sprint Reviews, Daily Scrums     | Development Team, QA Team    |
+| **Testing**          | 4 weeks                 | Completion of unit, system, and security tests | Test Reports, Security Audit Reports | QA Reviews, Stakeholder Feedback | QA Team, Security Experts     |
+| **Deployment**       | 2 weeks                 | Successful system deployment             | CI/CD Pipeline, Release Notes        | Final Review, User Feedback      | Development Team, Ops Team     |
+| **Closure**          | 1 week                  | Final project report, evaluation        | Closure Report, Lessons Learned      | Final Review with Stakeholders   | Project Manager, Team Leads    |
 
 ---
 
