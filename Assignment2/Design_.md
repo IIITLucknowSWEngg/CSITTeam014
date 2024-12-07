@@ -359,8 +359,9 @@ component "Dispute Resolution Module" {
 ```plantuml      @startuml  component "Code Maintenance Guidelines" {  + establishCodingStandards()  + documentCodeBase() }  @enduml```  
 
 3. *Reusability*
-     - Importance Level: O      – Design Component: Shared Libraries/Components 
+     - Importance Level: O      – Design Component: Shared Libraries/Components
 ![image](https://github.com/user-attachments/assets/ba26ae1b-d783-4a33-aa54-c500ca831b3b)
+
 
 ```plantuml      @startuml  component "Shared Libraries/Components" {  + createReusableComponents()  }  @enduml```
 
