@@ -98,7 +98,8 @@ The PhonePe clone follows a multi-layered architecture consisting of three main 
 
 **Diagram:**
 
-![User Registration](https://github.com/user-attachments/assets/7d0f94c1-c5fd-4e9e-9c9f-71b64b8e2e98)
+![image](https://github.com/user-attachments/assets/706d6777-76f1-4d98-9b2e-aef1e0769397)
+
 
 #### 3.1.2 Login
 - **Actor**: User
@@ -109,7 +110,7 @@ The PhonePe clone follows a multi-layered architecture consisting of three main 
 
 **Diagram:**
 
-![User Login](https://github.com/user-attachments/assets/96322fbb-0ae1-42ea-a087-081f5ff59932)
+![image](https://github.com/user-attachments/assets/090c9991-0485-4f20-9867-a06f3ca62ff1)
 
 #### 3.1.3 Add Money to Wallet
 - **Actor**: User
@@ -120,7 +121,8 @@ The PhonePe clone follows a multi-layered architecture consisting of three main 
 
 **Diagram:**
 
-![Add Money to Wallet](https://github.com/user-attachments/assets/3e279b99-4f90-4f1e-9d1c-c68d5fcf9d4f)
+![image](https://github.com/user-attachments/assets/9a650065-3d32-4448-9455-f497619854c2)
+
 
 #### 3.1.4 Send Money to Contacts
 - **Actor**: User
@@ -131,7 +133,8 @@ The PhonePe clone follows a multi-layered architecture consisting of three main 
 
 **Diagram:**
 
-![Send Money to Contacts](https://github.com/user-attachments/assets/19d25b5d-b330-4e5e-9499-288dc3ac8bc7)
+![image](https://github.com/user-attachments/assets/9feb50bb-2284-4740-9e26-fbddbd09d442)
+
 
 #### 3.1.5 Pay Bills
 - **Actor**: User
@@ -142,7 +145,8 @@ The PhonePe clone follows a multi-layered architecture consisting of three main 
 
 **Diagram:**
 
-![Pay Bills](https://github.com/user-attachments/assets/87bb9b2e-cf1e-4a53-8ac5-639d970be235)
+![image](https://github.com/user-attachments/assets/f28a7deb-7d30-48ae-a2a1-06ecd0e707c9)
+
 
 #### 3.1.6 Recharge Mobile
 - **Actor**: User
@@ -153,7 +157,8 @@ The PhonePe clone follows a multi-layered architecture consisting of three main 
 
 **Diagram:**
 
-![Recharge Mobile](https://github.com/user-attachments/assets/3c6fd0b8-dcf1-47be-a285-4b209a347acb)
+![image](https://github.com/user-attachments/assets/31c95db4-7c22-45ca-ae80-ac4394a0d054)
+
 
 #### 3.1.7 Book Tickets
 - **Actor**: User
@@ -164,7 +169,8 @@ The PhonePe clone follows a multi-layered architecture consisting of three main 
 
 **Diagram:**
 
-![Book Tickets](https://github.com/user-attachments/assets/f6f6c158-e730-4c75-a149-6fbb35f8231b)
+![image](https://github.com/user-attachments/assets/3402cc49-6dfb-4097-9a48-d9746445d007)
+
 
 #### 3.1.8 View Transaction History
 - **Actor**: User
@@ -175,7 +181,8 @@ The PhonePe clone follows a multi-layered architecture consisting of three main 
 
 **Diagram:**
 
-![Transaction History](https://github.com/user-attachments/assets/58cd672f-ff51-40bc-a07b-b62515dbb877)
+![image](https://github.com/user-attachments/assets/e2556769-04d2-4e80-a2bc-80df2b75a91c)
+
 
 #### 3.1.9 Raise Dispute
 - **Actor**: User
@@ -186,7 +193,8 @@ The PhonePe clone follows a multi-layered architecture consisting of three main 
 
 **Diagram:**
 
-![Raise Dispute](https://github.com/user-attachments/assets/7b84e249-fd9d-4195-92e7-b6185b0c2c29)
+![image](https://github.com/user-attachments/assets/cba8b60e-76ff-4d6a-8c4d-a53b774ba19c)
+
 
 ---
 
@@ -201,7 +209,8 @@ The PhonePe clone follows a multi-layered architecture consisting of three main 
 
 **Diagram:**
 
-![Merchant Payment](https://github.com/user-attachments/assets/36a1f9e4-80de-4318-8ec7-f68dff8daecb)
+![image](https://github.com/user-attachments/assets/1ebd71a3-6830-4174-9915-0383c3b82014)
+
 
 #### 3.2.2 View Payment History
 - **Actor**: Merchant
@@ -212,7 +221,8 @@ The PhonePe clone follows a multi-layered architecture consisting of three main 
 
 **Diagram:**
 
-![Merchant Dashboard](https://github.com/user-attachments/assets/4d63b5fa-1f2b-41a6-a22c-295b74a4d413)
+![image](https://github.com/user-attachments/assets/af9a7556-ca34-4fa2-919d-ac28c6dc6855)
+
 
 ---
 
