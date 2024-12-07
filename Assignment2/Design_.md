@@ -6,7 +6,6 @@
 *Authors:* [CSITTeam014]  
 *Version:* 1.0  
 *Date:* [05-12-2024]  
- 
 
 ---
 
@@ -44,159 +43,189 @@ The purpose of this Software Design Document (SDD) is to provide a comprehensive
 
 ## 2. System Architecture
 
-The architecture of the PhonePe application consists of three main layers: Presentation Layer, Business Logic Layer, and Data Layer.
-![image](https://github.com/user-attachments/assets/4748ddfd-784e-4fa9-9b9f-fcf4b5723a66)
+The architecture of the PhonePe application consists of three main layers: Presentation Layer, Business Logic Layer, and Data Layer.  
+![System Architecture](https://github.com/user-attachments/assets/4748ddfd-784e-4fa9-9b9f-fcf4b5723a66)
+
+---
 
 ## 3. Functional Requirements and Design Components
 
-1. *Register*
-   - *Actor:* User
-   - *Precondition:* None
-   - *Description:* Create an account to access the app's features.
-   - *Design Component:* User Registration Module
-     - Handles input validation, user data storage, and account creation.
+### 1. Register
+- **Actor:** User
+- **Precondition:** None
+- **Description:** Create an account to access the app's features.
+- **Design Component:** User Registration Module  
+  - Handles input validation, user data storage, and account creation.
 
-![image](https://github.com/user-attachments/assets/ca0df450-6179-42d1-860e-e1dd4ac839de) 
+![Register](https://github.com/user-attachments/assets/ca0df450-6179-42d1-860e-e1dd4ac839de)
 
-1. *Login*
-   - *Actor:* User
-   - *Precondition:* Must have an existing account.
-   - *Description:* Access the app and its features.
-   - *Design Component:* Authentication Module
-     - Manages user login sessions, credential verification, and security measures.
+### 2. Login
+- **Actor:** User
+- **Precondition:** Must have an existing account.
+- **Description:** Access the app and its features.
+- **Design Component:** Authentication Module  
+  - Manages user login sessions, credential verification, and security measures.
 
-![image](https://github.com/user-attachments/assets/8f20b3f7-d597-4544-8c1f-e93f6437b621)   
+![Login](https://github.com/user-attachments/assets/8f20b3f7-d597-4544-8c1f-e93f6437b621)
 
-1. *Add Money to Wallet*
-   - *Actor:* User
-   - *Precondition:* Must have a linked payment method.
-   - *Description:* Add funds to their digital wallet.
-   - *Design Component:* Wallet Management Module
-     - Facilitates linking payment methods and processing deposits.
-    
- ![image](https://github.com/user-attachments/assets/cfcf2e2b-550f-4258-acf0-27a3337cc14d)   
+### 3. Add Money to Wallet
+- **Actor:** User
+- **Precondition:** Must have a linked payment method.
+- **Description:** Add funds to their digital wallet.
+- **Design Component:** Wallet Management Module  
+  - Facilitates linking payment methods and processing deposits.
 
-2. *Send Money to Contacts*
-   - *Actor:* User
-   - *Precondition:* Must have sufficient balance in wallet.
-   - *Description:* Transfer money to other users.
-   - *Design Component:* Transaction Processing Module
-     - Manages fund transfers, recipient validation, and transaction authorization.
+![Add Money](https://github.com/user-attachments/assets/cfcf2e2b-550f-4258-acf0-27a3337cc14d)
 
-![image](https://github.com/user-attachments/assets/0e872a56-cc4b-4b41-9817-65d0abc305ed)
+### 4. Send Money to Contacts
+- **Actor:** User
+- **Precondition:** Must have sufficient balance in wallet.
+- **Description:** Transfer money to other users.
+- **Design Component:** Transaction Processing Module  
+  - Manages fund transfers, recipient validation, and transaction authorization.
 
-2. *Pay Bills*
-   - *Actor:* User
-   - *Precondition:* Must have linked bank account or wallet balance.
-   - *Description:* Pay utility bills through the app.
-   - *Design Component:* Bill Payment Module
-     - Interfaces with biller APIs for payment processing and confirmation.
+![Send Money](https://github.com/user-attachments/assets/0e872a56-cc4b-4b41-9817-65d0abc305ed)
 
-![image](https://github.com/user-attachments/assets/7974a002-e282-4839-9b46-7c2b0b4c01da) 
+### 5. Pay Bills
+- **Actor:** User
+- **Precondition:** Must have linked bank account or wallet balance.
+- **Description:** Pay utility bills through the app.
+- **Design Component:** Bill Payment Module  
+  - Interfaces with biller APIs for payment processing and confirmation.
 
-3. *Recharge Mobile*
-   - *Actor:* User
-   - *Precondition:* Must have wallet balance.
-   - *Description:* Recharge their mobile phone number.
-   - *Design Component:* Mobile Recharge Module
-     - Handles selection of recharge plans and processes payments.
+![Pay Bills](https://github.com/user-attachments/assets/7974a002-e282-4839-9b46-7c2b0b4c01da)
 
-![image](https://github.com/user-attachments/assets/baad54f6-16b3-4928-85be-c8f1cf93a0e6)  
+### 6. Recharge Mobile
+- **Actor:** User
+- **Precondition:** Must have wallet balance.
+- **Description:** Recharge their mobile phone number.
+- **Design Component:** Mobile Recharge Module  
+  - Handles selection of recharge plans and processes payments.
 
-3. *Book Tickets*
-   - *Actor:* User
-   - *Precondition:* Must have wallet balance or linked payment method.
-   - *Description:* Book tickets for various services.
-   - *Design Component:* Ticket Booking Module
-     - Manages ticket searches, selections, and payment processing.
-     - 
-![image](https://github.com/user-attachments/assets/bfbb6361-87e7-4d58-adbe-6d1e2b3bab5c)
-8. *View Transaction History*
-    - *Actor:* User  
-    - *Precondition:* Must be logged in  
-    - *Description:* Review past transactions  
-    - *Design Component:* Transaction History Module  
-      - Retrieves and displays past transactions for user review.
+![Recharge Mobile](https://github.com/user-attachments/assets/baad54f6-16b3-4928-85be-c8f1cf93a0e6)
 
-![image](https://github.com/user-attachments/assets/72febafc-2e20-494f-bb59-c691cb17eae9)
-9. *Raise Dispute*
-    - Actor: User  
-    - Precondition: Must have made a recent transaction  
-    - Description: Dispute a transaction or issue  
-    - Design Component: Dispute Management Module  
-      - Allows users to submit disputes and tracks their status.
+### 7. Book Tickets
+- **Actor:** User
+- **Precondition:** Must have wallet balance or linked payment method.
+- **Description:** Book tickets for various services.
+- **Design Component:** Ticket Booking Module  
+  - Manages ticket searches, selections, and payment processing.
 
-![image](https://github.com/user-attachments/assets/6036330a-f600-4b9c-9be6-cf72efa6d966)
-10. *Accept Payments*
-    - Actor: Merchant  
-    - Precondition: Must have registered and set up account  
-    - Description: Receive digital payments from users  
-    - Design Component: Merchant Payment Module  
-      - Facilitates payment acceptance through various methods.
+![Book Tickets](https://github.com/user-attachments/assets/bfbb6361-87e7-4d58-adbe-6d1e2b3bab5c)
 
+### 8. View Transaction History
+- **Actor:** User
+- **Precondition:** Must be logged in.
+- **Description:** Review past transactions.
+- **Design Component:** Transaction History Module  
+  - Retrieves and displays past transactions for user review.
 
-![image](https://github.com/user-attachments/assets/a4b55f63-37a4-40aa-a17d-25dbd637fee3)
-11. *View Payment History*
-    - Actor: Merchant  
-    - Precondition: Must have an active merchant account  
-    - Description: Review payment history and details  
-    - Design Component: Merchant Dashboard Module  
-      - Displays payment history and transaction details for merchants.
+![Transaction History](https://github.com/user-attachments/assets/72febafc-2e20-494f-bb59-c691cb17eae9)
 
-![image](https://github.com/user-attachments/assets/4cd06984-eeb6-46b2-91fb-97d16441c2ad)
-12. *Withdraw Money to Bank Account*
-    - Actor: Merchant  
-    - Precondition: Must have received payments  
-    - Description: Transfer funds to linked bank account  
-    - Design Component: Withdrawal Processing Module  
-      - Manages withdrawal requests and bank transfer processes.
+### 9. Raise Dispute
+- **Actor:** User
+- **Precondition:** Must have made a recent transaction.
+- **Description:** Dispute a transaction or issue.
+- **Design Component:** Dispute Management Module  
+  - Allows users to submit disputes and tracks their status.
 
-![image](https://github.com/user-attachments/assets/6911020e-d4ff-4a01-b7af-d6dacb039ae9)
-13. *Resolve Disputes*
-    - Actor: Merchant  
-    - Precondition: Must have unresolved disputes  
-    - Description: Work with support to resolve payment disputes  
-    - Design Component: Dispute Resolution Module  
-      - Facilitates communication between merchants and support for dispute resolution.
+![Raise Dispute](https://github.com/user-attachments/assets/6036330a-f600-4b9c-9be6-cf72efa6d966)
 
-![image](https://github.com/user-attachments/assets/91d981e4-8790-495a-9531-af0f37342541)
-14. *Manage Users*
-     - Actor: Admin        - Precondition: Must have administrative access        - Description: Manage user accounts and permissions        - Design Component: Admin Management Module          - Provides functionalities for creating, modifying, or deactivating user accounts.
+### 10. Accept Payments
+- **Actor:** Merchant
+- **Precondition:** Must have registered and set up account.
+- **Description:** Receive digital payments from users.
+- **Design Component:** Merchant Payment Module  
+  - Facilitates payment acceptance through various methods.
 
-![image](https://github.com/user-attachments/assets/ce149392-9dbc-4214-84c1-c9f399aa7cc9)
+![Accept Payments](https://github.com/user-attachments/assets/a4b55f63-37a4-40aa-a17d-25dbd637fee3)
 
-15. *Generate Reports*
-     - Actor: Admin         - Precondition: Administrative access         - Description: Generate various reports based on user activity and transactions         - Design Component: Reporting Module             - Generates reports for analysis.
-   
-![image](https://github.com/user-attachments/assets/9757bde2-dd28-46c7-ae7c-c1c2047e84dc)
+### 11. View Payment History
+- **Actor:** Merchant
+- **Precondition:** Must have an active merchant account.
+- **Description:** Review payment history and details.
+- **Design Component:** Merchant Dashboard Module  
+  - Displays payment history and transaction details for merchants.
+
+![Payment History](https://github.com/user-attachments/assets/4cd06984-eeb6-46b2-91fb-97d16441c2ad)
+
+### 12. Withdraw Money to Bank Account
+- **Actor:** Merchant
+- **Precondition:** Must have received payments.
+- **Description:** Transfer funds to linked bank account.
+- **Design Component:** Withdrawal Processing Module  
+  - Manages withdrawal requests and bank transfer processes.
+
+![Withdraw Money](https://github.com/user-attachments/assets/6911020e-d4ff-4a01-b7af-d6dacb039ae9)
+
+### 13. Resolve Disputes
+- **Actor:** Merchant
+- **Precondition:** Must have unresolved disputes.
+- **Description:** Work with support to resolve payment disputes.
+- **Design Component:** Dispute Resolution Module  
+  - Facilitates communication between merchants and support for dispute resolution.
+
+![Resolve Disputes](https://github.com/user-attachments/assets/91d981e4-8790-495a-9531-af0f37342541)
+
+### 14. Manage Users
+- **Actor:** Admin
+- **Precondition:** Must have administrative access.
+- **Description:** Manage user accounts and permissions.
+- **Design Component:** Admin Management Module  
+  - Provides functionalities for creating, modifying, or deactivating user accounts.
+
+![Manage Users](https://github.com/user-attachments/assets/ce149392-9dbc-4214-84c1-c9f399aa7cc9)
+
+### 15. Generate Reports
+- **Actor:** Admin
+- **Precondition:** Administrative access.
+- **Description:** Generate various reports based on user activity and transactions.
+- **Design Component:** Reporting Module  
+  - Generates reports for analysis.
+
+![Generate Reports](https://github.com/user-attachments/assets/9757bde2-dd28-46c7-ae7c-c1c2047e84dc)
+
+---
 
 ## 4. Non-Functional Requirements and Design Components
 
-1. *Modularity*
-     - Importance Level: C+
-     - Design Component: Modular Architecture Framework     
+### 1. Modularity
+- **Importance Level:** C+
+- **Design Component:** Modular Architecture Framework  
 
-![image](https://github.com/user-attachments/assets/46eb880a-98a4-4bcd-8ad0-211d0d3bb023)
-2. *Maintainability*
-     - Importance Level: O           - Design Component: Code Maintenance Guidelines 
-![image](https://github.com/user-attachments/assets/615e5e50-08f9-4320-9ac7-fce4d6e51fea) 
+![Modularity](https://github.com/user-attachments/assets/46eb880a-98a4-4bcd-8ad0-211d0d3bb023)
 
-3. *Reusability*
-     - Importance Level: O      – Design Component: Shared Libraries/Components
-![image](https://github.com/user-attachments/assets/ba26ae1b-d783-4a33-aa54-c500ca831b3b)
+### 2. Maintainability
+- **Importance Level:** O
+- **Design Component:** Code Maintenance Guidelines
 
-4. *Testability*
-     - Importance Level: O     – Design Component: Testing Framework Integration 
-![image](https://github.com/user-attachments/assets/d05b10c2-3915-407e-b410-5138de2f7846)
+![Maintainability](https://github.com/user-attachments/assets/615e5e50-08f9-4320-9ac7-fce4d6e51fea)
 
-5. *Documentation*
-     - Importance Level: I     – Design Component: Documentation Standards 
-![image](https://github.com/user-attachments/assets/7cd5ee4a-1a77-4d35-8479-36acf716b361)
+### 3. Reusability
+- **Importance Level:** O
+- **Design Component:** Shared Libraries/Components
 
-6. *Error Handling*
-     - Importance Level: N/A     – Design Component: Error Handling Framework
-  
-![image](https://github.com/user-attachments/assets/e13a6762-53a5-40ec-a161-d02ba4d0ae65)
+![Reusability](https://github.com/user-attachments/assets/ba26ae1b-d783-4a33-aa54-c500ca831b3b)
+
+### 4. Testability
+- **Importance Level:** O
+- **Design Component:** Testing Framework Integration  
+
+![Testability](https://github.com/user-attachments/assets/d05b10c2-3915-407e-b410-5138de2f7846)
+
+### 5. Documentation
+- **Importance Level:** I
+- **Design Component:** Documentation Standards  
+
+![Documentation](https://github.com/user-attachments/assets/7cd5ee4a-1a77-4d35-8479-36acf716b361)
+
+### 6. Error Handling
+- **Importance Level:** N/A
+- **Design Component:** Error Handling Framework  
+
+![Error Handling](https://github.com/user-attachments/assets/e13a6762-53a5-40ec-a161-d02ba4d0ae65)
+
+---
 
 ## 5. Data Design
 
@@ -204,25 +233,28 @@ The architecture of the PhonePe application consists of three main layers: Prese
 
 The database schema will include tables for users, transactions, merchants, and disputes.
 
-![image](https://github.com/user-attachments/assets/46d49111-fa9c-4385-ae18-b65ecb19cae0)
+![Database Schema](https://github.com/user-attachments/assets/46d49111-fa9c-4385-ae18-b65ecb19cae0)
+
+---
 
 ## 6. Interface Design
 
 ### User Interface Elements
 
 The user interface will consist of:
-
 - Registration/Login screens with input fields for credentials.
 - Dashboard displaying wallet balance and quick action buttons (Send Money, Pay Bills).
 - Transaction history page with filters for date and type of transaction.
 
 ### Mockups
 
-![image](https://github.com/user-attachments/assets/3e707687-b985-4f22-85ac-47b15f55a6fc)
+![UI Mockups](https://github.com/user-attachments/assets/3e707687-b985-4f22-85ac-47b15f55a6fc)
+
+---
+
 ## 7. Error Handling and Recovery
 
 The system will implement robust error handling mechanisms that include:
-
 - Logging errors for debugging purposes.
 - Providing user-friendly error messages on the UI.
 - Implementing retry mechanisms for failed transactions where applicable.
@@ -245,9 +277,9 @@ The system will implement robust error handling mechanisms that include:
 
 ## 9. Glossary
 
-- User: Individual using the PhonePe application for financial transactions.
-- Merchant: Business entity receiving payments through the PhonePe application.
-- Admin: Administrative user managing the application backend.
+- **User:** Individual using the PhonePe application for financial transactions.
+- **Merchant:** Business entity receiving payments through the PhonePe application.
+- **Admin:** Administrative user managing the application backend.
 
 ---
 
