@@ -96,6 +96,19 @@ I often pay for transportation, tolls, and travel-related services using PhonePe
 - Limited options for integrated travel services.
 
 ---
+### User 6: Customer Support Rep  
+**Role:** Likely a Customer Support Rep  
+**Scenario:**  
+I assist users and merchants in resolving payment or account-related issues.  
+**Goals:**  
+- Access detailed transaction history and logs to resolve disputes.  
+- Handle refund requests or payment failures efficiently.  
+- Provide guidance to new users on linking accounts or using features.  
+**Pain Points:**  
+- Lack of real-time data during peak transaction hours.  
+- Managing multiple escalations without adequate resources
+
+- ---
 ## **3. Use Cases**  
 
 ### **Use Case 1: Registering and Logging In**  
@@ -142,6 +155,8 @@ I often pay for transportation, tolls, and travel-related services using PhonePe
   3. Provide additional details or evidence and submit the claim.  
 
 ---
+
+
 
 ## **4. Functional Requirements**  
 
