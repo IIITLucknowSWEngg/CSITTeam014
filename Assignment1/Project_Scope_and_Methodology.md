@@ -107,12 +107,12 @@ The PhonePe Clone project will be executed using the **Agile development methodo
 
 | **Phase**           | **Expected Approximate Duration** | **Expected Key Milestones**                          | **Expected Major Deliverables**                 | **Review Points**                | **Expected Resources Allocated** |
 |---------------------|-------------------------|--------------------------------------------|---------------------------------------|----------------------------------|-------------------------|
-| **Initiation**       | 2 weeks                 | Project scope, charter approval           | Project Charter, Product Backlog      | Stakeholder review               | Project Manager, Team Leads |
+| **Initiation**       | 4 weeks                 | Project scope           | Project Charter, Product Backlog      | Stakeholder review               | Project Manager , Team Leads |
 | **Planning**         | 2 weeks                 | Requirements gathering, design approval  | SRS, Design Documents                 | Review with stakeholders         | Business Analysts, Designers  |
-| **Execution**        | 8 weeks                 | Completion of coding, integration        | Wireframes, UI/UX, API Integrations  | Sprint Reviews, Daily Scrums     | Development Team, QA Team    |
-| **Testing**          | 4 weeks                 | Completion of unit, system, and security tests | Test Reports, Security Audit Reports | QA Reviews, Stakeholder Feedback | QA Team, Security Experts     |
-| **Deployment**       | 2 weeks                 | Successful system deployment             | CI/CD Pipeline, Release Notes        | Final Review, User Feedback      | Development Team, Ops Team     |
-| **Closure**          | 1 week                  | Final project report, evaluation        | Closure Report, Lessons Learned      | Final Review with Stakeholders   | Project Manager, Team Leads    |
+| **Execution**        | 10 weeks                 | Completion of coding, integration        | Wireframes, UI/UX, API Integrations  | Sprint Reviews, Daily Scrums     | Development Team, QA Team    |
+| **Testing**          | 7 weeks                 | Completion of unit, system, and security tests | Test Reports, Security Audit Reports | QA Reviews, Stakeholder Feedback | QA Team, Security Experts     |
+| **Deployment**       | 3 weeks                 | Successful system deployment             | CI/CD Pipeline, Release Notes        | Final Review, User Feedback      | Development Team, Ops Team     |
+| **Closure**          | 1 week                  | Final project report, evaluation of the model       | Closure Report, Lessons Learned      | Final Review with Stakeholders   | Project Manager, Team Leads    |
 
 ---
 
