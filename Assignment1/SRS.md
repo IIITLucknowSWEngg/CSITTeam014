@@ -175,11 +175,14 @@ The application should support the above use cases to provide a comprehensive di
 
 
 #### Use Case Diagram  
-![PhonePe Use Cases](https://github.com/IIITLucknowSWEngg/CSITTeam014/blob/main/PhonePe%20Use%20cases.png)
+![PhonePe Use Cases](https://github.com/IIITLucknowSWEngg/CSITTeam014/blob/main/Assignment1/PhonePe%20Use%20cases.png)
 
 
 ### error case diagram
-![erro case diagram](https://github.com/IIITLucknowSWEngg/CSITTeam014/blob/main/error_cases.jpg)
+![erro case diagram](https://github.com/IIITLucknowSWEngg/CSITTeam014/blob/main/Assignment1/error_cases.jpg)
+
+### abuse case diagram
+![erro case diagram](https://github.com/IIITLucknowSWEngg/CSITTeam014/blob/main/Assignment1/Abuse_cases.png.jpg)
 
 ---
 
