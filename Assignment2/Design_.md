@@ -377,12 +377,11 @@ component "Dispute Resolution Module" {
 ```plantuml      @startuml  component "Documentation Standards" {  + provideGuidelinesForDocumentation()  }  @enduml ``` 
 
 6. *Error Handling*
-     - Importance Level: N/A     – Design Component: Error Handling Framework 
+     - Importance Level: N/A     – Design Component: Error Handling Framework
+  
 ![image](https://github.com/user-attachments/assets/e13a6762-53a5-40ec-a161-d02ba4d0ae65)
 
 ```plantuml      @startuml  component "Error Handling Framework" {  + logErrors()  + displayUserFriendlyErrors() }  @enduml ``` 
-
----
 
 ## 5. Data Design
 
