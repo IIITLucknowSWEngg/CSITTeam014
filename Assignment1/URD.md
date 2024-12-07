@@ -70,6 +70,32 @@ The PhonePe Clone is a mobile-based digital payment platform that enables users 
 
 ---
 
+### User 4: First-Time User  
+**Scenario:**  
+I am new to digital payments and want a simple and secure way to transfer money.  
+
+**Goals:**  
+- Easily link my bank account to the app.  
+- Understand the steps to complete a payment without confusion.  
+- Get quick support if I face any transaction issues.  
+
+**Pain Points:**  
+- Overwhelming features or complicated setup processes.  
+- Fear of security risks or transaction failures.
+
+---
+### User 5: Frequent Traveler  
+**Scenario:**  
+I often pay for transportation, tolls, and travel-related services using PhonePe.  
+**Goals:**  
+- Recharge travel cards (e.g., metro or FASTag) directly.  
+- Pay for cabs, buses, or train tickets seamlessly.  
+- Get travel insurance or offers for frequent travelers.  
+**Pain Points:**  
+- Delays in recharge updates for travel cards.  
+- Limited options for integrated travel services.
+
+---
 ## **3. Use Cases**  
 
 ### **Use Case 1: Registering and Logging In**  
