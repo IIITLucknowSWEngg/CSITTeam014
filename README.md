@@ -32,5 +32,5 @@
 | *Siddharth Paladi*             | f804d5812895f4f58e40b6dca9980bba4efd4a85  | Updated the Stakeholder Register Table and added relevant details for each stakeholder | 2024-12-01 |
 | *Nalla Hitha Sai Srinath*      | 38ade40dc89858a3099dcd9538bce891db86032a  | Created Architecture.md and added most of the C4 model diagrams                | 2024-11-17 |
 | *Gana Kalvakuntla*             | 495340ba844292be863db144fbd82353b91c80b3  | Created urd.md documenting project requirements and updated srs.md with error case and use case diagrams | 2024-11-30 |
-| *Koyyani Naga Sai Yaaghnetha*  | 7b9a13f3b9bf202dcbc4208d3e85d51082aa54c4  | Added the Use Cases under Functional Requirements Section                      | 2024-11-30 |
+| *Koyyani Naga Sai Yaaghnetha*  | 745dc3bd005fb24c77664cd2278db00ec0003ff1  | Added Project Scope and Methodology Document with relevant details required for each                      | 2024-11-30 |
 | *Revanth Kurapati*             | 508e7a39e9bf81bac8dcf519dddee6f059ff2148  | Updated the uptime and downtime values table                                   | 2024-11-30 |
