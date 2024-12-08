@@ -52,8 +52,7 @@ The scope outlines the key features, boundaries, and exclusions for the project.
 ### **Out-of-Scope Features**  
 1. **Advanced Financial Services**:  
    - No investment portfolios or tools for financial planning.  
-   - Excludes loans, credit score monitoring, or lending services.  
-   - Avoids integration with third-party financial tools.  
+   - Excludes loans, credit score monitoring, or lending services.    
 
 2. **Loyalty and Reward Programs**:  
    - No cashback offers for transactions.  
@@ -61,8 +60,7 @@ The scope outlines the key features, boundaries, and exclusions for the project.
    - No reward-based incentives for user engagement.  
 
 3. **International Payments**:  
-   - No support for foreign currency transactions.  
-   - Excludes handling of cross-border payments.  
+   - No support for foreign currency transactions.  .  
    - Focus remains solely on domestic transactions.  
 
 4. **Account Aggregation**:  
@@ -73,7 +71,6 @@ The scope outlines the key features, boundaries, and exclusions for the project.
 5. **AI-Powered Chatbots**:  
    - No AI-based customer support automation.  
    - Customer queries will be handled by human support teams.  
-   - Excludes machine learning-driven personalized responses.
 
 ---
 
