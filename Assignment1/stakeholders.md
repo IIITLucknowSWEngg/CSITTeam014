@@ -13,7 +13,7 @@ This document provides a comprehensive **Stakeholder Register** for the **PhoneP
 |--------------------------------|-------------------------------------------------|----------------------------------------------------------------------------|---------------|--------------|---------------|
 | **Project Sponsor**            | Oversees funding and strategic alignment        | Approves scope, budget, timeline; aligns goals; guides decisions            | High          | High         | Internal      |
 | **Project Manager**            | Manages project execution                       | Plans and monitors progress; allocates resources; resolves conflicts        | High          | High         | Internal      |
-| ** Admin**     | Handle administrative tasks | Manage documentation, scheduling, and coordination                       | Medium        | High         | Internal      |
+| **Admin**     | Handle administrative tasks | Manage documentation, scheduling, and coordination                       | Medium        | High         | Internal      |
 | **Development Team**           | Develops and maintains the platform             | Implements features, fixes bugs, ensures scalability                        | High          | High         | Internal      |
 | **UI/UX Designers**            | Ensure a seamless, user-friendly experience     | Create intuitive designs, test usability, ensure accessibility              | Medium        | High         | Internal      |
 | **Quality Assurance (QA) Team**| Ensures app quality and stability               | Conducts testing, identifies bugs, ensures stability and performance        | High          | High         | Internal      |
