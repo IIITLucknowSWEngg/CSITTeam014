@@ -33,13 +33,9 @@ The scope outlines the key features, boundaries, and exclusions for the project.
 - **3.2.3 Offline Payments**: No support for offline QR-based payments.  
 - **3.2.4 International Payments**: No support for cross-border payments or foreign currency transactions.  
 - **3.2.5 Multi-Language Support**: No support for multilingual interfaces or localization.  
-- **3.2.6 Advanced Analytics and Reports**: No provision for in-depth financial analytics or custom reports.  
-- **3.2.7 Cryptocurrency Transactions**: No integration with blockchain or support for crypto payments.  
-- **3.2.8 Custom Payment Schedules**: No feature to schedule recurring payments or subscriptions.  
-- **3.2.9 Account Aggregation**: No aggregation of multiple bank accounts into a single dashboard.  
-- **3.2.10 Customizable Themes**: No ability for users to customize the app’s appearance or themes.  
-- **3.2.11 AI-Powered Chatbots**: No AI-based customer support chatbot integration.  
-- **3.2.12 Third-Party Integrations**: No integrations with e-commerce platforms or external apps.
+- **3.2.6 Advanced Analytics and Reports**: No provision for in-depth financial analytics or custom reports.   
+- **3.2.7 Account Aggregation**: No aggregation of multiple bank accounts into a single dashboard.   
+- **3.2.8 AI-Powered Chatbots**: No AI-based customer support chatbot integration.  
 - 
 ---
 
