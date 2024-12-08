@@ -528,6 +528,46 @@ describe('Merchant Payments', () => {
 
 ---
 
+### Code Example
+
+```javascript
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const { expect } = chai;
+
+chai.use(chaiHttp);
+
+const API_URL = '<API_URL>'; // Replace with your API base URL
+const AUTH_TOKEN = '<AUTH_TOKEN>'; // Replace with a valid authorization token for the API
+
+describe('Merchant Account Management', () => {
+  it('TC-019: View Payment History - Payment history displayed accurately', (done) => {
+    chai
+      .request(API_URL)
+      .get('/merchant/payment-history') // Assuming this is the endpoint for viewing payment history
+      .set('Authorization', `Bearer ${AUTH_TOKEN}`) // Include the authorization token
+      .end((err, res) => {
+        expect(res).to.have.status(200);
+
+        // Validate the response
+        expect(res.body).to.have.property('paymentHistory').that.is.an('array');
+
+        // Optionally validate individual payment entries in the history
+        res.body.paymentHistory.forEach((payment) => {
+          expect(payment).to.have.property('transactionId').that.is.a('string');
+          expect(payment).to.have.property('amount').that.is.a('number');
+          expect(payment).to.have.property('date').that.is.a('string');
+          expect(payment).to.have.property('status').that.is.a('string');
+        });
+
+        done();
+      });
+  });
+});
+```
+
+---
+
 ### *2.9 Admin Functions*
 
 | *Test Case ID* | *Description*                                           | *Steps*                                                                                                                                 | *Expected Outcome*                              |
