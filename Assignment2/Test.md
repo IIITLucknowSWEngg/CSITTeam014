@@ -311,6 +311,74 @@ describe('UPI Transactions', () => {
 
 ---
 
+## Code Example
+```javascript
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const { expect } = chai;
+
+chai.use(chaiHttp);
+
+const API_URL = '<API_URL>'; // Replace with your API base URL
+const AUTH_TOKEN = '<AUTH_TOKEN>'; // Replace with a valid authorization token for the API
+
+describe('Bill Payments', () => {
+  const testCases = [
+    {
+      id: 'TC-013',
+      description: 'Pay Utility Bill - Payment processed successfully with receipt generated',
+      endpoint: '/bill-payments/pay',
+      payload: { biller: 'Electricity', amount: 1200 },
+      expectedStatus: 200,
+      expectedResponse: { message: 'Payment processed successfully', receiptCheck: true },
+    },
+    {
+      id: 'TC-014',
+      description: 'Recharge Mobile Number - Recharge completed successfully with confirmation',
+      endpoint: '/bill-payments/recharge',
+      payload: { mobileNumber: '9876543210', plan: 'Unlimited_30days' },
+      expectedStatus: 200,
+      expectedResponse: { message: 'Recharge completed successfully', confirmationCheck: true },
+    },
+    {
+      id: 'TC-015',
+      description: 'Generate Receipt for Payment - Receipt generated and displayed correctly',
+      endpoint: '/bill-payments/receipt',
+      payload: { transactionId: 'abc123' },
+      expectedStatus: 200,
+      expectedResponse: { message: 'Receipt generated successfully', receiptDataCheck: true },
+    },
+  ];
+
+  testCases.forEach(({ id, description, endpoint, payload, expectedStatus, expectedResponse }) => {
+    it(`${id}: ${description}`, (done) => {
+      chai
+        .request(API_URL)
+        .post(endpoint)
+        .set('Authorization', `Bearer ${AUTH_TOKEN}`) // Include the authorization token
+        .send(payload)
+        .end((err, res) => {
+          expect(res).to.have.status(expectedStatus);
+
+          // Check expected fields in the response
+          Object.keys(expectedResponse).forEach((key) => {
+            if (key === 'receiptCheck') {
+              expect(res.body).to.have.property('receiptId').that.is.a('string');
+            } else if (key === 'confirmationCheck') {
+              expect(res.body).to.have.property('confirmationId').that.is.a('string');
+            } else if (key === 'receiptDataCheck') {
+              expect(res.body).to.have.property('receiptData').that.is.an('object');
+            } else {
+              expect(res.body).to.have.property(key, expectedResponse[key]);
+            }
+          });
+          done();
+        });
+    });
+  });
+});
+
+
 ### *2.5 Transaction History*
 
 | *Test Case ID* | *Description*                                           | *Steps*                                                                                                                                 | *Expected Outcome*                              |
