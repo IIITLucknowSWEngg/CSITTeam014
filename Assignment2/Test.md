@@ -311,7 +311,7 @@ describe('UPI Transactions', () => {
 
 ---
 
-## Code Example
+### Code Example
 ```javascript
 const chai = require('chai');
 const chaiHttp = require('chai-http');
@@ -388,6 +388,43 @@ describe('Bill Payments', () => {
 |-------------------|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | TC-016           | View Transaction History                                  | Navigate to transaction history section in the app.                                                                                      | List of past transactions displayed accurately.  |
 
+---
+### Code Example
+```javascript
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const { expect } = chai;
+
+chai.use(chaiHttp);
+
+const API_URL = '<API_URL>'; // Replace with your API base URL
+const AUTH_TOKEN = '<AUTH_TOKEN>'; // Replace with a valid authorization token for the API
+
+describe('Transaction History', () => {
+  it('TC-016: View Transaction History - List of past transactions displayed accurately', (done) => {
+    chai
+      .request(API_URL)
+      .get('/transaction-history') // Assuming this is the endpoint for fetching transaction history
+      .set('Authorization', `Bearer ${AUTH_TOKEN}`) // Include the authorization token
+      .end((err, res) => {
+        expect(res).to.have.status(200);
+
+        // Validate the response structure
+        expect(res.body).to.have.property('transactions').that.is.an('array');
+
+        // Optionally validate individual transactions in the list
+        res.body.transactions.forEach((transaction) => {
+          expect(transaction).to.have.property('id').that.is.a('string');
+          expect(transaction).to.have.property('amount').that.is.a('number');
+          expect(transaction).to.have.property('date').that.is.a('string');
+          expect(transaction).to.have.property('status').that.is.a('string');
+        });
+
+        done();
+      });
+  });
+});
+```
 ---
 
 ### *2.6 Customer Support*
