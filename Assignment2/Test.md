@@ -377,6 +377,9 @@ describe('Bill Payments', () => {
     });
   });
 });
+```
+
+---
 
 
 ### *2.5 Transaction History*
