@@ -434,6 +434,44 @@ describe('Transaction History', () => {
 | TC-017           | Raise Dispute                                             | Go to customer support section, submit dispute details along with any evidence required.                                                 | Dispute raised successfully with confirmation received. |
 
 ---
+### Code Example
+```javascript
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const { expect } = chai;
+
+chai.use(chaiHttp);
+
+const API_URL = '<API_URL>'; // Replace with your API base URL
+const AUTH_TOKEN = '<AUTH_TOKEN>'; // Replace with a valid authorization token for the API
+
+describe('Customer Support', () => {
+  it('TC-017: Raise Dispute - Dispute raised successfully with confirmation received', (done) => {
+    const disputeDetails = {
+      transactionId: 'txn12345', // Example transaction ID
+      reason: 'Incorrect amount debited',
+      evidence: 'screenshot_of_transaction.png', // Assume evidence is optional
+    };
+
+    chai
+      .request(API_URL)
+      .post('/customer-support/raise-dispute') // Assuming this is the endpoint for raising a dispute
+      .set('Authorization', `Bearer ${AUTH_TOKEN}`) // Include the authorization token
+      .send(disputeDetails)
+      .end((err, res) => {
+        expect(res).to.have.status(200);
+
+        // Validate the response
+        expect(res.body).to.have.property('message', 'Dispute raised successfully');
+        expect(res.body).to.have.property('disputeId').that.is.a('string');
+        expect(res.body).to.have.property('status', 'Pending');
+
+        done();
+      });
+  });
+});
+```
+---
 
 ### *2.7 Merchant Payments*
 
