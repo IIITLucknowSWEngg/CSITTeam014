@@ -630,6 +630,62 @@ describe('Admin Functions', () => {
 
 ---
 
+### Code EXample
+```javascript
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const { expect } = chai;
+
+chai.use(chaiHttp);
+
+const API_URL = '<API_URL>'; // Replace with your API base URL
+const AUTH_TOKEN = '<AUTH_TOKEN>'; // Replace with a valid authorization token for the API
+
+describe('Performance Testing', () => {
+  it('TC-P01: Measure Transaction Processing Time - All transactions processed within acceptable limits', (done) => {
+    const transactionDetails = { upiId: 'recipient@bank', amount: 1000 };
+
+    const startTime = Date.now();
+    chai
+      .request(API_URL)
+      .post('/transactions/process') // Assuming this is the endpoint for processing transactions
+      .set('Authorization', `Bearer ${AUTH_TOKEN}`) // Include the authorization token
+      .send(transactionDetails)
+      .end((err, res) => {
+        const endTime = Date.now();
+        const processingTime = endTime - startTime;
+
+        expect(res).to.have.status(200);
+        expect(res.body).to.have.property('message', 'Transaction processed successfully');
+        expect(processingTime).to.be.below(2000); // Ensure processing time is below 2 seconds
+
+        done();
+      });
+  });
+
+  it('TC-P02: Load Testing - System remains responsive under load', function (done) {
+    this.timeout(60000); // Extend timeout to handle load simulation
+    const loadTest = require('loadtest'); // Load testing library
+    const options = {
+      url: `${API_URL}/transactions/process`,
+      maxRequests: 50000, // Simulate 50,000 requests
+      concurrency: 1000, // Simulate 1,000 concurrent users
+      method: 'POST',
+      headers: { Authorization: `Bearer ${AUTH_TOKEN}` },
+      body: JSON.stringify({ upiId: 'recipient@bank', amount: 1000 }),
+    };
+
+    loadTest.loadTest(options, (error, result) => {
+      expect(error).to.be.null;
+      expect(result.totalRequests).to.equal(50000);
+      expect(result.meanLatencyMs).to.be.below(200); // Ensure average latency is under 200 ms
+      done();
+    });
+  });
+});
+```
+---
+
 #### *Security Testing*
 
 | *Test Case ID* | *Description*                                           | *Steps*                                                                                                              | *Expected Outcome*                              |
