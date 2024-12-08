@@ -107,39 +107,18 @@ The PhonePe Competitor project will be executed using the **Agile development me
 
 ---
 
-## **7. Expected Rough Timeline**  
- The project timeline follows the IEEE standard, incorporating key elements such as phases, milestones, deliverables, resource allocation, risk management, review points, and change control.  
-
-| **Phase**           | **Expected Approximate Duration** | **Expected Key Milestones**                          | **Expected Major Deliverables**                 | **Review Points**                | **Expected Resources Allocated** |
-|---------------------|-------------------------|--------------------------------------------|---------------------------------------|----------------------------------|-------------------------|
-| **Initiation**       | 4 weeks                 | Project scope           | Project Charter, Product Backlog      | Stakeholder review               | Project Manager , Team Leads |
-| **Planning**         | 2 weeks                 | Requirements gathering, design approval  | SRS, Design Documents                 | Review with stakeholders         | Business Analysts, Designers  |
-| **Execution**        | 10 weeks                 | Completion of coding, integration        | Wireframes, UI/UX, API Integrations  | Sprint Reviews, Daily Scrums     | Development Team, QA Team    |
-| **Testing**          | 7 weeks                 | Completion of unit, system, and security tests | Test Reports, Security Audit Reports | QA Reviews, Stakeholder Feedback | QA Team, Security Experts     |
-| **Deployment**       | 3 weeks                 | Successful system deployment             | CI/CD Pipeline, Release Notes        | Final Review, User Feedback      | Development Team, Ops Team     |
-| **Closure**          | 1 week                  | Final project report, evaluation of the model       | Closure Report, Lessons Learned      | Final Review with Stakeholders   | Project Manager, Team Leads    |
-
----
-
 ## **8. Constraints**  
 Constraints highlight limitations that could impact the project's success.  
 
 - **8.1 Time Constraints**: Strict deadlines for each phase to meet product launch targets.  
-- **8.2 Budget Constraints**: Limited resources allocated for development, testing, and deployment.  
-- **8.3 Technical Constraints**: Dependence on third-party APIs (UPI, bill payments, etc.) which may affect system performance.  
-- **8.4 Regulatory Constraints**: Compliance with financial regulations (e.g., data protection laws) may restrict certain features.  
-- **8.5 Resource Constraints**: Limited availability of skilled developers, testers, and support staff.  
-- **8.6 Security Constraints**: Need to adhere to stringent security measures to protect user data and transactions.  
-- **8.7 Scalability Constraints**: System must support a large number of concurrent users without performance degradation.  
-- **8.8 Hardware Constraints**: Reliance on cloud infrastructure and hardware resources for scalability and performance.  
-- **8.9 Dependency Constraints**: Dependence on third-party payment gateways, APIs, and banking systems.  
-- **8.10 Data Privacy Constraints**: Compliance with privacy laws like GDPR, which may limit data collection and usage.  
-- **8.11 Testing Constraints**: Limited time for comprehensive testing, including load and stress testing.  
-- **8.12 Design Constraints**: User interface and experience (UI/UX) must be consistent with industry standards and user expectations.  
-- **8.13 Maintenance Constraints**: Continuous maintenance and support required after deployment, affecting resource allocation.  
-- **8.14 Versioning Constraints**: Managing multiple versions/releases simultaneously during updates or bug fixes.  
-- **8.15 Licensing Constraints**: Adherence to open-source license rules for third-party libraries or frameworks used.  
-- **8.16 Change Management Constraints**: Any change in scope or features must follow a formal change control process.
+- **8.2 Budget Constraints**: Limited resources allocated for development, testing, and deployment.   
+- **8.3 Security Constraints**: Need to adhere to stringent security measures to protect user data and transactions.  
+- **8.4 Hardware Constraints**: Reliance on cloud infrastructure and hardware resources for scalability and performance.  
+- **8.5 Dependency Constraints**: Dependence on third-party payment gateways, APIs, and banking systems.  
+- **8.6 Data Privacy Constraints**: Compliance with privacy laws like GDPR, which may limit data collection and usage.    
+- **8.7 Design Constraints**: User interface and experience (UI/UX) must be consistent with industry standards and user expectations.  
+- **8.8 Maintenance Constraints**: Continuous maintenance and support required after deployment, affecting resource allocation.  
+- **8.9 Versioning Constraints**: Managing multiple versions/releases simultaneously during updates or bug fixes.   
   
 ---
 
