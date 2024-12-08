@@ -55,7 +55,7 @@ The scope of this test plan includes:
 
 ---
 
- ###Code Example
+ ### Code Example
 
 ```javascript
 const chai = require('chai');
