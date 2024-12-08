@@ -70,7 +70,7 @@ The PhonePe Competitor is a mobile-based digital payment platform that enables u
 
 ---
 
-### User 4: First-Time User  
+### User 4: Novice User  
 **Scenario:**  
 I am new to digital payments and want a simple and secure way to transfer money.  
 
