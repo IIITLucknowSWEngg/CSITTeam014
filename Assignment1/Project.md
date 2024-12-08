@@ -130,11 +130,10 @@ Assumptions are conditions that are assumed to be true for the project to procee
 
 ## **References**
 
-### **IEEE Standards**  
+### **IEEE Documentation**  
 
-#### **IEEE Std 830-1998, Software Requirements Specification (SRS) Standard**  
-- **Description**: This standard defines the recommended practices for Software Requirements Specification (SRS) documents.  
-- **Access Link**: [IEEE Std 830-1998](https://ieeexplore.ieee.org/document/720574)    
+- **Description**: This document defines the recommended practices used for methodology selection to develop the software project  
+- [Access Link](https://ieeexplore.ieee.org/document/7755370)    
 
 ---
 
