@@ -147,6 +147,75 @@ describe('User Registration and Authentication', () => {
 
 ---
 
+### Code Example
+
+```javascript
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const { expect } = chai;
+
+chai.use(chaiHttp);
+
+const API_URL = '<API_URL>'; // Replace with your API base URL
+const AUTH_TOKEN = '<AUTH_TOKEN>'; // Replace with a valid authorization token for the API
+
+describe('Wallet Management', () => {
+  const testCases = [
+    {
+      id: 'TC-006',
+      description: 'Add Money to Wallet - Wallet balance should update correctly',
+      endpoint: '/wallet/add',
+      payload: { amount: 1000 },
+      expectedStatus: 200,
+      expectedResponse: { message: 'Money added successfully', newBalanceCheck: true },
+    },
+    {
+      id: 'TC-007',
+      description: 'Withdraw Money from Wallet - Funds should withdraw successfully',
+      endpoint: '/wallet/withdraw',
+      payload: { amount: 500 },
+      expectedStatus: 200,
+      expectedResponse: { message: 'Withdrawal successful', newBalanceCheck: true },
+    },
+    {
+      id: 'TC-008',
+      description: 'View Wallet Balance - Should display current wallet balance accurately',
+      endpoint: '/wallet/balance',
+      payload: {}, // No payload needed for balance check
+      expectedStatus: 200,
+      expectedResponse: { balanceCheck: true },
+    },
+  ];
+
+  testCases.forEach(({ id, description, endpoint, payload, expectedStatus, expectedResponse }) => {
+    it(`${id}: ${description}`, (done) => {
+      chai
+        .request(API_URL)
+        .post(endpoint)
+        .set('Authorization', `Bearer ${AUTH_TOKEN}`) // Add token for authorization
+        .send(payload)
+        .end((err, res) => {
+          expect(res).to.have.status(expectedStatus);
+
+          // Check specific response fields
+          Object.keys(expectedResponse).forEach((key) => {
+            if (key === 'newBalanceCheck') {
+              expect(res.body).to.have.property('newBalance').that.is.a('number');
+            } else if (key === 'balanceCheck') {
+              expect(res.body).to.have.property('balance').that.is.a('number');
+            } else {
+              expect(res.body).to.have.property(key, expectedResponse[key]);
+            }
+          });
+          done();
+        });
+    });
+  });
+});
+```
+
+---
+
 ### *2.3 UPI Transactions*
 
 | *Test Case ID* | *Description*                                           | *Steps*                                                                                                                                 | *Expected Outcome*                              |
