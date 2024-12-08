@@ -228,3 +228,12 @@ I assist users and merchants in resolving payment or account-related issues.
 ## **7. Conclusion**  
 
 This document clearly defines the functional and non-functional requirements for developing a robust, user-friendly PhonePe Clone application. By addressing user stories and pain points, the development team can deliver a platform that meets user expectations while maintaining high standards of security and usability.
+
+
+## **Annex A: Supporting Material**  
+
+### **A.1 Voice Conversation**  
+**Title**: Discussion between Business Analyst and User  
+**Description**: This voice recording captures insights from a user interview, focusing on potential improvements for the Payment application.  
+**Access Link**: [Voice Conversation](https://drive.google.com/file/d/15Bnknf7jbEEY3ueXbQlrHLOPRk4xMdyj/view?usp=sharing)   
+
