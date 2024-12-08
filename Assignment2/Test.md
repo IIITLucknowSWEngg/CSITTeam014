@@ -576,6 +576,49 @@ describe('Merchant Account Management', () => {
 
 ---
 
+### Code Example
+
+```javascript
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const { expect } = chai;
+
+chai.use(chaiHttp);
+
+const API_URL = '<API_URL>'; // Replace with your API base URL
+const ADMIN_TOKEN = '<ADMIN_TOKEN>'; // Replace with a valid authorization token for the admin
+
+describe('Admin Functions', () => {
+  it('TC-020: Manage Users - User accounts managed successfully', (done) => {
+    const userManagementDetails = {
+      action: 'create', // Action can be 'create', 'update', or 'delete'
+      user: {
+        name: 'John Doe',
+        email: 'john.doe@example.com',
+        phone: '1234567890',
+        role: 'user', // Role can be 'user' or 'admin'
+      },
+    };
+
+    chai
+      .request(API_URL)
+      .post('/admin/manage-users') // Assuming this is the endpoint for managing users
+      .set('Authorization', `Bearer ${ADMIN_TOKEN}`) // Include the admin authorization token
+      .send(userManagementDetails)
+      .end((err, res) => {
+        expect(res).to.have.status(200);
+
+        // Validate the response
+        expect(res.body).to.have.property('message', 'User account created successfully');
+        expect(res.body).to.have.property('userId').that.is.a('string');
+
+        done();
+      });
+  });
+});
+```
+---
+
 ### *2.10 Non-Functional Requirements*
 
 #### *Performance Testing*
