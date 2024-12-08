@@ -1,4 +1,4 @@
-# System Context  Diagram Code
+# 7.1 : System Context  Diagram Code
 
 ![image](https://github.com/user-attachments/assets/1f5019a1-eedb-4537-98cf-a4ae03837e61)
 
@@ -54,7 +54,7 @@
 ```
 
 # Container Diagram
-## End User
+## 7.2 : End User
 ![image](https://github.com/user-attachments/assets/57efbe64-f14d-4c79-8775-d454ad36701b)
 
 ```plantuml
@@ -120,7 +120,7 @@ chatService --> customerSupport : "Escalate Issues"
 
 
 ```
-## Merchant
+## 7.3 : Merchant
 ![image](https://github.com/user-attachments/assets/26ba55b4-3194-4d68-898d-8606d8ee28d6)
 ```plantuml
 @startuml
@@ -172,7 +172,7 @@ chatService --> customerSupport : "Escalate Issues"
 @enduml
 
 ```
-## Admin
+## 7.4 : Admin
 ![image](https://github.com/user-attachments/assets/23148d7b-dbb6-44f0-9b1c-b89b561a0678)
 ```plantuml
 @startuml
@@ -222,7 +222,7 @@ chatService --> customerSupport : "Escalate Issues"
 
 ```
 # Component Diagram
-## End User
+## 7.5 : End User
 ![image](https://github.com/user-attachments/assets/52772aa0-ea34-46c2-b2e6-9f11638ac9bd)
 
 ```plantuml
@@ -263,7 +263,7 @@ EndUserTransactionManagement --> BankingSystem : Bank Transfers
 @enduml
 
 ```
-## Merchant
+## 7.6 : Merchant
 ![image](https://github.com/user-attachments/assets/084633d9-6aab-4374-a083-5abbfd296f6b)
 
 
@@ -304,7 +304,7 @@ MerchantTransactionManagement --> BankingSystem : Bank Transfers
 @enduml
 
 ```
-## Admin
+## 7.7 : Admin
 ![image](https://github.com/user-attachments/assets/0249364a-7877-4be6-9524-97a7143fd54e)
 
 ```plantuml
@@ -357,7 +357,7 @@ NotificationManagement --> NotificationService : Send Notifications to End Users
 
 ```
 
-# Deployment Diagram Code
+# 7.8 : Deployment Diagram Code
 
 ![image](https://github.com/user-attachments/assets/0b21f083-c370-45e8-a4fa-d8a4e78cfe16)
 
