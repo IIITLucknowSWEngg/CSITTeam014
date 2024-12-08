@@ -16,65 +16,67 @@ The PhonePe Competitor project aims to develop a comprehensive digital payment p
 ---
 
 ## **Scope Description**  
-The scope outlines the key features, boundaries, and exclusions for the project.  
+The scope outlines the key features, boundaries, and exclusions for the project.
 
 ### **In-Scope Features**  
-- **UPI Transactions**: Enable users to send and receive payments through UPI.  
-- **Bill Payments**: Support payments for utility bills (electricity, water, gas, etc.).  
-- **Mobile Recharges**: Allow users to recharge prepaid mobile numbers.  
-- **Bank Account Management**: Facilitate secure linking and management of user bank accounts.  
-- **Transaction History**: Maintain detailed transaction records for user reference.  
-- **Notifications**: Send real-time updates and alerts for successful payments, failures, and important notices.  
+1. **UPI Transactions**:  
+   - Allow secure and reliable money transfers.  
+   - Enable seamless linking of user bank accounts.  
+   - Provide instant confirmations for successful transactions.  
+
+2. **Bill Payments**:  
+   - Support payments for electricity, water, and gas bills.  
+   - Enable scheduling and reminders for bill payments.  
+   - Offer quick access to frequently used billers.  
+
+3. **Mobile Recharges**:  
+   - Facilitate easy prepaid recharge processing.  
+   - Allow users to browse and select recharge plans.  
+   - Provide instant recharge confirmation notifications.  
+
+4. **Bank Account Management**:  
+   - Allow linking of multiple bank accounts securely.  
+   - Enable viewing of account balances and details.  
+   - Provide transaction initiation directly from the app.  
+
+5. **Transaction History**:  
+   - Maintain a detailed log of all transactions.  
+   - Provide options to search, filter, and categorize transactions.  
+   - Allow users to download or export their transaction history.  
+
+6. **Notifications**:  
+   - Send real-time alerts for successful and failed payments.  
+   - Notify users about pending bill payments and recharges.  
+   - Provide updates on system maintenance or outages.  
 
 ### **Out-of-Scope Features**  
-- **Advanced Financial Services**: No support for investments, loans, or credit services.  
-- **Loyalty and Reward Programs**: No cashbacks, points, or reward systems.   
-- **International Payments**: No support for cross-border payments or foreign currency transactions.  
-- **Account Aggregation**: No aggregation of multiple bank accounts into a single dashboard.  
-- **AI-Powered Chatbots**: No AI-based customer support chatbot integration.  
+1. **Advanced Financial Services**:  
+   - No investment portfolios or tools for financial planning.  
+   - Excludes loans, credit score monitoring, or lending services.  
+   - Avoids integration with third-party financial tools.  
+
+2. **Loyalty and Reward Programs**:  
+   - No cashback offers for transactions.  
+   - Excludes accumulation of loyalty points for usage.  
+   - No reward-based incentives for user engagement.  
+
+3. **International Payments**:  
+   - No support for foreign currency transactions.  
+   - Excludes handling of cross-border payments.  
+   - Focus remains solely on domestic transactions.  
+
+4. **Account Aggregation**:  
+   - Users cannot view all bank accounts on a single dashboard.  
+   - Excludes automatic account balance updates across accounts.  
+   - Each account must be managed individually within the app.  
+
+5. **AI-Powered Chatbots**:  
+   - No AI-based customer support automation.  
+   - Customer queries will be handled by human support teams.  
+   - Excludes machine learning-driven personalized responses.
 
 ---
 
-# **Project Deliverables**
-
-## **Key Deliverables**
-
-### **Technical Deliverables**  
-- Complete source code repository  
-- Functional mobile application  
-- UPI transaction module  
-- Bill payment and mobile recharge systems  
-- Secure transaction history system  
-- API documentation  
-
-### **Documentation**  
-- Requirements specification document  
-- Technical design specifications  
-- User manual  
-- Test cases and testing reports  
-
-### **Project Management**  
-- Project management plan  
-- Sprint planning documents  
-- Risk management log  
-
-### **Security Deliverables**  
-- Security compliance documentation  
-- User authentication modules  
-- Data protection reports  
-
----
-
-## **Stakeholders**  
-Identifying the key stakeholders and their roles in the project.  
-
-- **Project Sponsor**: Executive management responsible for approving and funding the project. 
-- **Project Manager**: Oversees the project, ensuring deliverables are met within the timeline and budget.  
-- **Development Team**: Cross-functional team responsible for coding, testing, and deploying the platform.  
-- **Quality Assurance (QA) Team**: QA engineers responsible for ensuring the product meets quality standards.  
-- **End Users**: Customers who will use the PhonePe Competitor platform for payments and transactions.  
-
----
 
 # **Project Methodology**
 
