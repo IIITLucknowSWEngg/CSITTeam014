@@ -3,7 +3,7 @@
 ---
 
 ## **1. Introduction**  
-The PhonePe Clone project aims to develop a comprehensive digital payment platform that replicates the key features of a leading payment app. This platform will facilitate secure UPI-based payments, bill payments, bank account management, and mobile recharges. The goal is to provide users with a seamless, secure, and efficient financial transaction experience.  
+The PhonePe Competitor project aims to develop a comprehensive digital payment platform that replicates the key features of a leading payment app. This platform will facilitate secure UPI-based payments, bill payments, bank account management, and mobile recharges. The goal is to provide users with a seamless, secure, and efficient financial transaction experience.  
 
 ---
 
@@ -75,12 +75,12 @@ Identifying the key stakeholders and their roles in the project.
 - **5.2 Project Manager**: Oversees the project, ensuring deliverables are met within the timeline and budget.  
 - **5.3 Development Team**: Cross-functional team responsible for coding, testing, and deploying the platform.  
 - **5.4 Quality Assurance (QA) Team**: QA engineers responsible for ensuring the product meets quality standards.  
-- **5.5 End Users**: Customers who will use the PhonePe Clone platform for payments and transactions.  
+- **5.5 End Users**: Customers who will use the PhonePe Competitor platform for payments and transactions.  
 
 ---
 
 ## **6. Methodology**  
-The PhonePe Clone project will be executed using the **Agile development methodology**, following the **Scrum framework**. Agile ensures flexibility, iterative development, and continuous improvement.  
+The PhonePe Competitor project will be executed using the **Agile development methodology**, following the **Scrum framework**. Agile ensures flexibility, iterative development, and continuous improvement.  
 
 ### **6.1 Key Agile Principles**  
 - **6.1.1 Incremental Development**: Deliver small, functional pieces of the platform in each sprint.  
