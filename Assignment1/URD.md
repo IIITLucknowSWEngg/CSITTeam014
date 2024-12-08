@@ -198,8 +198,10 @@ I assist users and merchants in resolving payment or account-related issues.
 ## **5. Non-Functional Requirements**  
 
 ### **5.1 Performance and Scalability**  
-- Support up to 10,000 concurrent users with minimal latency.  
-- Handle peak loads during festivals or events.  
+- Ensure seamless and uninterrupted payment processing during high-demand periods, such as festivals or sales. 
+- Provide a smooth experience with minimal delays during transactions, ensuring quick confirmation.  
+- Enable fast access to transaction history, account details, and other features, regardless of user activity levels.  
+  
 
 ---
 
