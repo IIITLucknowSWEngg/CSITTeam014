@@ -159,11 +159,11 @@ Assumptions are conditions that are assumed to be true for the project to procee
 
 #### **1.1. IEEE Std 830-1998, Software Requirements Specification (SRS) Standard**  
 - **Description**: This standard defines the recommended practices for Software Requirements Specification (SRS) documents.  
-- **Access Link**: [IEEE Std 830-1998](https://ieeexplore.ieee.org/document/740001)  
+- **Access Link**: [IEEE Std 830-1998](https://ieeexplore.ieee.org/document/720574)  
 
 #### **1.2. IEEE Std 12207-2017, System and Software Life Cycle Processes**  
 - **Description**: This standard outlines the processes required for managing and executing software and system development life cycles.  
-- **Access Link**: [IEEE Std 12207-2017](https://ieeexplore.ieee.org/document/7961181)  
+- **Access Link**: [IEEE Std 12207-2017](https://standards.ieee.org/ieee/12207/5672/)  
 
 ---
 
