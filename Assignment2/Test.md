@@ -695,6 +695,65 @@ describe('Performance Testing', () => {
 
 ---
 
+### Code Example
+```javascript
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const { expect } = chai;
+
+chai.use(chaiHttp);
+
+const API_URL = '<API_URL>'; // Replace with your API base URL
+const AUTH_TOKEN = '<AUTH_TOKEN>'; // Replace with a valid authorization token
+
+describe('Security Testing', () => {
+  it('TC-S01: Data Encryption Verification - Sensitive data appears encrypted', (done) => {
+    const sensitiveOperationDetails = { upiId: 'recipient@bank', amount: 1000 };
+
+    chai
+      .request(API_URL)
+      .post('/transactions/process') // Endpoint for a sensitive operation
+      .set('Authorization', `Bearer ${AUTH_TOKEN}`) // Include the authorization token
+      .send(sensitiveOperationDetails)
+      .end((err, res) => {
+        expect(res).to.have.status(200);
+
+        // Simulate checking encryption (in practice, this would involve monitoring network traffic)
+        expect(res.body).to.have.property('encrypted', true); // Assuming the response indicates encryption status
+
+        done();
+      });
+  });
+
+  it('TC-S02: Multi-Factor Authentication Check - Access granted only after verification code entry', (done) => {
+    const loginDetails = { username: 'testuser', password: 'password123' };
+
+    chai
+      .request(API_URL)
+      .post('/auth/login') // Endpoint for login
+      .send(loginDetails)
+      .end((err, res) => {
+        expect(res).to.have.status(200);
+        expect(res.body).to.have.property('mfaRequired', true);
+
+        const mfaCode = '123456'; // Assume a test MFA code is generated
+        chai
+          .request(API_URL)
+          .post('/auth/verify-mfa') // Endpoint for MFA verification
+          .set('Authorization', `Bearer ${res.body.tempToken}`) // Temporary token from login response
+          .send({ mfaCode })
+          .end((err, mfaRes) => {
+            expect(mfaRes).to.have.status(200);
+            expect(mfaRes.body).to.have.property('message', 'MFA verified successfully');
+            expect(mfaRes.body).to.have.property('accessToken'); // Final token issued after MFA
+            done();
+          });
+      });
+  });
+});
+```
+---
+
 #### *Usability Testing*
 
 | *Test Case ID* | *Description*                                           | *Steps*                                                                                                              | *Expected Outcome*                              |
