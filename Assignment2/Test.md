@@ -227,6 +227,80 @@ describe('Wallet Management', () => {
 
 ---
 
+### Code Example
+
+```javascript
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const { expect } = chai;
+
+chai.use(chaiHttp);
+
+const API_URL = '<API_URL>'; // Replace with your API base URL
+const AUTH_TOKEN = '<AUTH_TOKEN>'; // Replace with a valid authorization token for the API
+
+describe('UPI Transactions', () => {
+  const testCases = [
+    {
+      id: 'TC-009',
+      description: 'Link Bank Account for UPI - Should link bank account successfully',
+      endpoint: '/upi/link-bank',
+      payload: { bankDetails: { accountNumber: '1234567890', ifsc: 'BANK0001234' } },
+      expectedStatus: 200,
+      expectedResponse: { message: 'Bank account linked successfully' },
+    },
+    {
+      id: 'TC-010',
+      description: 'Send Money via UPI ID - Should complete transaction successfully',
+      endpoint: '/upi/send',
+      payload: { upiId: 'recipient@bank', amount: 1000 },
+      expectedStatus: 200,
+      expectedResponse: { message: 'Transaction completed successfully', transactionIdCheck: true },
+    },
+    {
+      id: 'TC-011',
+      description: 'Send Money via QR Code - Should complete transaction successfully',
+      endpoint: '/upi/scan-qr',
+      payload: { qrCodeData: 'encoded_qr_data', amount: 500 },
+      expectedStatus: 200,
+      expectedResponse: { message: 'Transaction completed successfully', transactionIdCheck: true },
+    },
+    {
+      id: 'TC-012',
+      description: 'Transaction Failure Notification - Should notify insufficient balance',
+      endpoint: '/upi/send',
+      payload: { upiId: 'recipient@bank', amount: 100000 }, // Assuming this exceeds available balance
+      expectedStatus: 400,
+      expectedResponse: { error: 'Insufficient balance' },
+    },
+  ];
+
+  testCases.forEach(({ id, description, endpoint, payload, expectedStatus, expectedResponse }) => {
+    it(`${id}: ${description}`, (done) => {
+      chai
+        .request(API_URL)
+        .post(endpoint)
+        .set('Authorization', `Bearer ${AUTH_TOKEN}`) // Include the authorization token
+        .send(payload)
+        .end((err, res) => {
+          expect(res).to.have.status(expectedStatus);
+
+          // Check expected fields in the response
+          Object.keys(expectedResponse).forEach((key) => {
+            if (key === 'transactionIdCheck') {
+              expect(res.body).to.have.property('transactionId').that.is.a('string');
+            } else {
+              expect(res.body).to.have.property(key, expectedResponse[key]);
+            }
+          });
+          done();
+        });
+    });
+  });
+});
+```
+---
+
 ### *2.4 Bill Payments*
 
 | *Test Case ID* | *Description*                                           | *Steps*                                                                                                                                 | *Expected Outcome*                              |
