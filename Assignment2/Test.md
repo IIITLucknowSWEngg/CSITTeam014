@@ -55,27 +55,87 @@ The scope of this test plan includes:
 
 ---
 
-*Code Example*
+ *Code Example*
 
-class RegistrationPage {
-  open() {
-    browser.url('/register'); // URL for the registration page
-  }
+# User Registration and Authentication Test Cases
 
-  fillRegistrationForm(phone) {
-    $('#phoneInput').setValue(phone); 
-  }
+```javascript
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const { expect } = chai;
 
-  submitForm() {
-    $('#submitBtn').click(); 
-  }
+chai.use(chaiHttp);
 
-  getSuccessMessage() {
-    return $('#successMessage').getText(); 
-  }
-}
+const API_URL = '<API_URL>'; // Replace with your API base URL
+const VALID_PHONE = '1234567890';
+const INVALID_PHONE = '1111111111';
+const VALID_OTP = '123456';
+const INVALID_OTP = '000000';
 
-module.exports = new RegistrationPage();
+describe('User Registration and Authentication', () => {
+  const testCases = [
+    {
+      id: 'TC-001',
+      description: 'User Registration - Should send OTP for verification',
+      endpoint: '/register',
+      payload: { phone: VALID_PHONE },
+      expectedStatus: 200,
+      expectedResponse: { message: 'OTP sent successfully' },
+    },
+    {
+      id: 'TC-002',
+      description: 'OTP Verification - Should create user account',
+      endpoint: '/verify-otp',
+      payload: { phone: VALID_PHONE, otp: VALID_OTP },
+      expectedStatus: 201,
+      expectedResponse: { message: 'User account created successfully' },
+    },
+    {
+      id: 'TC-003',
+      description: 'Password Recovery - Should send OTP for password reset',
+      endpoint: '/forgot-password',
+      payload: { phone: VALID_PHONE },
+      expectedStatus: 200,
+      expectedResponse: { message: 'OTP sent for password reset' },
+    },
+    {
+      id: 'TC-004',
+      description: 'Successful Login - Should allow access to app features',
+      endpoint: '/login',
+      payload: { phone: VALID_PHONE, otp: VALID_OTP },
+      expectedStatus: 200,
+      expectedResponse: { message: 'Login successful', tokenCheck: true },
+    },
+    {
+      id: 'TC-005',
+      description: 'Failed Login - Should show error for invalid credentials',
+      endpoint: '/login',
+      payload: { phone: INVALID_PHONE, otp: INVALID_OTP },
+      expectedStatus: 401,
+      expectedResponse: { error: 'Invalid credentials' },
+    },
+  ];
+
+  testCases.forEach(({ id, description, endpoint, payload, expectedStatus, expectedResponse }) => {
+    it(`${id}: ${description}`, (done) => {
+      chai.request(API_URL)
+        .post(endpoint)
+        .send(payload)
+        .end((err, res) => {
+          expect(res).to.have.status(expectedStatus);
+          Object.keys(expectedResponse).forEach((key) => {
+            if (key === 'tokenCheck') {
+              expect(res.body).to.have.property('accessToken');
+            } else {
+              expect(res.body).to.have.property(key, expectedResponse[key]);
+            }
+          });
+          done();
+        });
+    });
+  });
+});
+
 
 
 ### *2.2 Wallet Management*
