@@ -135,7 +135,8 @@ describe('User Registration and Authentication', () => {
     });
   });
 });
-
+```
+---
 
 
 ### *2.2 Wallet Management*
