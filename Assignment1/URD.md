@@ -234,9 +234,9 @@ This document clearly defines the functional and non-functional requirements for
 
 ## **8. Annex A: Supporting Material**  
 
-### **A.1 Voice Conversation**  
-**Title**: Discussion between Business Analyst and User  
-**Description**: This voice recording captures insights from a user interview, focusing on potential improvements for the Payment application.  
+### **A.1 Recorded User Feedback Session**  
+**Title**: User Feedback and Requirement Discussion
+**Description**: This audio recording documents a session with a user providing feedback and requirements for the PhonePe Competitor application, including suggested improvements.
 **Access Link**: [Voice Conversation](https://drive.google.com/file/d/15Bnknf7jbEEY3ueXbQlrHLOPRk4xMdyj/view?usp=sharing) 
 
 ---  
