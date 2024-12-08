@@ -481,6 +481,45 @@ describe('Customer Support', () => {
 
 ---
 
+### Code Example
+```javascript
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const { expect } = chai;
+
+chai.use(chaiHttp);
+
+const API_URL = '<API_URL>'; // Replace with your API base URL
+const AUTH_TOKEN = '<AUTH_TOKEN>'; // Replace with a valid authorization token for the API
+
+describe('Merchant Payments', () => {
+  it('TC-018: Accept Payments - Merchant receives payment confirmation', (done) => {
+    const paymentDetails = {
+      qrCodeData: 'encoded_qr_data', // Example QR code data scanned from the customer's app
+      amount: 1500,
+    };
+
+    chai
+      .request(API_URL)
+      .post('/merchant/accept-payment') // Assuming this is the endpoint for accepting payments
+      .set('Authorization', `Bearer ${AUTH_TOKEN}`) // Include the authorization token
+      .send(paymentDetails)
+      .end((err, res) => {
+        expect(res).to.have.status(200);
+
+        // Validate the response
+        expect(res.body).to.have.property('message', 'Payment received successfully');
+        expect(res.body).to.have.property('transactionId').that.is.a('string');
+        expect(res.body).to.have.property('status', 'Completed');
+        expect(res.body).to.have.property('amount').that.equals(paymentDetails.amount);
+
+        done();
+      });
+  });
+});
+```
+---
+
 ### *2.8 Merchant Account Management*
 
 | *Test Case ID* | *Description*                                           | *Steps*                                                                                                                                 | *Expected Outcome*                              |
