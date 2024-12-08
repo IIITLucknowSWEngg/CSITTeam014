@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This document provides a comprehensive **Stakeholder Register** for the **PhonePe Clone** project. Stakeholders are individuals, teams, or entities with an interest in or influence over the project. Categorizing them as **internal** or **external** helps ensure clear communication, effective collaboration, and alignment of goals, contributing to the successful execution of the project.
+This document provides a comprehensive **Stakeholder Register** for the **PhonePe competitor** project. Stakeholders are individuals, teams, or entities with an interest in or influence over the project. Categorizing them as **internal** or **external** helps ensure clear communication, effective collaboration, and alignment of goals, contributing to the successful execution of the project.
 
 ---
 ## Stakeholder Register Table
@@ -13,18 +13,17 @@ This document provides a comprehensive **Stakeholder Register** for the **PhoneP
 |--------------------------------|-------------------------------------------------|----------------------------------------------------------------------------|---------------|--------------|---------------|
 | **Project Sponsor**            | Oversees funding and strategic alignment        | Approves scope, budget, timeline; aligns goals; guides decisions            | High          | High         | Internal      |
 | **Project Manager**            | Manages project execution                       | Plans and monitors progress; allocates resources; resolves conflicts        | High          | High         | Internal      |
+| **Project Admin**     | Handle administrative tasks | Manage documentation, scheduling, and coordination                       | Medium        | High         | Internal      |
 | **Development Team**           | Develops and maintains the platform             | Implements features, fixes bugs, ensures scalability                        | High          | High         | Internal      |
 | **UI/UX Designers**            | Ensure a seamless, user-friendly experience     | Create intuitive designs, test usability, ensure accessibility              | Medium        | High         | Internal      |
 | **Quality Assurance (QA) Team**| Ensures app quality and stability               | Conducts testing, identifies bugs, ensures stability and performance        | High          | High         | Internal      |
-| **Product Owner**              | Defines product vision and priorities           | Specifies features, sets priorities, manages backlog                        | High          | High         | Internal      |
+| **Testers**          | Verify app functionality   | Conduct detailed testing, identify bugs, validate fixes, and ensure quality | High          | High         | Internal      |
+| **Customer Support Team**      | Provides support to app users                   | Handles inquiries and complaints, resolves issues                            | Medium        | Medium       | Internal      |
+| **Marketing Team**             | Promotes the app and its features               | Creates marketing campaigns, tracks market trends, engages with users       | Medium        | Medium       | Internal      |
 | **End Users**                  | Use the app for payments and transactions       | Provide feedback, test features, enhance visibility through reviews         | High          | High         | External      |
 | **Banks and Financial Institutions** | Enable digital payments and transaction security | Provide UPI infrastructure, ensure security, support integrations          | High          | High         | External      |
 | **Regulatory Authorities**     | Enforce compliance with digital payment regulations | Ensure adherence to privacy, security, and AML standards                  | High          | Medium       | External      |
-| **Customer Support Team**      | Provides support to app users                   | Handles inquiries and complaints, resolves issues                            | Medium        | Medium       | Internal      |
-| **Security Auditors**          | Ensure app security and compliance              | Conduct security audits, ensure data protection, identify vulnerabilities   | High          | High         | External      |
-| **Marketing Team**             | Promotes the app and its features               | Creates marketing campaigns, tracks market trends, engages with users       | Medium        | Medium       | Internal      |
 | **Merchants**                  | Use the app to accept payments                  | Accept payments, provide feedback, encourage app adoption by customers     | Medium        | Medium       | External      |
-
 
 ---
 
@@ -131,6 +130,28 @@ This document provides a comprehensive **Stakeholder Register** for the **PhoneP
 - **Influence:** High
 - **Interest:** Medium
 - **Category:** Internal
+
+### 11. **Testers**  
+- **Role:** Verify the functionality, performance, and stability of the app.  
+- **Responsibilities:**  
+  - Conduct manual and automated testing to identify bugs and inconsistencies.  
+  - Validate bug fixes and confirm resolution of reported issues.  
+  - Collaborate with the development team to ensure features meet requirements.  
+  - Perform regression and performance testing to ensure quality over updates.  
+- **Influence:** High  
+- **Interest:** High  
+- **Category:** Internal  
+
+### 12. **Project Admin**  
+- **Role:** Manage administrative tasks and facilitate project coordination.  
+- **Responsibilities:**  
+  - Maintain and organize project documentation, such as schedules and reports.  
+  - Schedule and coordinate meetings between stakeholders.  
+  - Track deadlines and ensure team adherence to the project timeline.  
+  - Manage tools, resources, and licenses required for project execution.  
+- **Influence:** Medium  
+- **Interest:** High  
+- **Category:** Internal  
 
 ---
 
