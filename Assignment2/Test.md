@@ -55,9 +55,7 @@ The scope of this test plan includes:
 
 ---
 
- *Code Example*
-
-# User Registration and Authentication Test Cases
+ ###Code Example
 
 ```javascript
 const chai = require('chai');
