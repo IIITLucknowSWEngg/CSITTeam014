@@ -55,6 +55,29 @@ The scope of this test plan includes:
 
 ---
 
+*Code Example*
+
+class RegistrationPage {
+  open() {
+    browser.url('/register'); // URL for the registration page
+  }
+
+  fillRegistrationForm(phone) {
+    $('#phoneInput').setValue(phone); 
+  }
+
+  submitForm() {
+    $('#submitBtn').click(); 
+  }
+
+  getSuccessMessage() {
+    return $('#successMessage').getText(); 
+  }
+}
+
+module.exports = new RegistrationPage();
+
+
 ### *2.2 Wallet Management*
 
 | *Test Case ID* | *Description*                                           | *Steps*                                                                                                                                 | *Expected Outcome*                              |
