@@ -762,6 +762,48 @@ describe('Security Testing', () => {
 | TC-U02           | Accessibility Compliance Check                            | Use accessibility tools to test features against WCAG standards.                                                      | App meets accessibility standards.               |
 
 ---
+### Code Example
+```javascript
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const { expect } = chai;
+
+chai.use(chaiHttp);
+
+const API_URL = '<API_URL>'; // Replace with your API base URL
+const AUTH_TOKEN = '<AUTH_TOKEN>'; // Replace with a valid authorization token
+
+describe('Usability Testing', () => {
+  it('TC-U01: UI/UX Navigation Testing - Users find it easy to navigate', (done) => {
+    // Simulate navigation to perform common tasks
+    chai
+      .request(API_URL)
+      .get('/navigation-test') // Endpoint to simulate navigation (or monitor user tasks)
+      .set('Authorization', `Bearer ${AUTH_TOKEN}`) // Include the authorization token
+      .end((err, res) => {
+        expect(res).to.have.status(200);
+        expect(res.body).to.have.property('navigationIntuitive', true); // Check if navigation is intuitive
+        expect(res.body).to.have.property('feedbackScore').that.is.above(8); // Example: Feedback score > 8/10
+        done();
+      });
+  });
+
+  it('TC-U02: Accessibility Compliance Check - App meets accessibility standards', (done) => {
+    // Use an accessibility API or tool to test compliance
+    chai
+      .request(API_URL)
+      .get('/accessibility-check') // Endpoint to verify accessibility compliance
+      .set('Authorization', `Bearer ${AUTH_TOKEN}`) // Include the authorization token
+      .end((err, res) => {
+        expect(res).to.have.status(200);
+        expect(res.body).to.have.property('compliant', true); // Check if the app meets WCAG standards
+        expect(res.body).to.have.property('issues').that.is.an('array').that.is.empty; // No accessibility issues
+        done();
+      });
+  });
+});
+```
+---
 
 ## *3. Conclusion*
 
