@@ -33,4 +33,4 @@
 | *Nalla Hitha Sai Srinath*      | 38ade40dc89858a3099dcd9538bce891db86032a  | Created Architecture.md and added most of the C4 model diagrams                | 2024-11-17 |
 | *Gana Kalvakuntla*             | 495340ba844292be863db144fbd82353b91c80b3  | Created urd.md documenting project requirements and updated srs.md with error case and use case diagrams | 2024-11-30 |
 | *Koyyani Naga Sai Yaaghnetha*  | 745dc3bd005fb24c77664cd2278db00ec0003ff1  | Added Project Scope and Methodology Document with relevant details required for each                      | 2024-12-07 |
-| *Revanth Kurapati*             | 508e7a39e9bf81bac8dcf519dddee6f059ff2148  | Updated the uptime and downtime values table                                   | 2024-11-30 |
+| *Revanth Kurapati*             | e2116bbb25007c68e90078314030584ee171769b  | redocumented  the srs by adding essential sections andremoving unnecessary things                                 | 2024-11-30 |
