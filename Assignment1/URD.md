@@ -8,7 +8,7 @@
 This document outlines the user requirements for the PhonePe Clone application. It serves as a guide for the design, development, and testing phases to ensure the final product aligns with user needs and expectations.  
 
 ### **1.2 Scope**  
-The PhonePe Clone is a mobile-based digital payment platform that enables users to:  
+The PhonePe Competitor is a mobile-based digital payment platform that enables users to:  
 - Perform UPI transactions.  
 - Recharge mobiles and DTH services.  
 - Pay utility bills.  
