@@ -219,3 +219,78 @@ This document provides a comprehensive **Stakeholder Register** for the **PhoneP
 - **Category:** External
 
 ---
+
+
+## **Login Details**   
+
+1. **Development Team**  
+   - **Access Level:** High  
+   - **Rights and Access:**  
+     - Access production environments to deploy updates and debug issues.  
+     - Manage system logs and monitor performance for scalability.  
+     - Restricted from accessing sensitive user or financial data.  
+ 
+
+2. **Quality Assurance (QA) Team (Testers)**  
+   - **Access Level:** Moderate  
+   - **Rights and Access:**  
+     - Access environments mirrored with production for testing purposes.  
+     - Perform testing on live features and monitor system stability.  
+     - Restricted from viewing sensitive user or transaction data.  
+
+3. **Customer Support Team**  
+   - **Access Level:** Moderate  
+   - **Rights and Access:**  
+     - Access user accounts for troubleshooting purposes.  
+     - View transaction logs to assist with issue resolution.  
+     - Raise escalation tickets to development or cybersecurity teams.  
+     - Restricted from modifying sensitive user or financial data.  
+
+4. **Marketing Team**  
+   - **Access Level:** Moderate  
+   - **Rights and Access:**  
+     - Access dashboards to analyze user engagement and campaign performance.  
+     - Manage in-app promotional content.  
+     - No access to private user information or transaction data.  
+
+5. **Cybersecurity Team**  
+   - **Access Level:** High  
+   - **Rights and Access:**  
+     - Access security logs and real-time threat monitoring tools.  
+     - Implement security patches and manage encryption protocols.  
+     - Ensure compliance with privacy and data protection standards.  
+
+6. **System Architects**  
+   - **Access Level:** High  
+   - **Rights and Access:**  
+     - Full access to platform infrastructure and system configurations.  
+     - Monitor resource utilization and optimize architecture.  
+     - Restricted from directly accessing user or financial data.  
+
+7. **Banks and Financial Institutions**  
+   - **Access Level:** High  
+   - **Rights and Access:**  
+     - Access transaction APIs and settlement reports.  
+     - Monitor payment flow and ensure integration stability.  
+     - Analyze compliance with financial standards without accessing non-transaction user data.  
+
+8. **Regulatory Authorities**  
+   - **Access Level:** Limited to compliance monitoring tools.  
+   - **Rights and Access:**  
+     - View audit logs for compliance and user data protection.  
+     - Access security reports for regulatory purposes.  
+     - Restricted from making modifications or accessing personal user data.  
+
+9. **Merchants & End Users**  
+    - **Access Level:** User-level  
+    - **Rights and Access:**  
+      - View their transaction histories and settlement reports.  
+      - Customize personal preferences and raise disputes for failed transactions.  
+      - No access to admin tools or other merchant and user data.  
+ 
+10. **Administrators**  
+    - **Access Level:** Highest  
+    - **Rights and Access:**  
+      - Manage platform settings, user roles, and permissions.  
+      - Oversee system security and data privacy for all users.  
+      - Access but not modify all application areas, including sensitive user and transaction data.  
